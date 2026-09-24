@@ -1,0 +1,134 @@
+{
+  "coverage_inventory": {
+    "absolute_paths": {
+      "patterns": [
+        "absolute path",
+        "startswith\\(.?/"
+      ],
+      "present": true
+    },
+    "backslashes": {
+      "patterns": [
+        "backslash",
+        "'\\\\\\\\'"
+      ],
+      "present": true
+    },
+    "duplicate_json_keys": {
+      "patterns": [
+        "duplicate.*key",
+        "object_pairs_hook"
+      ],
+      "present": true
+    },
+    "malformed_order": {
+      "patterns": [
+        "order.*constraint",
+        "cycle"
+      ],
+      "present": true
+    },
+    "noncanonical_hex": {
+      "patterns": [
+        "canonical.*hex",
+        "lowercase.*hex"
+      ],
+      "present": true
+    },
+    "nul": {
+      "patterns": [
+        "nul",
+        "\\\\x00"
+      ],
+      "present": true
+    },
+    "path_traversal": {
+      "patterns": [
+        "\\.\\.",
+        "path traversal",
+        "canonical path"
+      ],
+      "present": true
+    },
+    "schema_version": {
+      "patterns": [
+        "schema.?version",
+        "unsupported.*version"
+      ],
+      "present": true
+    },
+    "unknown_fields": {
+      "patterns": [
+        "unknown field",
+        "unexpected field",
+        "extra field"
+      ],
+      "present": true
+    },
+    "unsupported_transform": {
+      "patterns": [
+        "unsupported.*transform",
+        "relocation"
+      ],
+      "present": true
+    }
+  },
+  "note": "Presence is a static navigation aid, not proof that every path is hardened. Runtime adversarial tests remain authoritative.",
+  "raw_json_load_sites": [
+    {
+      "file": "src/producer.py",
+      "line": 31,
+      "strict_hook_on_line": true,
+      "text": "return json.loads(data.decode('utf-8'), object_pairs_hook=_object)"
+    },
+    {
+      "file": "src/checker.py",
+      "line": 31,
+      "strict_hook_on_line": true,
+      "text": "return json.loads(data.decode('utf-8'), object_pairs_hook=no_duplicates)"
+    },
+    {
+      "file": "tests/test_boundary.py",
+      "line": 121,
+      "strict_hook_on_line": false,
+      "text": "for record in json.loads((ROOT/'inputs/index.json').read_text()):"
+    },
+    {
+      "file": "tests/test_boundary.py",
+      "line": 122,
+      "strict_hook_on_line": false,
+      "text": "x=json.loads((ROOT/record['path']).read_text())"
+    },
+    {
+      "file": "scripts/audit_release.py",
+      "line": 20,
+      "strict_hook_on_line": true,
+      "text": "json.loads(path.read_text(encoding='utf-8'),object_pairs_hook=strict_pairs,parse_constant=parse_constant)"
+    },
+    {
+      "file": "scripts/audit_claims.py",
+      "line": 64,
+      "strict_hook_on_line": false,
+      "text": "try: obj=json.loads(p.read_text(encoding='utf-8'))"
+    },
+    {
+      "file": "scripts/build_data_dictionary.py",
+      "line": 26,
+      "strict_hook_on_line": false,
+      "text": "try:o=json.loads(p.read_text(encoding='utf-8'))"
+    },
+    {
+      "file": "scripts/campaign.py",
+      "line": 11,
+      "strict_hook_on_line": false,
+      "text": "index=json.loads((ROOT/'inputs/index.json').read_text()); records=[]"
+    },
+    {
+      "file": "scripts/campaign.py",
+      "line": 14,
+      "strict_hook_on_line": false,
+      "text": "raw=json.loads((ROOT/item['path']).read_text()); t=time.process_time()"
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,1 @@
+{"obstructions":[],"orders":[[1,2,0],[2,0,1]],"regions":[{"class":"ambiguous","excluded":[],"owners":["developer","lib:A"],"support":[["developer",1],["lib:A",0]]}],"status":"classified"}

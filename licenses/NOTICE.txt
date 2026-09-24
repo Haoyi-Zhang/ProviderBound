@@ -1,0 +1,18 @@
+The original implementation, generated fixtures, owned Java examples, and
+artifact documentation are distributed under the adjacent MIT license. This
+does not assert exclusive copyright over AI-assisted material or change any
+third-party rights. Human approval remains required before external use.
+
+The public-corpus directory embeds 45 unmodified JAR archives obtained from
+Debian packages: 43 study providers and two Apache Ant builder archives. Those
+archives are not covered by the artifact's MIT license. Their package names,
+package versions, upstream project identifiers, and file sizes are recorded in
+inputs/public/providers.csv. The corresponding Debian machine-readable or
+legacy copyright notices are preserved verbatim in
+inputs/public/licenses/*.copyright. Redistribution and use of each archive are
+subject to the license(s) identified in its package copyright record. The
+artifact neither modifies these binaries nor claims ownership of them.
+
+No research-paper PDF, external source repository, trained model, private data,
+or credential is embedded. The paper-side ACM class and bibliography style are
+user-supplied assets and remain with paper/ under their retained notices.

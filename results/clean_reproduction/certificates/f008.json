@@ -1,0 +1,1 @@
+{"obstruction":{"kind":"trap","nodes":[0,1],"reasons":[{"kind":"before","node":0,"pred":1},{"kind":"before","node":1,"pred":0}]},"status":"inconsistent"}

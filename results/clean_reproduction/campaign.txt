@@ -1,0 +1,21 @@
+{
+  "cases": 60,
+  "generated_cases": 40,
+  "boundary_fixtures": 20,
+  "public_builds": 0,
+  "classified_inputs": 43,
+  "inconsistent_inputs": 15,
+  "admission_rejected_inputs": 2,
+  "rows": 130,
+  "incidences": 505,
+  "developer": 22,
+  "library": 34,
+  "ambiguous": 24,
+  "dependency_strictly_narrowed": 54,
+  "bytes_strictly_narrowed": 18,
+  "certificate_bytes": 59646,
+  "cpu_seconds": 0.03248053500000003,
+  "wall_seconds": 0.03247956300015176,
+  "peak_rss_kib": 92952,
+  "baseline_scope": "Local provider membership and exact-byte owner sets only; no whitelist or package-frequency tool evaluation."
+}

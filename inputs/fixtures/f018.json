@@ -1,0 +1,32 @@
+{
+  "kind": "inventory",
+  "providers": [
+    {
+      "id": "p0",
+      "owner": "developer",
+      "relocations": [
+        [
+          "a/",
+          "b/"
+        ],
+        [
+          "b/",
+          "c/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "a/x.bin",
+          "payload": "78"
+        }
+      ]
+    }
+  ],
+  "before": [],
+  "observed": [
+    {
+      "name": "b/x.bin",
+      "payload": "78"
+    }
+  ]
+}

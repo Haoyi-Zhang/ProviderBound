@@ -1,0 +1,140 @@
+{
+  "kind": "inventory",
+  "providers": [
+    {
+      "id": "p0",
+      "owner": "developer",
+      "relocations": [
+        [
+          "origin0/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin0/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "owner": "lib:L1",
+      "relocations": [
+        [
+          "origin1/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin1/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "owner": "lib:L2",
+      "relocations": [
+        [
+          "origin2/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin2/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "owner": "lib:L3",
+      "relocations": [
+        [
+          "origin3/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin3/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "owner": "lib:L4",
+      "relocations": [
+        [
+          "origin4/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin4/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "owner": "lib:L5",
+      "relocations": [
+        [
+          "origin5/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin5/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "owner": "lib:L6",
+      "relocations": [
+        [
+          "origin6/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin6/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "owner": "lib:L7",
+      "relocations": [
+        [
+          "origin7/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin7/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    }
+  ],
+  "before": [],
+  "observed": [
+    {
+      "name": "r/target.bin",
+      "payload": "73616d65"
+    }
+  ]
+}

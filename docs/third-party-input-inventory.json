@@ -1,0 +1,301 @@
+{
+  "archive_inputs": [
+    {
+      "bytes": 2306686,
+      "path": "inputs/public/jars/ant-1.10.15.jar",
+      "sha256": "4f35d8bc79b6b280f86543a91f6fa8e6f92d4975b47246b9e610e1774f6b2f6b"
+    },
+    {
+      "bytes": 18868,
+      "path": "inputs/public/jars/ant-launcher-1.10.15.jar",
+      "sha256": "6c711be7c7b0d10b53997c0272e9e7ce596f766352611f8602512dc50d225233"
+    },
+    {
+      "bytes": 4328384,
+      "path": "inputs/public/jars/batik-all-1.18.jar",
+      "sha256": "297c1b91e86addaf35297263c9b3b36cb970b632667702fde6cee090d21b2711"
+    },
+    {
+      "bytes": 491865,
+      "path": "inputs/public/jars/batik-anim-1.18.jar",
+      "sha256": "c757101ca0b4b0c63e3cf1a99c33f6b9eb6fe1610b7b82f2352007a3678c244d"
+    },
+    {
+      "bytes": 427375,
+      "path": "inputs/public/jars/batik-awt-util-1.18.jar",
+      "sha256": "b61dae29aea852cceab380091e599727fce7ad174b86442034eac145fd7e5cc9"
+    },
+    {
+      "bytes": 713169,
+      "path": "inputs/public/jars/batik-bridge-1.18.jar",
+      "sha256": "d436a1960e9530444ed4ff3da99f4a87028370b91ad6ccff67c33b9fe6abbdc5"
+    },
+    {
+      "bytes": 113312,
+      "path": "inputs/public/jars/batik-codec-1.18.jar",
+      "sha256": "5b75ab94d2b96617b879dd8f2da76ca0d5d3a947f315a8020f5db835a9ba3d53"
+    },
+    {
+      "bytes": 8596,
+      "path": "inputs/public/jars/batik-constants-1.18.jar",
+      "sha256": "b508b7e7771812bc0c76d812fd173ae8aefd03ab2d89468315ede74b97dd0713"
+    },
+    {
+      "bytes": 334760,
+      "path": "inputs/public/jars/batik-css-1.18.jar",
+      "sha256": "508b1138e8f9d4ac2f640ba511daf7ee5bcb3a9051375735c4f7b35ff3f450e5"
+    },
+    {
+      "bytes": 186078,
+      "path": "inputs/public/jars/batik-dom-1.18.jar",
+      "sha256": "93ec7afe1399d9526a269e1f2285afd12dcff0380ccfaee3ce06f7aad6b2f86d"
+    },
+    {
+      "bytes": 10385,
+      "path": "inputs/public/jars/batik-ext-1.18.jar",
+      "sha256": "6d38fa2a07ad2b426358561e4bd5e17188088e83d757e380ee63edada98a6da0"
+    },
+    {
+      "bytes": 73106,
+      "path": "inputs/public/jars/batik-extension-1.18.jar",
+      "sha256": "b686c356e6fb34b3ad00c20be59e6b77c4f691c068c2ade9a533c7c17d99c35f"
+    },
+    {
+      "bytes": 174993,
+      "path": "inputs/public/jars/batik-gui-util-1.18.jar",
+      "sha256": "97d02473a385be5777d8fd18cd75abaecf4563bc17d239d3126df96fb5590777"
+    },
+    {
+      "bytes": 193737,
+      "path": "inputs/public/jars/batik-gvt-1.18.jar",
+      "sha256": "5241b10f16e6b6dd37e9e9ab9db17209388b3a9adecb9ce18055d19093394c34"
+    },
+    {
+      "bytes": 11583,
+      "path": "inputs/public/jars/batik-i18n-1.18.jar",
+      "sha256": "bd48e6d2f0dc9f7a25e4950a28abd5a62fb64abd0f8baf107c9cd0205d91eb92"
+    },
+    {
+      "bytes": 77422,
+      "path": "inputs/public/jars/batik-parser-1.18.jar",
+      "sha256": "cc387af45135d859cc0a8d6da3d19e50976622cd399ab11d2b67b4c4e6707a64"
+    },
+    {
+      "bytes": 9056,
+      "path": "inputs/public/jars/batik-rasterizer-1.18.jar",
+      "sha256": "e7afb9e97ecfd28f95cfc9925f78a98e61f1dfdfd0d2b402c92959b5efca60ad"
+    },
+    {
+      "bytes": 23370,
+      "path": "inputs/public/jars/batik-script-1.18.jar",
+      "sha256": "d99dd3c418f0b7b180f97d68c0c75c61a6edc870dbdf3093b9d33f841ee51e83"
+    },
+    {
+      "bytes": 17858,
+      "path": "inputs/public/jars/batik-slideshow-1.18.jar",
+      "sha256": "400c05464b330789a41f4fb4ef14e941738196cff8da6b8f28f8e3ed8d73506f"
+    },
+    {
+      "bytes": 231119,
+      "path": "inputs/public/jars/batik-svg-dom-1.18.jar",
+      "sha256": "978d3dc22d820b47267438f8c576d24821c512069b71d034343bcb0e7f8184b9"
+    },
+    {
+      "bytes": 610168,
+      "path": "inputs/public/jars/batik-svgbrowser-1.18.jar",
+      "sha256": "72f3568036de8f8bd4a2f8c5bf66b40cb66978585bb544299d83304776dd76c9"
+    },
+    {
+      "bytes": 229573,
+      "path": "inputs/public/jars/batik-svggen-1.18.jar",
+      "sha256": "841d33d1435555b06294bbb2db72903af68eb7b34d5017e7d34bdbd4783322cf"
+    },
+    {
+      "bytes": 20298,
+      "path": "inputs/public/jars/batik-svgpp-1.18.jar",
+      "sha256": "67808e79217c6c0b6fb82ad55f4c3676765153ee49fbb85ece04f33fd29e7e51"
+    },
+    {
+      "bytes": 62167,
+      "path": "inputs/public/jars/batik-svgrasterizer-1.18.jar",
+      "sha256": "9abf8b1b3b0de6df8d82d6f2d8e88112c1a7544caf82a6185db61bb083f1361f"
+    },
+    {
+      "bytes": 195945,
+      "path": "inputs/public/jars/batik-swing-1.18.jar",
+      "sha256": "88347580cf39d5a195d8074ffb66f807e55008e21418712b79dd9ef36f319c03"
+    },
+    {
+      "bytes": 130390,
+      "path": "inputs/public/jars/batik-transcoder-1.18.jar",
+      "sha256": "14a6ddcef1295498d118110f11e70bf7edf381b34dc7ca6784e331a29b7407ca"
+    },
+    {
+      "bytes": 8092,
+      "path": "inputs/public/jars/batik-ttf2svg-1.18.jar",
+      "sha256": "1db0da8d3d02caa3addd7bc7c502813bf51c0a97ae9a80c08e14686ac699d0cd"
+    },
+    {
+      "bytes": 128578,
+      "path": "inputs/public/jars/batik-util-1.18.jar",
+      "sha256": "74a2cee88d02216109e3a96131ee454d3ee889fbc42886d1202ed586dcc59312"
+    },
+    {
+      "bytes": 34096,
+      "path": "inputs/public/jars/batik-xml-1.18.jar",
+      "sha256": "4aa7aa14b3bdcc2c0ce89b9f99bfe0ec5e8af100e26e0dbb9ef857d3fc1a5d11"
+    },
+    {
+      "bytes": 296031,
+      "path": "inputs/public/jars/flow-engine-0.9.4.jar",
+      "sha256": "59395784cf0282d5bbaced85068313b22780472309b8bb260b3949805b48b7d1"
+    },
+    {
+      "bytes": 755980,
+      "path": "inputs/public/jars/hsqldb1.8.0-1.8.0.10+dfsg.jar",
+      "sha256": "519dc567eec2538b9cc1acb28113c3e646fa5a698dc2d9c51d65d749bfef3160"
+    },
+    {
+      "bytes": 259896,
+      "path": "inputs/public/jars/hsqldbutil1.8.0-1.8.0.10+dfsg.jar",
+      "sha256": "5558221b029b77935e4b1d9c91f9fa41025d031e87abbf320161df9d439977e1"
+    },
+    {
+      "bytes": 676838,
+      "path": "inputs/public/jars/javax.mail-1.6.5.jar",
+      "sha256": "6ab7434e166d7068c7c1195331c3b1922b9752bf6113832d708a00ad459a89fd"
+    },
+    {
+      "bytes": 206870,
+      "path": "inputs/public/jars/javax.mail-api-1.6.5.jar",
+      "sha256": "8f47e401dfa08b308571a8743b8a5cfba180620b457aecf5467398a8084b2c0d"
+    },
+    {
+      "bytes": 825778,
+      "path": "inputs/public/jars/liblayout-0.2.10.jar",
+      "sha256": "ce93e935c80923106e57ab714e3188b549ace83859c58c1501772a9fc9ac3895"
+    },
+    {
+      "bytes": 2220364,
+      "path": "inputs/public/jars/libreoffice-25.2.3.jar",
+      "sha256": "9fa19b7bc1211f83f4885914719fd3b46523ea1f3b6e0e8243c0e919fb3a6a16"
+    },
+    {
+      "bytes": 79097,
+      "path": "inputs/public/jars/libxml-1.1.7.jar",
+      "sha256": "9d01392bbc18a281e429268826ff8073c5bd8f8edb724c7dd6e34cacc2806733"
+    },
+    {
+      "bytes": 362801,
+      "path": "inputs/public/jars/mailapi-1.6.5.jar",
+      "sha256": "19ff7589fdb8cb6e8ee7ea0e24a760146ec851a558ee40491f5fed97d2c24bd5"
+    },
+    {
+      "bytes": 16450,
+      "path": "inputs/public/jars/sac.jar",
+      "sha256": "b2f5447516687086f64cae580f3f9dd892d2a0716f3b1c386424c818eb7796d4"
+    },
+    {
+      "bytes": 4745,
+      "path": "inputs/public/jars/unoloader-25.2.3.jar",
+      "sha256": "77bd0d00dcb65dde2f658e13b4b2cdd74862e91f16348f16eb0f7f6950f57190"
+    },
+    {
+      "bytes": 36324,
+      "path": "inputs/public/jars/websocket-api.jar",
+      "sha256": "77c13d35c3682732ded62f73d45e389b3723768fbb28ec4f7f0e39da670bfd9d"
+    },
+    {
+      "bytes": 27078,
+      "path": "inputs/public/jars/websocket-client-api.jar",
+      "sha256": "b24984c521941aa2a078dbad342899bb0bfd129e4d5052761a2e9bf66b91d455"
+    },
+    {
+      "bytes": 302919,
+      "path": "inputs/public/jars/xml-apis-1.3.04.jar",
+      "sha256": "260521e2288338477f76744a2ec3e684c038e49d93c797dcacb05ec461016f82"
+    },
+    {
+      "bytes": 240269,
+      "path": "inputs/public/jars/xml-apis-1.4.01.jar",
+      "sha256": "19ac98fc4f16479ea2e35c726c2b953964313046e2069069a01630a29fcc53ee"
+    },
+    {
+      "bytes": 82561,
+      "path": "inputs/public/jars/xml-apis-ext-1.4.01.jar",
+      "sha256": "b278cceac4942948e6894be14a67ed0eb081071885610f4f2c7c4a75e52593dc"
+    }
+  ],
+  "candidate_provenance_manifests": [
+    "inputs/public/selection.json"
+  ],
+  "legal_note": "This inventory is not legal advice. Presence of a notice does not by itself satisfy all redistribution duties; submitting authors must review corresponding-source and notice requirements before public release.",
+  "license_notice_records": [
+    {
+      "bytes": 1074,
+      "path": "inputs/public/licenses/ant.copyright",
+      "sha256": "d3594bd9534b2129d19b702c0ba554e487681e3c691bf00cd693c537c8197ec6"
+    },
+    {
+      "bytes": 25854,
+      "path": "inputs/public/licenses/libbatik-java.copyright",
+      "sha256": "b0cf236b772782bb02090a3b01725a288f195ab77a567d0e8ca6bdbd94ca2570"
+    },
+    {
+      "bytes": 3580,
+      "path": "inputs/public/licenses/libhsqldb1.8.0-java.copyright",
+      "sha256": "84f3186fbf858986c41959c2ecebc47640cea4502c7ae34dbf7a8088748c980e"
+    },
+    {
+      "bytes": 4465,
+      "path": "inputs/public/licenses/libjaxp1.3-java.copyright",
+      "sha256": "954691365c5cd12179af8ae274860fe31bf3528584c95f0b9b0c0bd518a277b2"
+    },
+    {
+      "bytes": 957,
+      "path": "inputs/public/licenses/liblayout-java.copyright",
+      "sha256": "e5cb19191744c27bd72c2cf9cddd501116bbb0e33216efc3a649897553ebd57f"
+    },
+    {
+      "bytes": 20199,
+      "path": "inputs/public/licenses/liblibreoffice-java.copyright",
+      "sha256": "cf9d0e2a977145750723bf71705e3fc829d5fc396376587ba546febbf9eebda3"
+    },
+    {
+      "bytes": 18214,
+      "path": "inputs/public/licenses/libmail-java.copyright",
+      "sha256": "679a913cbb960ea463810adbc07939cee44dd28add7eff2e9c2cdd872f695c6b"
+    },
+    {
+      "bytes": 1103,
+      "path": "inputs/public/licenses/libpentaho-reporting-flow-engine-java.copyright",
+      "sha256": "3b8d87f61489a5250c1e64a9fda6b4c29c0aaa3f286732934bc855f7e486bad2"
+    },
+    {
+      "bytes": 3556,
+      "path": "inputs/public/licenses/libsac-java.copyright",
+      "sha256": "55c9ba101cebc29f5a6b2cedbc8a556c92b6598dd0b697675e1ef4855bcb7ab5"
+    },
+    {
+      "bytes": 20199,
+      "path": "inputs/public/licenses/libunoloader-java.copyright",
+      "sha256": "cf9d0e2a977145750723bf71705e3fc829d5fc396376587ba546febbf9eebda3"
+    },
+    {
+      "bytes": 19766,
+      "path": "inputs/public/licenses/libwebsocket-api-java.copyright",
+      "sha256": "16c2f3a2137fc7487e193a577fcd6ad13c652ec924d2dff838753c5d3622f641"
+    },
+    {
+      "bytes": 5358,
+      "path": "inputs/public/licenses/libxml-commons-external-java.copyright",
+      "sha256": "38010c4ea4d4cad118c0fccefca4fbed62026023d1d0548bd1a85df5f0224c1a"
+    },
+    {
+      "bytes": 960,
+      "path": "inputs/public/licenses/libxml-java.copyright",
+      "sha256": "000635761a7d95bbefd8f8d129412e1ec506ff14af142f0fd0e5d7169e4ebeb4"
+    }
+  ],
+  "schema_version": 1
+}

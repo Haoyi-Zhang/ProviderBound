@@ -1,0 +1,268 @@
+{
+  "kind": "inventory",
+  "providers": [
+    {
+      "id": "p0",
+      "owner": "developer",
+      "relocations": [
+        [
+          "origin0/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin0/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "owner": "lib:L1",
+      "relocations": [
+        [
+          "origin1/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin1/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "owner": "lib:L2",
+      "relocations": [
+        [
+          "origin2/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin2/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "owner": "lib:L3",
+      "relocations": [
+        [
+          "origin3/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin3/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "owner": "lib:L4",
+      "relocations": [
+        [
+          "origin4/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin4/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "owner": "lib:L5",
+      "relocations": [
+        [
+          "origin5/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin5/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "owner": "lib:L6",
+      "relocations": [
+        [
+          "origin6/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin6/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "owner": "lib:L7",
+      "relocations": [
+        [
+          "origin7/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin7/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "owner": "lib:L8",
+      "relocations": [
+        [
+          "origin8/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin8/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "owner": "lib:L9",
+      "relocations": [
+        [
+          "origin9/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin9/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "owner": "lib:L10",
+      "relocations": [
+        [
+          "origin10/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin10/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "owner": "lib:L11",
+      "relocations": [
+        [
+          "origin11/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin11/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "owner": "lib:L12",
+      "relocations": [
+        [
+          "origin12/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin12/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "owner": "lib:L13",
+      "relocations": [
+        [
+          "origin13/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin13/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "owner": "lib:L14",
+      "relocations": [
+        [
+          "origin14/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin14/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "owner": "lib:L15",
+      "relocations": [
+        [
+          "origin15/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin15/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    }
+  ],
+  "before": [],
+  "observed": [
+    {
+      "name": "r/target.bin",
+      "payload": "73616d65"
+    }
+  ]
+}

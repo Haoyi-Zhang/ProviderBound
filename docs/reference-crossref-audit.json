@@ -1,0 +1,491 @@
+{
+  "records": [
+    {
+      "author": "Samhi, Jordan and Bissyand{\\'e}, Tegawend{\\'e} F. and Klein, Jacques",
+      "doi": "",
+      "key": "androlibzoo",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{AndroLibZoo}: A Reliable Dataset of Libraries Based on Software Dependency Analysis",
+      "year": ""
+    },
+    {
+      "author": "Allix, Kevin and Bissyand{\\'e}, Tegawend{\\'e} F. and Klein, Jacques and Le Traon, Yves",
+      "doi": "",
+      "key": "androzoo",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{AndroZoo}: Collecting Millions of {Android} Apps for the Research Community",
+      "year": ""
+    },
+    {
+      "author": "Arzt, Steven and Rasthofer, Siegfried and Fritz, Christian and Bodden, Eric and Bartel, Alexandre and Klein, Jacques and Le Traon, Yves and Octeau, Damien and McDaniel, Patrick",
+      "doi": "",
+      "key": "flowdroid",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{FlowDroid}: Precise Context, Flow, Field, Object-sensitive and Lifecycle-aware Taint Analysis for {Android} Apps",
+      "year": ""
+    },
+    {
+      "author": "Li, Li and Bartel, Alexandre and Bissyand{\\'e}, Tegawend{\\'e} F. and Klein, Jacques and Le Traon, Yves and Arzt, Steven and Rasthofer, Siegfried and Bodden, Eric and Octeau, Damien and McDaniel, Patrick",
+      "doi": "",
+      "key": "iccta",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{IccTA}: Detecting Inter-Component Privacy Leaks in {Android} Apps",
+      "year": ""
+    },
+    {
+      "author": "Li, Li and Bissyand{\\'e}, Tegawend{\\'e} F. and Papadakis, Mike and Rasthofer, Siegfried and Bartel, Alexandre and Octeau, Damien and Klein, Jacques and Le Traon, Yves",
+      "doi": "",
+      "key": "androidslr",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Static Analysis of {Android} Apps: A Systematic Literature Review",
+      "year": "2017}, pages={67--95"
+    },
+    {
+      "author": "Li, Li and Bissyand{\\'e}, Tegawend{\\'e} F. and Klein, Jacques and Le Traon, Yves",
+      "doi": "",
+      "key": "commonlibs",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "An Investigation into the Use of Common Libraries in {Android} Apps",
+      "year": ""
+    },
+    {
+      "author": "Li, Li and Riom, Timoth{\\'e}e and Bissyand{\\'e}, Tegawend{\\'e} F. and Wang, Haoyu and Klein, Jacques and Le Traon, Yves",
+      "doi": "",
+      "key": "revisitcommon",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Revisiting the Impact of Common Libraries for {Android}-related Investigations",
+      "year": "2019}, pages={157--175"
+    },
+    {
+      "author": "Ma, Ziang and Wang, Haoyu and Guo, Yao and Chen, Xiangqun",
+      "doi": "",
+      "key": "libradar",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{LibRadar}: Fast and Accurate Detection of Third-Party Libraries in {Android} Apps",
+      "year": ""
+    },
+    {
+      "author": "Backes, Michael and Bugiel, Sven and Derr, Erik",
+      "doi": "",
+      "key": "libscout",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Reliable Third-Party Library Detection in {Android} and its Security Applications",
+      "year": ""
+    },
+    {
+      "author": "Li, Menghao and Wang, Wei and Wang, Pei and Wang, Shuai and Wu, Dinghao and Liu, Jian and Xue, Rui and Huo, Wei",
+      "doi": "",
+      "key": "libd",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{LibD}: Scalable and Precise Third-Party Library Detection in {Android} Markets",
+      "year": ""
+    },
+    {
+      "author": "Zhang, Jiexin and Beresford, Alastair R. and Kollmann, Stephan A.",
+      "doi": "",
+      "key": "libid",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{LibID}: Reliable Identification of Obfuscated Third-Party {Android} Libraries",
+      "year": ""
+    },
+    {
+      "author": "Zhan, Xian and Fan, Lingling and Chen, Sen and Wu, Feng and Liu, Tianming and Luo, Xiapu and Liu, Yang",
+      "doi": "",
+      "key": "atvhunter",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{ATVHunter}: Reliable Version Detection of Third-Party Libraries for Vulnerability Identification in {Android} Applications",
+      "year": ""
+    },
+    {
+      "author": "Zhan, Xian and Liu, Tianming and Fan, Lingling and Li, Li and Chen, Sen and Luo, Xiapu and Liu, Yang",
+      "doi": "",
+      "key": "tplreview",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Research on Third-Party Libraries in {Android} Apps: A Taxonomy and Systematic Literature Review",
+      "year": "2022}, pages={4181--4213"
+    },
+    {
+      "author": "Zhou, Bolin and Wu, Jingzheng and Ling, Xiang and Luo, Tianyue and Zhang, Jingkun",
+      "doi": "",
+      "key": "sad",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Version-level Third-Party Library Detection in {Android} Applications via Class Structural Similarity",
+      "year": ""
+    },
+    {
+      "author": "Xie, Zifan and Wen, Ming and Li, Tinghan and Zhu, Yiding and Hou, Qinsheng and Jin, Hai",
+      "doi": "",
+      "key": "libhunter",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "How Does Code Optimization Impact Third-party Library Detection for {Android} Applications?",
+      "year": ""
+    },
+    {
+      "author": "Kapur, Ritu and Rao, Poojith U. and Dewan, Agrim and Sodhi, Balwinder",
+      "doi": "",
+      "key": "xtralibd",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{XtraLibD}: Detecting Third-Party Libraries in {Android} Applications",
+      "year": ""
+    },
+    {
+      "author": "Tang, Wei and Wang, Yanlin and Zhang, Hongyu and Han, Shi and Luo, Ping and Zhang, Dongmei",
+      "doi": "",
+      "key": "libdb",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{LibDB}: An Effective and Efficient Framework for Detecting Third-Party Libraries in Binaries",
+      "year": ""
+    },
+    {
+      "author": "Woo, Seunghoon and Park, Sunghan and Kim, Seulbae and Lee, Heejo and Oh, Hakjoo",
+      "doi": "",
+      "key": "centris",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{CENTRIS}: A Precise and Scalable Approach for Identifying Modified Open-Source Software Reuse",
+      "year": ""
+    },
+    {
+      "author": "Duan, Ruian and Bijlani, Ashish and Xu, Meng and Kim, Taesoo and Lee, Wenke",
+      "doi": "",
+      "key": "osspolice",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Identifying Open-Source License Violation and 1-day Security Risk at Large Scale",
+      "year": ""
+    },
+    {
+      "author": "Li, Siyuan and Wang, Yongpan and Dong, Chaopeng and Yang, Shouguo and Li, Hong and Sun, Hao and Lang, Zhe and Chen, Zuxin and Wang, Weijie and Zhu, Hongsong and Sun, Limin",
+      "doi": "",
+      "key": "libam",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{LibAM}: An Area Matching Framework for Detecting Third-Party Libraries in Binaries",
+      "year": ""
+    },
+    {
+      "author": "Necula, George C.}, title={Proof-Carrying Code",
+      "doi": "",
+      "key": "pcc",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Proof-Carrying Code",
+      "year": ""
+    },
+    {
+      "author": "Appel, Andrew W.}, title={Foundational Proof-Carrying Code",
+      "doi": "",
+      "key": "pccfoundations",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Foundational Proof-Carrying Code",
+      "year": ""
+    },
+    {
+      "author": "Leroy, Xavier}, title={Formal Verification of a Realistic Compiler",
+      "doi": "",
+      "key": "compcert",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Formal Verification of a Realistic Compiler",
+      "year": "2009}, pages={107--115"
+    },
+    {
+      "author": "Seghir, Mohamed Nassim}, title={Certificate Enhanced Data-Flow Analysis",
+      "doi": "",
+      "key": "dcert",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Certificate Enhanced Data-Flow Analysis",
+      "year": ""
+    },
+    {
+      "author": "Yoshikawa, Hiyori and Hirai, Hiroshi and Makino, Kazuhisa",
+      "doi": "",
+      "key": "horn",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "A Representation of Antimatroids by {Horn} Rules and its Application to Educational Systems",
+      "year": "2017}, pages={82--93"
+    },
+    {
+      "author": "Cousot, Patrick and Cousot, Radhia",
+      "doi": "",
+      "key": "abstractinterp",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Abstract Interpretation: A Unified Lattice Model for Static Analysis of Programs by Construction or Approximation of Fixpoints",
+      "year": ""
+    },
+    {
+      "author": "Blum, Manuel and Kannan, Sampath}, title={Designing Programs that Check Their Work",
+      "doi": "",
+      "key": "programchecking",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Designing Programs that Check Their Work",
+      "year": ""
+    },
+    {
+      "author": "Pnueli, Amir and Siegel, Michael and Singerman, Eli",
+      "doi": "",
+      "key": "translationvalidation",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Translation Validation",
+      "year": ""
+    },
+    {
+      "author": "Mokhov, Andrey and Mitchell, Neil and Peyton Jones, Simon",
+      "doi": "",
+      "key": "buildsystems",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Build Systems {\\`a} la Carte}, journal={Proceedings of the ACM on Programming Languages",
+      "year": ""
+    },
+    {
+      "author": "Torres-Arias, Santiago and Afzali, Hammad and Kuppusamy, Trishank Karthik and Curtmola, Reza and Cappos, Justin",
+      "doi": "",
+      "key": "intoto",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "in-toto: Providing Farm-to-Table Guarantees for Bits and Bytes",
+      "year": ""
+    },
+    {
+      "author": "Samuel, Justin and Mathewson, Nick and Cappos, Justin and Dingledine, Roger",
+      "doi": "",
+      "key": "tuf",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Survivable Key Compromise in Software Update Systems",
+      "year": ""
+    },
+    {
+      "author": "Raemaekers, Steven and van Deursen, Arie and Visser, Joost",
+      "doi": "",
+      "key": "semverbreaking",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Semantic Versioning versus Breaking Changes: A Study of the {Maven} Repository",
+      "year": ""
+    },
+    {
+      "author": "Ochoa, Lina and Degueule, Thomas and Falleri, Jean-R{\\'e}my and Vinju, Jurgen J.",
+      "doi": "",
+      "key": "mavenbreaking",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Breaking Bad? Semantic Versioning and Impact of Breaking Changes in {Maven Central}",
+      "year": ""
+    },
+    {
+      "author": "Raemaekers, Steven and van Deursen, Arie and Visser, Joost",
+      "doi": "",
+      "key": "mavenrepo",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "The {Maven} Repository Dataset of Metrics, Changes, and Dependencies",
+      "year": ""
+    },
+    {
+      "author": "Soto-Valero, C{\\'e}sar and Harrand, Nicolas and Monperrus, Martin and Baudry, Benoit",
+      "doi": "",
+      "key": "depclean",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "A Comprehensive Study of Bloated Dependencies in the {Maven} Ecosystem",
+      "year": ""
+    },
+    {
+      "author": "Wang, Ying and Wu, Rongxin and Wang, Chao and Wen, Ming and Liu, Yepang and Cheung, Shing-Chi and Yu, Hai and Xu, Chang and Zhu, Zhiliang",
+      "doi": "",
+      "key": "sensor",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Will Dependency Conflicts Affect My Program's Semantics?",
+      "year": "2022}, pages={2295--2316"
+    },
+    {
+      "author": "Liu, Pei and Zhao, Yanjie and Fazzini, Mattia and Cai, Haipeng and Grundy, John and Li, Li",
+      "doi": "",
+      "key": "incompatibleapi",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Automatically Detecting Incompatible {Android} APIs",
+      "year": ""
+    },
+    {
+      "author": "Sun, Xiaoyu and Li, Li and Bissyand{\\'e}, Tegawend{\\'e} F. and Klein, Jacques and Octeau, Damien and Grundy, John",
+      "doi": "",
+      "key": "tamingreflection",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Taming Reflection: An Essential Step Toward Whole-program Analysis of {Android} Apps",
+      "year": ""
+    },
+    {
+      "author": "Sun, Xiaoyu and Chen, Xiao and Li, Li and Cai, Haipeng and Grundy, John and Samhi, Jordan and Bissyand{\\'e}, Tegawend{\\'e} F. and Klein, Jacques",
+      "doi": "",
+      "key": "hiddenops",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Demystifying Hidden Sensitive Operations in {Android} Apps",
+      "year": ""
+    },
+    {
+      "author": "Liu, Yonghui and Chen, Xiao and Liu, Pei and Samhi, Jordan and Grundy, John and Chen, Chunyang and Li, Li",
+      "doi": "",
+      "key": "reunify",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Demystifying {React Native Android} Apps for Static Analysis",
+      "year": ""
+    },
+    {
+      "author": "Samhi, Jordan and Just, Ren{\\'e} and Ernst, Michael D. and Bissyand{\\'e}, Tegawend{\\'e} F. and Klein, Jacques",
+      "doi": "",
+      "key": "archer",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Resolving Conditional Implicit Calls to Improve Static and Dynamic Analysis in {Android} Apps",
+      "year": ""
+    },
+    {
+      "author": "Zhou, Anshunkang and Hu, Yikun and Xu, Xiangzhe and Zhang, Charles",
+      "doi": "",
+      "key": "arcturus",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{ARCTURUS}: Full Coverage Binary Similarity Analysis with Reachability-guided Emulation",
+      "year": ""
+    },
+    {
+      "author": "Alshahwan, Nadia and Harman, Mark and Jia, Yue and Krinke, Jens and Zhang, Fan",
+      "doi": "",
+      "key": "beyondtests",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Beyond Tests: Program Analysis as a Generalisation of Testing",
+      "year": ""
+    },
+    {
+      "author": "Fu, Xiaoqin and Cai, Haipeng and Li, Wen and Li, Li",
+      "doi": "",
+      "key": "seads",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{SEADS}: Scalable and Cost-effective Dynamic Dependence Analysis of Distributed Systems via Reinforcement Learning",
+      "year": ""
+    },
+    {
+      "author": "Liu, Kui and Zhang, Jingtang and Li, Li and Koyuncu, Anil and Kim, Dongsun and Ge, Chunpeng and Liu, Zhe and Klein, Jacques and Bissyand{\\'e}, Tegawend{\\'e} F.",
+      "doi": "",
+      "key": "reliablefix",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Reliable Fix Patterns Inferred from Static Checkers for Automated Program Repair",
+      "year": ""
+    },
+    {
+      "author": "Sattler, Florian and B{\\\"o}hm, Sebastian and Schubert, Philipp Dominik and Siegmund, Norbert and Apel, Sven",
+      "doi": "",
+      "key": "seal",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{SEAL}: Integrating Program Analysis and Repository Mining",
+      "year": ""
+    },
+    {
+      "author": "Williams, Laurie A. and Benedetti, Giacomo and Hamer, Sivana and Paramitha, Ranindya and Rahman, Imranur and Tamanna, Mahzabin and Tystahl, Greg and Zahan, Nusrat and Morrison, Patrick and Acar, Yasemin and Cukier, Michel and K{\\\"a}stner, Christian and Kapravelos, Alexandros and Wermke, Dominik and Enck, William",
+      "doi": "",
+      "key": "supplychainresearch",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Research Directions in Software Supply Chain Security",
+      "year": ""
+    },
+    {
+      "author": "Sun, Tiezhu and Daoudi, Nadia and Pian, Weiguo and Kim, Kisub and Allix, Kevin and Bissyand{\\'e}, Tegawend{\\'e} F. and Klein, Jacques",
+      "doi": "",
+      "key": "temporalincremental",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Temporal-Incremental Learning for {Android} Malware Detection",
+      "year": ""
+    },
+    {
+      "author": "Garcia, Joshua and Hammad, Mahmoud and Malek, Sam",
+      "doi": "",
+      "key": "malwareobfuscation",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Lightweight, Obfuscation-Resilient Detection and Family Identification of {Android} Malware",
+      "year": ""
+    },
+    {
+      "author": "Samhi, Jordan and Bartel, Alexandre and Bissyand{\\'e}, Tegawend{\\'e} F. and Klein, Jacques",
+      "doi": "",
+      "key": "raicc",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{RAICC}: Revealing Atypical Inter-Component Communication in {Android} Apps",
+      "year": ""
+    },
+    {
+      "author": "Samhi, Jordan and Gao, Jun and Daoudi, Nadia and Graux, Pierre and Hoyez, Henri and Sun, Xiaoyu and Allix, Kevin and Bissyand{\\'e}, Tegawend{\\'e} F. and Klein, Jacques",
+      "doi": "",
+      "key": "jucify",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{JuCify}: A Step Towards Android Code Unification for Enhanced Static Analysis",
+      "year": ""
+    },
+    {
+      "author": "Samhi, Jordan and Li, Li and Bissyand{\\'e}, Tegawend{\\'e} F. and Klein, Jacques",
+      "doi": "",
+      "key": "difuzer",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{Difuzer}: Uncovering Suspicious Hidden Sensitive Operations in {Android} Apps",
+      "year": ""
+    },
+    {
+      "author": "Cheney, James and Chiticariu, Laura and Tan, Wang-Chiew",
+      "doi": "",
+      "key": "provenance",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "Provenance in Databases: Why, How, and Where",
+      "year": ""
+    },
+    {
+      "author": "Cao, Yinzhi and Fratantonio, Yanick and Bianchi, Antonio and Egele, Manuel and Kruegel, Christopher and Vigna, Giovanni and Chen, Yan",
+      "doi": "",
+      "key": "edgeminer",
+      "normalized_doi": "",
+      "status": "NO_DOI",
+      "title": "{EdgeMiner}: Automatically Detecting Implicit Control Flow Transitions through the {Android} Framework",
+      "year": ""
+    }
+  ],
+  "schema_version": 1
+}

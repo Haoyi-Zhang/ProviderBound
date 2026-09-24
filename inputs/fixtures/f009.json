@@ -1,0 +1,23 @@
+{
+  "kind": "graph",
+  "owners": [
+    "developer"
+  ],
+  "before": [
+    [
+      0,
+      0
+    ]
+  ],
+  "rows": [
+    {
+      "key": "r",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    }
+  ]
+}

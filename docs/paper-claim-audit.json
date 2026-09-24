@@ -1,0 +1,35 @@
+{
+  "forbidden_hits": {},
+  "missing": {
+    "Info-ZIP validation": "Info-ZIP|unzip\\s*-n",
+    "all unordered pairs": "5\\s*[,{}\\\\]*\\s*671",
+    "complete archive frame": "107[- ]archive|107\\s+(?:public\\s+)?(?:JAR|archive)",
+    "entry-map equality": "entry[- ]to[- ](?:uncompressed[- ])?byte map|not ZIP container serialization",
+    "finite-frame generalization": "(?:not a random or representative|does not estimate prevalence|finite-population)",
+    "global-coupling resolution": "100\\s+(?:mixed-case\\s+)?regions",
+    "label-partition enumeration": "676\\s*[,{}\\\\]*\\s*354",
+    "metadata sensitivity": "Metadata sensitivity|metadata-only",
+    "multi-provider orders": "42\\s+(?:orders|permutations)",
+    "multi-provider output classes": "14\\s+(?:observable\\s+)?output classes",
+    "upstream projects": "37\\s+(?:upstream[- ]project|projects)"
+  },
+  "pages": 36,
+  "required": {
+    "Info-ZIP validation": false,
+    "all unordered pairs": false,
+    "caller supplied labels": true,
+    "complete archive frame": false,
+    "entry-map equality": false,
+    "finite-frame generalization": false,
+    "global-coupling resolution": false,
+    "hidden equal-byte reversals": true,
+    "label-partition enumeration": false,
+    "metadata sensitivity": false,
+    "multi-provider orders": false,
+    "multi-provider output classes": false,
+    "not legal ownership": true,
+    "upstream projects": false
+  },
+  "schema_version": 1,
+  "status": "FAIL"
+}

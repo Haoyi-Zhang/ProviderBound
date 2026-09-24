@@ -1,0 +1,28 @@
+public_provider_archives: 43
+collision_pairs: 40
+actual_ant_builds: 80
+pair_categories: {'different-only': 9, 'equal-only': 30, 'mixed': 1}
+reversed_pairs_with_identical_output_maps: 30
+indistinguishable_shared_regions_with_owner_flip: 3471
+region_observations: 165630
+collision_region_observations: 8156
+local_byte_ambiguous_regions: 7042
+certified_ambiguous_regions: 6942
+global_narrowings_over_local_bytes: 100
+equal_byte_regions_resolved_by_global_coupling: 100
+ant_first_winner_mismatches: 0
+independent_archive_adapter_mismatches: 0
+certificate_vs_actual_two_order_oracle_mismatches: 0
+baseline_comparison_on_collision_regions: {'catalogue_tiebreak': {'observations': 8156, 'oracle_exact_count': 607, 'oracle_exact_rate': 0.074424, 'oracle_conservative_rate': 0.074424, 'hidden_winner_coverage_rate': 0.5, 'mean_owner_set_size': 1.0}, 'inventory_size_proxy': {'observations': 8156, 'oracle_exact_count': 607, 'oracle_exact_rate': 0.074424, 'oracle_conservative_rate': 0.074424, 'hidden_winner_coverage_rate': 0.5, 'mean_owner_set_size': 1.0}, 'dependency': {'observations': 8156, 'oracle_exact_count': 6942, 'oracle_exact_rate': 0.851153, 'oracle_conservative_rate': 1.0, 'hidden_winner_coverage_rate': 1.0, 'mean_owner_set_size': 2.0}, 'local_bytes': {'observations': 8156, 'oracle_exact_count': 8056, 'oracle_exact_rate': 0.987739, 'oracle_conservative_rate': 1.0, 'hidden_winner_coverage_rate': 1.0, 'mean_owner_set_size': 1.863413}, 'certified': {'observations': 8156, 'oracle_exact_count': 8156, 'oracle_exact_rate': 1.0, 'oracle_conservative_rate': 1.0, 'hidden_winner_coverage_rate': 1.0, 'mean_owner_set_size': 1.851153}, 'trusted_trace': {'observations': 8156, 'oracle_exact_count': 1214, 'oracle_exact_rate': 0.148847, 'oracle_conservative_rate': 0.148847, 'hidden_winner_coverage_rate': 1.0, 'mean_owner_set_size': 1.0}}
+certificate_bytes_min: 6729
+certificate_bytes_median: 292971
+certificate_bytes_max: 385672
+elapsed_seconds: 27.954036
+process_cpu_seconds: 0.034132
+child_user_cpu_seconds: 48.206142
+child_system_cpu_seconds: 4.488764
+child_peak_rss_kib: 195044
+workers: 4
+builder: Apache Ant 1.10.15 Zip task, duplicate=preserve, filesonly=true
+manifest_handling: META-INF/MANIFEST.MF excluded from providers and outputs
+oracle_scope: For each two-provider pair, concrete builds in both orders enumerate all total orders.

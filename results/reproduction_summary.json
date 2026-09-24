@@ -1,0 +1,60 @@
+{
+  "commands": [
+    {
+      "command": "generate",
+      "exit_code": 0,
+      "wall_seconds": 0.7566801739999391,
+      "timeout_seconds": 180
+    },
+    {
+      "command": "public-inputs",
+      "exit_code": 0,
+      "wall_seconds": 1.294441802000165,
+      "timeout_seconds": 180
+    },
+    {
+      "command": "unit",
+      "exit_code": 0,
+      "wall_seconds": 0.9601931709999008,
+      "timeout_seconds": 180
+    },
+    {
+      "command": "oracle",
+      "exit_code": 0,
+      "wall_seconds": 4.690383385000132,
+      "timeout_seconds": 180
+    },
+    {
+      "command": "campaign",
+      "exit_code": 0,
+      "wall_seconds": 0.877422359999855,
+      "timeout_seconds": 180
+    },
+    {
+      "command": "public",
+      "exit_code": 0,
+      "wall_seconds": 50.026345440000114,
+      "timeout_seconds": 900
+    },
+    {
+      "command": "scale",
+      "exit_code": 0,
+      "wall_seconds": 6.303279371000144,
+      "timeout_seconds": 180
+    },
+    {
+      "command": "java",
+      "exit_code": 0,
+      "wall_seconds": 3.938491444999954,
+      "timeout_seconds": 180
+    }
+  ],
+  "logical_reproduction": "all requested documented stages completed",
+  "cpu_seconds_children": 112.928302,
+  "wall_seconds": 68.84740534399998,
+  "child_peak_rss_kib": 300576,
+  "maximum_workers": 4,
+  "java_requested": true,
+  "public_requested": true,
+  "scope": "Execution success, external two-order conformance, and finite regression evidence; not a universal implementation proof."
+}

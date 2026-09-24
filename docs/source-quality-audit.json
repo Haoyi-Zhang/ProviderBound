@@ -1,0 +1,163 @@
+{
+  "files": [
+    {
+      "file": "scripts/analyze_information_baselines.py",
+      "lines": 132,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/analyze_metadata_sensitivity.py",
+      "lines": 72,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/audit_claim_language.py",
+      "lines": 42,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/audit_claims.py",
+      "lines": 147,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/audit_input_hardening.py",
+      "lines": 39,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/audit_release.py",
+      "lines": 221,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/audit_source_quality.py",
+      "lines": 35,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/build_data_dictionary.py",
+      "lines": 40,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/campaign.py",
+      "lines": 57,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/capture_environment.py",
+      "lines": 20,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/inventory_third_party.py",
+      "lines": 45,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/java_pilot.py",
+      "lines": 83,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/make_inputs.py",
+      "lines": 91,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/public_corpus.py",
+      "lines": 229,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/reproduce.py",
+      "lines": 48,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/reproduce_release.py",
+      "lines": 35,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/scale.py",
+      "lines": 40,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/validate_infozip_merger.py",
+      "lines": 102,
+      "test_functions": 0
+    },
+    {
+      "file": "scripts/verify_public_inputs.py",
+      "lines": 99,
+      "test_functions": 0
+    },
+    {
+      "file": "src/archive_checker.py",
+      "lines": 86,
+      "test_functions": 0
+    },
+    {
+      "file": "src/archive_producer.py",
+      "lines": 81,
+      "test_functions": 0
+    },
+    {
+      "file": "src/checker.py",
+      "lines": 216,
+      "test_functions": 0
+    },
+    {
+      "file": "src/producer.py",
+      "lines": 244,
+      "test_functions": 0
+    },
+    {
+      "file": "tests/oracle.py",
+      "lines": 70,
+      "test_functions": 0
+    },
+    {
+      "file": "tests/test_boundary.py",
+      "lines": 258,
+      "test_functions": 39
+    }
+  ],
+  "findings": [
+    {
+      "file": "scripts/audit_input_hardening.py",
+      "kind": "bare-except",
+      "line": 23
+    },
+    {
+      "file": "scripts/audit_source_quality.py",
+      "kind": "unfinished-marker",
+      "line": 27,
+      "text": "if re.search(r'\\b(TODO|FIXME|XXX)\\b',line,re.I):findings.append({'kind':'unfinished-marker','file':rel,'line':no,'text':line.strip()})"
+    },
+    {
+      "file": "scripts/build_data_dictionary.py",
+      "kind": "bare-except",
+      "line": 27
+    },
+    {
+      "file": "scripts/build_data_dictionary.py",
+      "kind": "bare-except",
+      "line": 34
+    },
+    {
+      "file": "scripts/inventory_third_party.py",
+      "kind": "bare-except",
+      "line": 29
+    }
+  ],
+  "functions": 148,
+  "note": "This static inventory is not a substitute for review, tests, or threat modeling.",
+  "python_files": 25,
+  "python_lines": 2532,
+  "schema_version": 1,
+  "test_functions": 39
+}

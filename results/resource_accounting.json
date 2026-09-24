@@ -1,0 +1,25 @@
+{
+  "accounting_scope": "Final clean standalone-repository reproduction after the model, inputs, and study protocol were frozen. Exact CPU time for exploratory development is not reconstructed or claimed.",
+  "final_clean_child_cpu_seconds": 112.928302,
+  "final_clean_wall_seconds": 68.84740534399998,
+  "final_clean_child_peak_rss_kib": 300576,
+  "maximum_workers": 4,
+  "final_clean_stages": [
+    "generate",
+    "public-inputs",
+    "unit",
+    "oracle",
+    "campaign",
+    "public",
+    "scale",
+    "java"
+  ],
+  "public_input_archives": 45,
+  "public_input_archive_bytes": 17565030,
+  "public_license_records": 13,
+  "public_license_record_bytes": 125285,
+  "artifact_bytes_at_accounting": 25013324,
+  "downloads_during_final_clean_reproduction": 0,
+  "external_compute_or_gpu_used": false,
+  "resource_interpretation": "The reproduction command replays finite checks and public archive builds; timing is descriptive rather than a general performance bound."
+}

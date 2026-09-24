@@ -1,0 +1,60 @@
+{
+  "cpu_count": 5,
+  "executable": "/opt/pyvenv/bin/python",
+  "note": "This records one successful environment; it is not a claim that versions are necessary or sufficient.",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "schema_version": 1,
+  "tools": {
+    "ant": {
+      "path": "/usr/bin/ant",
+      "returncode": 1,
+      "version": "Unknown argument: --version\nant [options] [target [target2 [target3] ...]]\nOptions: \n  -help, -h              print this message and exit\n  -projecthelp, -p       print project help information and exit\n  -version               print the version information and exit\n  -diagnostics           print information that might be helpful to\n                         diagnose or report problems and exit\n  -quiet, -q             be extra quiet\n  -silent, -S            print nothing but task outputs and build failures\n  -verbose, -v           be extra verbose\n  -debug, -d             print debugging information\n  -emacs, -e             produce logging information without adornments\n  -lib <path>            specifies a path to search for jars and classes\n  -logfile <file>        use given file for log\n    -l     <file>                ''\n  -logger <classname>    the class which is to perform logging\n  -listener <classname>  add an instance of class as a project listener\n  -noinput               do not allow interactive input\n  -buildfile <file>      use given buildfile\n    -file    <file>              ''\n    -f       <file>              ''\n  -D<property>=<value>   use value for given property\n  -keep-going, -k        execute all targets that do not depend\n                         on failed target(s)\n  -propertyfile <name>   load all properties from file with -D\n                         properties taking precedence\n  -inputhandler <class>  the class which will handle input requests\n  -find <file>           (s)earch for buildfile towards the root of\n    -s  <file>           the filesystem and use it\n  -nice  number          A niceness value for the main thread:\n                         1 (lowest) to 10 (highest); 5 is the default\n  -nouserlib             Run ant without using the jar files from\n                         ${user.home}/.ant/lib\n  -noclasspath           Run ant without using CLASSPATH\n  -autoproxy             Java1.5+: use the OS proxy settings\n  -main <class>          override Ant's normal entry point"
+    },
+    "bibtex": {
+      "path": null,
+      "returncode": 127,
+      "version": "not found"
+    },
+    "java": {
+      "path": "/usr/bin/java",
+      "returncode": 0,
+      "version": "openjdk 21.0.11 2026-04-21\nOpenJDK Runtime Environment (build 21.0.11+10-1-deb13u2-Debian)\nOpenJDK 64-Bit Server VM (build 21.0.11+10-1-deb13u2-Debian, mixed mode, sharing)"
+    },
+    "javac": {
+      "path": "/usr/bin/javac",
+      "returncode": 0,
+      "version": "javac 21.0.11"
+    },
+    "pdfinfo": {
+      "path": "/usr/bin/pdfinfo",
+      "returncode": 1,
+      "version": "I/O Error: Couldn't open file '--version': No such file or directory."
+    },
+    "pdflatex": {
+      "path": "/usr/bin/pdflatex",
+      "returncode": 0,
+      "version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)\nkpathsea version 6.4.0/dev\nCopyright 2024 Han The Thanh (pdfTeX) et al.\nThere is NO warranty.  Redistribution of this software is\ncovered by the terms of both the pdfTeX copyright and\nthe Lesser GNU General Public License.\nFor more information about these matters, see the file\nnamed COPYING and the pdfTeX source.\nPrimary author of pdfTeX: Han The Thanh (pdfTeX) et al.\nCompiled with libpng 1.6.47; using libpng 1.6.48\nCompiled with zlib 1.3.1; using zlib 1.3.1\nCompiled with xpdf version 4.04"
+    },
+    "python": {
+      "path": "/opt/pyvenv/bin/python",
+      "returncode": 0,
+      "version": "Python 3.13.5"
+    },
+    "qpdf": {
+      "path": null,
+      "returncode": 127,
+      "version": "not found"
+    },
+    "unzip": {
+      "path": "/usr/bin/unzip",
+      "returncode": 10,
+      "version": "caution:  both -n and -o specified; ignoring -o\nUnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.\n\nUsage: unzip [-Z] [-opts[modifiers]] file[.zip] [list] [-x xlist] [-d exdir]\n  Default action is to extract files in list, except those in xlist, to exdir;\n  file[.zip] may be a wildcard.  -Z => ZipInfo mode (\"unzip -Z\" for usage).\n\n  -p  extract files to pipe, no messages     -l  list files (short format)\n  -f  freshen existing files, create none    -t  test compressed archive data\n  -u  update files, create if necessary      -z  display archive comment only\n  -v  list verbosely/show version info       -T  timestamp archive to latest\n  -x  exclude files that follow (in xlist)   -d  extract files into exdir\nmodifiers:\n  -n  never overwrite existing files         -q  quiet mode (-qq => quieter)\n  -o  overwrite files WITHOUT prompting      -a  auto-convert any text files\n  -j  junk paths (do not make directories)   -aa treat ALL files as text\n  -U  use escapes for all non-ASCII Unicode  -UU ignore any Unicode fields\n  -C  match filenames case-insensitively     -L  make (some) names lowercase\n  -X  restore UID/GID info                   -V  retain VMS version numbers\n  -K  keep setuid/setgid/tacky permissions   -M  pipe through \"more\" pager\nSee \"unzip -hh\" or unzip.txt for more help.  Examples:\n  unzip data1 -x joe   => extract all files except joe from zipfile data1.zip\n  unzip -p foo | more  => send contents of foo.zip via pipe into program more\n  unzip -fo foo ReadMe => quietly replace existing ReadMe if archive file newer"
+    },
+    "zip": {
+      "path": "/usr/bin/zip",
+      "returncode": 0,
+      "version": "Copyright (c) 1990-2008 Info-ZIP - Type 'zip \"-L\"' for software license.\nThis is Zip 3.0 (July 5th 2008), by Info-ZIP.\nCurrently maintained by E. Gordon.  Please send bug reports to\nthe authors using the web page at www.info-zip.org; see README for details.\n\nLatest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,\nas of above date; see http://www.info-zip.org/ for other sites.\n\nCompiled with gcc 14.2.0 for Unix (Linux ELF).\n\nZip special compilation options:\n\tUSE_EF_UT_TIME       (store Universal Time)\n\tBZIP2_SUPPORT        (bzip2 library version 1.0.8, 13-Jul-2019)\n\t    bzip2 code and library copyright (c) Julian R Seward\n\t    (See the bzip2 license for terms of use)\n\tSYMLINK_SUPPORT      (symbolic links supported)\n\tLARGE_FILE_SUPPORT   (can read and write large files on file system)\n\tZIP64_SUPPORT        (use Zip64 to store large files in archives)\n\tUNICODE_SUPPORT      (store and read UTF-8 Unicode paths)\n\tSTORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)\n\tUIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)\n\t[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)\n\nEncryption notice:\n\tThe encryption code of this program is not copyrighted and is\n\tput in the public domain.  It was originally written in Europe\n\tand, to the best of our knowledge, can be freely distributed\n\tin both source and object forms from any country, including\n\tthe USA under License Exception TSU of the U.S. Export\n\tAdministration Regulations (section 740.13(e)) of 6 June 2002.\n\nZip environment options:\n             ZIP:  [none]\n          ZIPOPT:  [none]"
+    }
+  }
+}

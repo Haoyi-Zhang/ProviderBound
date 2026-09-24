@@ -1,0 +1,3806 @@
+{
+  "status": "classified",
+  "regions": [
+    {
+      "key": "javax/xml/XMLConstants.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/datatype/DatatypeConfigurationException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/datatype/DatatypeConstants$1.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/datatype/DatatypeConstants$Field.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/datatype/DatatypeConstants.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/datatype/DatatypeFactory.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/datatype/Duration.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/datatype/FactoryFinder$ConfigurationError.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/datatype/FactoryFinder.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/datatype/SecuritySupport$1.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/datatype/SecuritySupport$2.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/datatype/SecuritySupport$3.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/datatype/SecuritySupport$4.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/datatype/SecuritySupport$5.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/datatype/SecuritySupport.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/datatype/XMLGregorianCalendar.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/namespace/NamespaceContext.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/namespace/QName$1.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/namespace/QName.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/parsers/DocumentBuilder.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/parsers/DocumentBuilderFactory.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/parsers/FactoryConfigurationError.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/parsers/FactoryFinder$ConfigurationError.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/parsers/FactoryFinder.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/parsers/FilePathToURI.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/parsers/ParserConfigurationException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/parsers/SAXParser.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/parsers/SAXParserFactory.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/parsers/SecuritySupport$1.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/parsers/SecuritySupport$2.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/parsers/SecuritySupport$3.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/parsers/SecuritySupport$4.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/parsers/SecuritySupport$5.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/parsers/SecuritySupport.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/EventFilter.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/FactoryConfigurationError.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/FactoryFinder$ConfigurationError.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/FactoryFinder.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/Location.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/SecuritySupport$1.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/SecuritySupport$2.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/SecuritySupport$3.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/SecuritySupport$4.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/SecuritySupport$5.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/SecuritySupport.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/StreamFilter.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/XMLEventFactory.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/XMLEventReader.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/XMLEventWriter.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/XMLInputFactory.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/XMLOutputFactory.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/XMLReporter.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/XMLResolver.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/XMLStreamConstants.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/XMLStreamException.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/XMLStreamReader.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/XMLStreamWriter.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/events/Attribute.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/events/Characters.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/events/Comment.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/events/DTD.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/events/EndDocument.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/events/EndElement.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/events/EntityDeclaration.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/events/EntityReference.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/events/Namespace.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/events/NotationDeclaration.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/events/ProcessingInstruction.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/events/StartDocument.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/events/StartElement.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/events/XMLEvent.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/util/EventReaderDelegate.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/util/StreamReaderDelegate.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/util/XMLEventAllocator.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/stream/util/XMLEventConsumer.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/ErrorListener.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/FactoryFinder$ConfigurationError.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/FactoryFinder.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/OutputKeys.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/Result.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/SecuritySupport$1.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/SecuritySupport$2.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/SecuritySupport$3.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/SecuritySupport$4.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/SecuritySupport$5.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/SecuritySupport.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/Source.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/SourceLocator.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/Templates.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/Transformer.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/TransformerConfigurationException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/TransformerException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/TransformerFactory.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/TransformerFactoryConfigurationError.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/URIResolver.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/dom/DOMLocator.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/dom/DOMResult.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/dom/DOMSource.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/sax/SAXResult.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/sax/SAXSource.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/sax/SAXTransformerFactory.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/sax/TemplatesHandler.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/sax/TransformerHandler.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/stax/StAXResult.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/stax/StAXSource.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/stream/FilePathToURI.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/stream/StreamResult.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/transform/stream/StreamSource.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/Schema.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/SchemaFactory.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/SchemaFactoryFinder$1.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/SchemaFactoryFinder$2.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/SchemaFactoryFinder$SingleIterator.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/SchemaFactoryFinder.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/SchemaFactoryLoader.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport$1.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport$2.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport$3.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport$4.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport$5.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport$6.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport$7.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport$8.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/TypeInfoProvider.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/Validator.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/validation/ValidatorHandler.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport$1.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport$2.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport$3.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport$4.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport$5.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport$6.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport$7.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport$8.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/XPath.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/XPathConstants.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/XPathException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/XPathExpression.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/XPathExpressionException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/XPathFactory.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/XPathFactoryConfigurationException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/XPathFactoryFinder$1.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/XPathFactoryFinder$2.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/XPathFactoryFinder$SingleIterator.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/XPathFactoryFinder.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/XPathFunction.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/XPathFunctionException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/XPathFunctionResolver.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "javax/xml/xpath/XPathVariableResolver.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "license/LICENSE.dom-documentation.txt",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "license/LICENSE.dom-software.txt",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "license/LICENSE.sax.txt",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "license/README.dom.txt",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "license/README.sax.txt",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/apache/xmlcommons/Version.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/AttributeCondition.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/CSSException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/CSSParseException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/CharacterDataSelector.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/CombinatorCondition.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/Condition.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/ConditionFactory.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/ConditionalSelector.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/ContentCondition.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/DescendantSelector.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/DocumentHandler.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/ElementSelector.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/ErrorHandler.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/InputSource.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/LangCondition.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/LexicalUnit.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/Locator.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/NegativeCondition.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/NegativeSelector.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/Parser.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/PositionalCondition.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/ProcessingInstructionSelector.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/SACMediaList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/Selector.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/SelectorFactory.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/SelectorList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/SiblingSelector.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/SimpleSelector.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/css/sac/helpers/ParserFactory.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/Attr.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/CDATASection.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/CharacterData.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/Comment.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/DOMConfiguration.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/DOMError.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/DOMErrorHandler.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/DOMException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/DOMImplementation.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/DOMImplementationList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/DOMImplementationSource.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/DOMLocator.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/DOMStringList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/Document.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/DocumentFragment.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/DocumentType.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/Element.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/ElementTraversal.class",
+      "owners": [
+        "lib:xml-apis-1.4.01"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/Entity.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/EntityReference.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/NameList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/NamedNodeMap.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/Node.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/NodeList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/Notation.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/ProcessingInstruction.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/Text.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/TypeInfo.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/UserDataHandler.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/bootstrap/DOMImplementationRegistry$1.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/bootstrap/DOMImplementationRegistry$2.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/bootstrap/DOMImplementationRegistry$3.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/bootstrap/DOMImplementationRegistry$4.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/bootstrap/DOMImplementationRegistry.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/CSS2Properties.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/CSSCharsetRule.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/CSSFontFaceRule.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/CSSImportRule.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/CSSMediaRule.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/CSSPageRule.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/CSSPrimitiveValue.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/CSSRule.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/CSSRuleList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/CSSStyleDeclaration.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/CSSStyleRule.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/CSSStyleSheet.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/CSSUnknownRule.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/CSSValue.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/CSSValueList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/Counter.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/DOMImplementationCSS.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/DocumentCSS.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/ElementCSSInlineStyle.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/RGBColor.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/Rect.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/css/ViewCSS.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/events/DocumentEvent.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/events/Event.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/events/EventException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/events/EventListener.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/events/EventTarget.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/events/MouseEvent.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/events/MutationEvent.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/events/UIEvent.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLAnchorElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLAppletElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLAreaElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLBRElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLBaseElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLBaseFontElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLBodyElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLButtonElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLCollection.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLDListElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLDirectoryElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLDivElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLDocument.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLFieldSetElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLFontElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLFormElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLFrameElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLFrameSetElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLHRElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLHeadElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLHeadingElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLHtmlElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLIFrameElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLImageElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLInputElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLIsIndexElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLLIElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLLabelElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLLegendElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLLinkElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLMapElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLMenuElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLMetaElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLModElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLOListElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLObjectElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLOptGroupElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLOptionElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLParagraphElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLParamElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLPreElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLQuoteElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLScriptElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLSelectElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLStyleElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLTableCaptionElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLTableCellElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLTableColElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLTableElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLTableRowElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLTableSectionElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLTextAreaElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLTitleElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLUListElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/ls/DOMImplementationLS.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/ls/LSException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/ls/LSInput.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/ls/LSLoadEvent.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/ls/LSOutput.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/ls/LSParser.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/ls/LSParserFilter.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/ls/LSProgressEvent.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/ls/LSResourceResolver.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/ls/LSSerializer.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/ls/LSSerializerFilter.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/ranges/DocumentRange.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/ranges/Range.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/ranges/RangeException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/smil/ElementTimeControl.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/smil/TimeEvent.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/stylesheets/DocumentStyle.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/stylesheets/LinkStyle.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/stylesheets/MediaList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/stylesheets/StyleSheet.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/stylesheets/StyleSheetList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/EventListenerInitializer.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/GetSVGDocument.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAltGlyphDefElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAltGlyphElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAltGlyphItemElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAngle.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimateColorElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimateElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimateMotionElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimateTransformElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedAngle.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedBoolean.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedEnumeration.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedInteger.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedLength.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedLengthList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedNumber.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedNumberList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedPathData.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedPoints.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedPreserveAspectRatio.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedRect.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedString.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedTransformList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimationElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGCSSRule.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGCircleElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGClipPathElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGColor.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGColorProfileElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGColorProfileRule.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGComponentTransferFunctionElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGCursorElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGDefinitionSrcElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGDefsElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGDescElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGDocument.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGElementInstance.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGElementInstanceList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGEllipseElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGEvent.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGExternalResourcesRequired.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEBlendElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEColorMatrixElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEComponentTransferElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFECompositeElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEConvolveMatrixElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEDiffuseLightingElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEDisplacementMapElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEDistantLightElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEFloodElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEFuncAElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEFuncBElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEFuncGElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEFuncRElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEGaussianBlurElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEImageElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEMergeElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEMergeNodeElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEMorphologyElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEOffsetElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEPointLightElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFESpecularLightingElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFESpotLightElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFETileElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFETurbulenceElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFilterElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFilterPrimitiveStandardAttributes.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFitToViewBox.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFontElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFontFaceElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFontFaceFormatElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFontFaceNameElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFontFaceSrcElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFontFaceUriElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGForeignObjectElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGGElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGGlyphElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGGlyphRefElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGGradientElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGHKernElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGICCColor.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGImageElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGLangSpace.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGLength.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGLengthList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGLineElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGLinearGradientElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGLocatable.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGMPathElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGMarkerElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGMaskElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGMatrix.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGMetadataElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGMissingGlyphElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGNumber.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGNumberList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPaint.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSeg.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegArcAbs.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegArcRel.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegClosePath.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegCurvetoCubicAbs.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegCurvetoCubicRel.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegCurvetoCubicSmoothAbs.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegCurvetoCubicSmoothRel.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegCurvetoQuadraticAbs.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegCurvetoQuadraticRel.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegCurvetoQuadraticSmoothAbs.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegCurvetoQuadraticSmoothRel.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegLinetoAbs.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegLinetoHorizontalAbs.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegLinetoHorizontalRel.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegLinetoRel.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegLinetoVerticalAbs.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegLinetoVerticalRel.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegMovetoAbs.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegMovetoRel.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPatternElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPoint.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPointList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPolygonElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPolylineElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPreserveAspectRatio.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGRadialGradientElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGRect.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGRectElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGRenderingIntent.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGSVGElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGScriptElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGSetElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGStopElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGStringList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGStylable.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGStyleElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGSwitchElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGSymbolElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTRefElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTSpanElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTests.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTextContentElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTextElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTextPathElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTextPositioningElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTitleElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTransform.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTransformList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTransformable.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGURIReference.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGUnitTypes.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGUseElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGVKernElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGViewElement.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGViewSpec.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGZoomAndPan.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGZoomEvent.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/traversal/DocumentTraversal.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/traversal/NodeFilter.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/traversal/NodeIterator.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/traversal/TreeWalker.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/views/AbstractView.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/views/DocumentView.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/xpath/XPathEvaluator.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/xpath/XPathException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/xpath/XPathExpression.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/xpath/XPathNSResolver.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/xpath/XPathNamespace.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/w3c/dom/xpath/XPathResult.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/AttributeList.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/Attributes.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/ContentHandler.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/DTDHandler.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/DocumentHandler.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/EntityResolver.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/ErrorHandler.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/HandlerBase.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/InputSource.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/Locator.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/Parser.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/SAXException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/SAXNotRecognizedException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/SAXNotSupportedException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/SAXParseException.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/XMLFilter.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/XMLReader.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/ext/Attributes2.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/ext/Attributes2Impl.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/ext/DeclHandler.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/ext/DefaultHandler2.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/ext/EntityResolver2.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/ext/LexicalHandler.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/ext/Locator2.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/ext/Locator2Impl.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/AttributeListImpl.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/AttributesImpl.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/DefaultHandler.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/LocatorImpl.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/NamespaceSupport$Context.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/NamespaceSupport.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/NewInstance.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/ParserAdapter$AttributeListAdapter.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/ParserAdapter.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/ParserFactory.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/SecuritySupport$1.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/SecuritySupport$2.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/SecuritySupport$3.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/SecuritySupport$4.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/SecuritySupport.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/XMLFilterImpl.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/XMLReaderAdapter$AttributesAdapter.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/XMLReaderAdapter.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    },
+    {
+      "key": "org/xml/sax/helpers/XMLReaderFactory.class",
+      "owners": [
+        "lib:xml-apis-1.3.04"
+      ],
+      "class": "library"
+    }
+  ]
+}

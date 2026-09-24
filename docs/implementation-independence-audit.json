@@ -1,0 +1,67 @@
+{
+  "interpretation": "The literal-permutation information baseline, Info-ZIP validation, and archive-safety audit must not import the certificate producer, checker, or another project-local implementation. This check establishes implementation separation, not formal verification of Python itself.",
+  "local_import_graph": {
+    "scripts.analyze_certificate_compression": [],
+    "scripts.analyze_information_baselines": [],
+    "scripts.analyze_metadata_sensitivity": [],
+    "scripts.audit_archive_safety": [],
+    "scripts.audit_claim_language": [],
+    "scripts.audit_claims": [],
+    "scripts.audit_independence": [],
+    "scripts.audit_input_hardening": [],
+    "scripts.audit_paper_claims": [],
+    "scripts.audit_release": [],
+    "scripts.audit_source_quality": [],
+    "scripts.build_data_dictionary": [],
+    "scripts.campaign": [],
+    "scripts.capture_environment": [],
+    "scripts.inventory_third_party": [],
+    "scripts.java_pilot": [],
+    "scripts.make_inputs": [],
+    "scripts.public_corpus": [],
+    "scripts.release_manifest": [],
+    "scripts.reproduce": [],
+    "scripts.reproduce_release": [],
+    "scripts.scale": [],
+    "scripts.validate_infozip_merger": [],
+    "scripts.verify_public_inputs": [],
+    "src.archive_checker": [],
+    "src.archive_producer": [],
+    "src.checker": [],
+    "src.producer": [],
+    "tests.oracle": [],
+    "tests.test_boundary": []
+  },
+  "local_modules": 30,
+  "python_files": 30,
+  "required_independent_modules": {
+    "scripts.analyze_information_baselines": {
+      "local_imports": [],
+      "path": "scripts/analyze_information_baselines.py"
+    },
+    "scripts.audit_archive_safety": {
+      "local_imports": [],
+      "path": "scripts/audit_archive_safety.py"
+    },
+    "scripts.validate_infozip_merger": {
+      "local_imports": [],
+      "path": "scripts/validate_infozip_merger.py"
+    }
+  },
+  "role_candidates": {
+    "checker": [
+      "scripts.verify_public_inputs",
+      "src.archive_checker",
+      "src.checker"
+    ],
+    "oracle": [
+      "tests.oracle"
+    ],
+    "producer": [
+      "src.archive_producer",
+      "src.producer"
+    ]
+  },
+  "schema_version": 1,
+  "violations": []
+}

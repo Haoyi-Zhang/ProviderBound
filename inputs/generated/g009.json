@@ -1,0 +1,184 @@
+{
+  "kind": "inventory",
+  "providers": [
+    {
+      "id": "p0",
+      "owner": "developer",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/probe000.bin",
+          "payload": "616363657074"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "owner": "lib:L1",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/probe000.bin",
+          "payload": "72656a656374"
+        },
+        {
+          "name": "s/probe001.bin",
+          "payload": "616363657074"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "owner": "lib:L2",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/probe001.bin",
+          "payload": "72656a656374"
+        },
+        {
+          "name": "s/probe002.bin",
+          "payload": "616363657074"
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "owner": "lib:L3",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/probe002.bin",
+          "payload": "72656a656374"
+        },
+        {
+          "name": "s/probe003.bin",
+          "payload": "616363657074"
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "owner": "lib:L4",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/probe003.bin",
+          "payload": "72656a656374"
+        },
+        {
+          "name": "s/probe004.bin",
+          "payload": "616363657074"
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "owner": "lib:L5",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/probe004.bin",
+          "payload": "72656a656374"
+        },
+        {
+          "name": "s/probe005.bin",
+          "payload": "616363657074"
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "owner": "lib:L6",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/probe005.bin",
+          "payload": "72656a656374"
+        },
+        {
+          "name": "s/probe006.bin",
+          "payload": "616363657074"
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "owner": "lib:L7",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/probe006.bin",
+          "payload": "72656a656374"
+        }
+      ]
+    }
+  ],
+  "before": [],
+  "observed": [
+    {
+      "name": "r/target.bin",
+      "payload": "73616d65"
+    },
+    {
+      "name": "s/probe000.bin",
+      "payload": "616363657074"
+    },
+    {
+      "name": "s/probe001.bin",
+      "payload": "616363657074"
+    },
+    {
+      "name": "s/probe002.bin",
+      "payload": "616363657074"
+    },
+    {
+      "name": "s/probe003.bin",
+      "payload": "616363657074"
+    },
+    {
+      "name": "s/probe004.bin",
+      "payload": "616363657074"
+    },
+    {
+      "name": "s/probe005.bin",
+      "payload": "616363657074"
+    },
+    {
+      "name": "s/probe006.bin",
+      "payload": "616363657074"
+    }
+  ]
+}

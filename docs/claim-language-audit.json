@@ -1,0 +1,857 @@
+{
+  "blocking_hits": [],
+  "note": "Blocking rules are deliberately narrow. Sensitive contexts require human reading and are not automatic errors.",
+  "schema_version": 1,
+  "sensitive_contexts": [
+    {
+      "file": "main.tex",
+      "line": 18,
+      "text": "\\title{Proof-Carrying Provider Attribution under First-Winner Archive Merging}"
+    },
+    {
+      "file": "main.tex",
+      "line": 28,
+      "text": "\\newcommand{\\first}{\\operatorname{first}}"
+    },
+    {
+      "file": "main.tex",
+      "line": 36,
+      "text": "We study that provenance question for a closed, finite first-winner language:"
+    },
+    {
+      "file": "main.tex",
+      "line": 44,
+      "text": "Ordinary proofs establish soundness and relative completeness within the"
+    },
+    {
+      "file": "main.tex",
+      "line": 50,
+      "text": "have zero mismatches against this complete two-order oracle.  Thirty reversed"
+    },
+    {
+      "file": "main.tex",
+      "line": 54,
+      "text": "100 equal-byte observations beyond local byte matching.  The guarantees remain"
+    },
+    {
+      "file": "main.tex",
+      "line": 55,
+      "text": "conditional on a complete supplied inventory and the declared merge semantics;"
+    },
+    {
+      "file": "main.tex",
+      "line": 56,
+      "text": "they do not cover arbitrary Gradle/Android transformations or infer omitted"
+    },
+    {
+      "file": "main.tex",
+      "line": 58,
+      "text": "\\par\\noindent Throughout, an owner is a caller-supplied label over build-input providers; it is neither inferred authorship nor legal ownership. Our empirical claims concern JAR/ZIP first-winner archive merging, not Android resource merging, variant selection, D8/R8, or dynamic loading."
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 4,
+      "text": "Static analyses of Android applications routinely distinguish application code"
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 11,
+      "text": "of Android static analysis and third-party-library research likewise identify"
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 27,
+      "text": "A downstream analyzer, however, may need a different guarantee: given a"
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 32,
+      "text": "If the build operation retains the first occurrence under one global provider"
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 56,
+      "text": "proposes an ownership set for every output region.  A separately implemented"
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 69,
+      "text": "first provider in that order that contains a name wins, and the observation"
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 73,
+      "text": "inventory itself is complete.  These restrictions are not descriptive claims"
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 74,
+      "text": "about Android or Gradle; they are the boundary within which the answer can be"
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 81,
+      "text": "ownership semantics and a complete replay protocol for each region.  Positive"
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 96,
+      "text": "first-winner builder, does the independent lowering and certificate checker"
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 107,
+      "text": "substituting one for another.  First, ordinary mathematical arguments prove the"
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 109,
+      "text": "soundness, and relative completeness.  Second, literal enumeration covers"
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 118,
+      "text": "providers, those two builds enumerate the complete order space for that case."
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 124,
+      "text": "the complete output content map unchanged while changing the hidden provider"
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 132,
+      "text": "Android APKs, AAR transformation pipelines, obfuscated applications, or the"
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 133,
+      "text": "completeness of a global library catalogue."
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 141,
+      "text": "ordered first-winner assembly and"
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 145,
+      "text": "completeness arguments and an independently written replay checker."
+    },
+    {
+      "file": "sections/01-introduction.tex",
+      "line": 155,
+      "text": "The paper does not claim a new library detector, a complete Android build"
+    },
+    {
+      "file": "sections/02-question.tex",
+      "line": 8,
+      "text": "Figure~\\ref{fig:coupled}. A first-winner assembler can produce this observation"
+    },
+    {
+      "file": "sections/02-question.tex",
+      "line": 17,
+      "text": "that both providers contribute to each output entry. Only the first provider at"
+    },
+    {
+      "file": "sections/02-question.tex",
+      "line": 34,
+      "text": "to one library. None of those possibilities licenses a legal-ownership claim."
+    },
+    {
+      "file": "sections/02-question.tex",
+      "line": 42,
+      "text": "Their local observations can remain unchanged while the actual first provider"
+    },
+    {
+      "file": "sections/02-question.tex",
+      "line": 57,
+      "text": "bytes are provided, but some provider ordering is not. If the actual complete"
+    },
+    {
+      "file": "sections/02-question.tex",
+      "line": 61,
+      "text": "Another tempting shortcut is to infer common ownership from an ordinary"
+    },
+    {
+      "file": "sections/02-question.tex",
+      "line": 74,
+      "text": "coupled first-winner selection from finite inventories."
+    },
+    {
+      "file": "sections/02-question.tex",
+      "line": 87,
+      "text": "The first is \\emph{admission}: can the supplied archives and transformations be"
+    },
+    {
+      "file": "sections/02-question.tex",
+      "line": 89,
+      "text": "one order reproduce all observed bytes?  The third is \\emph{ownership}: among"
+    },
+    {
+      "file": "sections/02-question.tex",
+      "line": 92,
+      "text": "strange form of inconsistency, and an inconsistent graph has no ownership set"
+    },
+    {
+      "file": "sections/02-question.tex",
+      "line": 99,
+      "text": "cycle, or mutually incompatible first-winner requirements is admitted but"
+    },
+    {
+      "file": "sections/02-question.tex",
+      "line": 107,
+      "text": "model.  Neither is supplied.  Treating the first enumerated order as more likely"
+    },
+    {
+      "file": "sections/02-question.tex",
+      "line": 128,
+      "text": "first in a catalogue."
+    },
+    {
+      "file": "sections/02-question.tex",
+      "line": 133,
+      "text": "shrinks.  The certificate for developer ownership contains an $a,b$ world and"
+    },
+    {
+      "file": "sections/02-question.tex",
+      "line": 137,
+      "text": "If a second probe requires $b$ before $a$ while the first requires $a$ before"
+    },
+    {
+      "file": "sections/02-question.tex",
+      "line": 164,
+      "text": "At the other extreme, shipping every feasible order would be complete but can"
+    },
+    {
+      "file": "sections/03-model.tex",
+      "line": 1,
+      "text": "\\section{Frozen Inventories and Ownership Worlds}"
+    },
+    {
+      "file": "sections/03-model.tex",
+      "line": 87,
+      "text": "\\subsection{A completeness premise cannot be certified from itself}"
+    },
+    {
+      "file": "sections/03-model.tex",
+      "line": 100,
+      "text": "omits a real input and has a different first provider. A procedure acting on"
+    },
+    {
+      "file": "sections/03-model.tex",
+      "line": 102,
+      "text": "cannot certify actual completeness in general."
+    },
+    {
+      "file": "sections/03-model.tex",
+      "line": 105,
+      "text": "The result does not prevent completeness from being established by additional"
+    },
+    {
+      "file": "sections/03-model.tex",
+      "line": 108,
+      "text": "premises. The ownership checker cannot manufacture that record from identical"
+    },
+    {
+      "file": "sections/03-model.tex",
+      "line": 130,
+      "text": "A higher-assurance deployment could retain complete payloads or use an"
+    },
+    {
+      "file": "sections/03-model.tex",
+      "line": 141,
+      "text": "Many provider permutations induce the same first winner at every region.  Let"
+    },
+    {
+      "file": "sections/03-model.tex",
+      "line": 154,
+      "text": "respected, and every row's first present provider is good.  A compressed"
+    },
+    {
+      "file": "sections/03-model.tex",
+      "line": 170,
+      "text": "histories of this kind.  If their first providers differ at a shared name, the"
+    },
+    {
+      "file": "sections/03-model.tex",
+      "line": 194,
+      "text": "precedence edges, revealing a trusted complete order, or replacing an unknown"
+    },
+    {
+      "file": "sections/03-model.tex",
+      "line": 221,
+      "text": "be worse than a smaller honest model.  An extension is scientifically complete"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 11,
+      "text": "If the first candidate is good, it is earlier than every bad candidate."
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 12,
+      "text": "Conversely, if the first candidate were bad, the stated condition would supply"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 21,
+      "text": "the disjunction by activating the row when its first good provider is selected."
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 44,
+      "text": "requirements by Equation~\\eqref{eq:eligibility}. A complete order therefore"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 47,
+      "text": "$\\pi$ exists. Choose the first provider $v$ of $\\pi$ that is not in $S$."
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 71,
+      "text": "provider first activates a row, the blocked counts of its bad providers are"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 76,
+      "text": "reported as a linear bound for the full ownership producer."
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 81,
+      "text": "have a first member in any valid order."
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 96,
+      "text": "For soundness, suppose a world existed and choose its first member $v$ of"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 99,
+      "text": "all such good providers lie in $U$, again a contradiction. For completeness,"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 106,
+      "text": "The proof depends on complete reason coverage. A set with a reason for only"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 107,
+      "text": "one of several nodes does not show that its first node is blocked. It also"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 131,
+      "text": "an original world has $p$ as its first provider at $r$."
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 153,
+      "text": "\\subsection{Sound and relatively complete owner answers}"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 156,
+      "text": "order whose first provider at $r$ has that label. For every compatible provider"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 183,
+      "text": "Relative completeness here is a property of the finite language and the"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 184,
+      "text": "certificate protocol. It does not assert complete Android modeling, complete"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 185,
+      "text": "inventories in reality, or a universal wall-time guarantee. Nor is it a"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 194,
+      "text": "a bijection between worlds, and corresponding first providers retain their"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 210,
+      "text": "\\emph{available} when two conditions hold.  First, every declared predecessor"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 215,
+      "text": "The second condition follows directly from first-winner semantics.  If $p$ is"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 220,
+      "text": "$p$: if it becomes the first present provider, it satisfies the row."
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 230,
+      "text": "completeness.  Accessibility of the associated Horn-rule system ensures that"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 233,
+      "text": "set but lists a different available provider first.  Moving the chosen"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 235,
+      "text": "bad first winner: all its predecessors and all rows that need an earlier good"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 287,
+      "text": "complete candidate set.  The key is sufficient because $F(r,p)$ depends only"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 304,
+      "text": "\\subsection{A complete certificate for the running example}"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 323,
+      "text": "correspond exactly to unique ownership, ambiguity, and inconsistency."
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 331,
+      "text": "A trusted complete provider order $\\tau$ leaves at most one candidate world: it"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 333,
+      "text": "Thus complete-order evidence eliminates ownership ambiguity in this language."
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 334,
+      "text": "It does not guarantee consistency or inventory completeness.  This corollary"
+    },
+    {
+      "file": "sections/04-certificates.tex",
+      "line": 341,
+      "text": "exact-byte reference performs the first removal independently per row; the"
+    },
+    {
+      "file": "sections/05-implementation.tex",
+      "line": 37,
+      "text": "one. Certificate fields are checked explicitly, including complete regional"
+    },
+    {
+      "file": "sections/05-implementation.tex",
+      "line": 57,
+      "text": "query by the forced provider and complete candidate set, and interns repeated"
+    },
+    {
+      "file": "sections/05-implementation.tex",
+      "line": 59,
+      "text": "when the obstruction reference, forced provider and complete candidate set"
+    },
+    {
+      "file": "sections/05-implementation.tex",
+      "line": 73,
+      "text": "patterns to expose this distinction. It does not infer a compression guarantee"
+    },
+    {
+      "file": "sections/05-implementation.tex",
+      "line": 129,
+      "text": "whose complete content map is compared with predictions for both concrete"
+    },
+    {
+      "file": "sections/05-implementation.tex",
+      "line": 151,
+      "text": "complete complement of excluded good providers.  It also derives the displayed"
+    },
+    {
+      "file": "sections/05-implementation.tex",
+      "line": 178,
+      "text": "Every command writes results into a caller-selected destination.  A stage first"
+    },
+    {
+      "file": "sections/05-implementation.tex",
+      "line": 202,
+      "text": "cell is questioned, while the complete command verifies that no hidden working"
+    },
+    {
+      "file": "sections/06-method.tex",
+      "line": 5,
+      "text": "an Android-app accuracy claim.  The central empirical obligation is to test"
+    },
+    {
+      "file": "sections/06-method.tex",
+      "line": 7,
+      "text": "same first-winner operation, including cases where local bytes are"
+    },
+    {
+      "file": "sections/06-method.tex",
+      "line": 22,
+      "text": "\\item[H2: external first-winner fidelity.] For every selected two-provider"
+    },
+    {
+      "file": "sections/06-method.tex",
+      "line": 24,
+      "text": "the content map predicted by first-winner semantics, both independently"
+    },
+    {
+      "file": "sections/06-method.tex",
+      "line": 28,
+      "text": "occurring public pair for which reversing provider order preserves the complete"
+    },
+    {
+      "file": "sections/06-method.tex",
+      "line": 60,
+      "text": "permutation, filters by precedence, evaluates first-winner output bytes, and"
+    },
+    {
+      "file": "sections/06-method.tex",
+      "line": 138,
+      "text": "JARs are launched in a child JVM.  The complete output archives are then read"
+    },
+    {
+      "file": "sections/06-method.tex",
+      "line": 146,
+      "text": "total orders.  Building both orders therefore enumerates the complete world"
+    },
+    {
+      "file": "sections/06-method.tex",
+      "line": 166,
+      "text": "\\item \\textbf{Catalogue tie-break} always chooses the first catalogue entry."
+    },
+    {
+      "file": "sections/06-method.tex",
+      "line": 177,
+      "text": "\\item \\textbf{Trusted trace} returns the actual first provider for a concrete"
+    },
+    {
+      "file": "sections/06-method.tex",
+      "line": 191,
+      "text": "Additional metrics count complete output maps that remain identical after"
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 51,
+      "text": "\\subsection{RQ2: agreement with an external first-winner builder}"
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 64,
+      "text": "with first-winner prediction.  The producer-side and checker-side archive"
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 79,
+      "text": "whole Android toolchain.  Ant is neither Gradle's complete dependency resolver"
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 80,
+      "text": "nor the Android Gradle Plugin's transform pipeline.  No APK signing, resource"
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 84,
+      "text": "first-winner ZIP/JAR merge on the retained corpus."
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 92,
+      "text": "complete output content map.  Nevertheless, the first provider changes.  Over"
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 102,
+      "text": "the component family; none can reconstruct the historical first provider from"
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 120,
+      "text": "For the build whose output contains the first archive's policy bytes, the"
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 121,
+      "text": "second-before-first order is globally impossible; the reverse holds for the"
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 123,
+      "text": "the same first provider."
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 129,
+      "text": "single owner allowed by the complete output.  The example is natural in the"
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 208,
+      "text": "fixed provider is first in one build and second in the other.  This arithmetic"
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 217,
+      "text": "plausible pipeline, but end-to-end Android accuracy remains future work."
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 222,
+      "text": "with a median of \\CertMedianKiB{} KiB.  In the retained measurement run, the public stage completed in 27.95"
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 226,
+      "text": "current host completed in roughly 46--50 seconds.  Both figures are descriptive,"
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 229,
+      "text": "Certificate size reflects the deliberate choice to retain complete witness"
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 245,
+      "text": "are not estimates of Android prevalence."
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 280,
+      "text": "with the concrete two-order oracle.  This supports the first-winner archive"
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 281,
+      "text": "fragment, not complete Android builds."
+    },
+    {
+      "file": "sections/07-results.tex",
+      "line": 291,
+      "text": "\\CertMedianKiB{} KiB, and all bounded scale probes replay.  Complete orders and"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 9,
+      "text": "\\subsection{Library identification and Android analysis boundaries}"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 11,
+      "text": "Android library research has progressively strengthened the evidence used to"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 23,
+      "text": "Binary software-composition analysis extends the problem beyond Android"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 32,
+      "text": "question: which candidates can be first winners under one explicit assembly"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 39,
+      "text": "infrastructure used by many Android studies \\cite{androzoo}.  Both illustrate"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 45,
+      "text": "The boundary also affects general Android analysis.  FlowDroid and IccTA model"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 75,
+      "text": "from Android external validity."
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 90,
+      "text": "scheduling abstractions \\cite{buildsystems}.  Our first-winner model is much"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 95,
+      "text": "A future Gradle or Android extension should add those semantics explicitly"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 96,
+      "text": "rather than interpreting the current theorem as a generic build guarantee."
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 110,
+      "text": "how outputs depend on inputs \\cite{provenance}.  First-winner ownership is a"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 131,
+      "text": "Android data-flow results \\cite{dcert}.  The present object differs in both"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 134,
+      "text": "completeness therefore requires a counterfactual obstruction for every excluded"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 150,
+      "text": "semantics are correct and complete, the accepted certificate equals the owner"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 151,
+      "text": "projection of every feasible first-winner order.  The mathematical proof gives"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 156,
+      "text": "identical-output pairs show that output bytes cannot reveal a hidden first"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 173,
+      "text": "Exact owner projection in the frozen language & Soundness and relative-completeness arguments; exact small oracle; accepted certificates & Correct language definition, checker/runtime, complete supplied facts \\\\"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 174,
+      "text": "External first-winner conformance & 80 Apache Ant builds; two independent archive adapters; complete two-order oracle & Ant fragment only, not Gradle, AAR, DEX, resource merging, or rewriting \\\\"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 176,
+      "text": "Nonlocal precision & Mixed public pair with 100 equal-byte observations resolved by one differing path & Frequency and magnitude are not estimated for Android applications \\\\"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 177,
+      "text": "Offline reproducibility & Retained inputs, licenses, scripts, raw summaries, and clean-extraction rerun & No authentication of historical origins or guarantee for future toolchains \\\\"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 191,
+      "text": "builder experiment, and offline package can be complete while live venue rules,"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 196,
+      "text": "The results do not establish the prevalence of these phenomena in Android apps."
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 209,
+      "text": "first-winner provenance under one build operation.  Calling the result"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 249,
+      "text": "The model excludes Android resource merging, manifest mergers, DEX and R8/D8"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 254,
+      "text": "JAR/ZIP first-winner fragment, not an APK ownership oracle."
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 261,
+      "text": "complete consumed input sequence."
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 290,
+      "text": "analysis as four explicit stages.  First, an existing library detector or"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 304,
+      "text": "first label in a serialized set has no semantic justification."
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 308,
+      "text": "policy used to turn set-valued ownership into analysis scope.  When a finding is"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 318,
+      "text": "change ownership elsewhere.  Safe incremental validation must track the rows"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 320,
+      "text": "recheck the complete graph.  The current artifact performs complete replay and"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 332,
+      "text": "consumed provider list, complete order, and output digest.  With a trusted"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 333,
+      "text": "complete order, the inference collapses to deterministic replay, but the"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 354,
+      "text": "but inventory completeness, label provenance, or trace authenticity lacks"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 369,
+      "text": "complete order.  Each level changes the interpretation of the same finite"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 376,
+      "text": "affirmative answers: (1) is the provider inventory believed complete for the"
+    },
+    {
+      "file": "sections/08-discussion.tex",
+      "line": 379,
+      "text": "does one global first-provider order govern duplicate paths; and (5) are owner"
+    },
+    {
+      "file": "sections/09-conclusion.tex",
+      "line": 4,
+      "text": "For finite first-winner assembly, library-boundary provenance is an exact"
+    },
+    {
+      "file": "sections/09-conclusion.tex",
+      "line": 8,
+      "text": "inconsistency, ambiguity, and unique ownership as distinct machine-checkable"
+    },
+    {
+      "file": "sections/09-conclusion.tex",
+      "line": 15,
+      "text": "changes behind identical complete content maps and show one global-order"
+    },
+    {
+      "file": "sections/09-conclusion.tex",
+      "line": 18,
+      "text": "These guarantees are a proof boundary, not a universal Android build model."
+    },
+    {
+      "file": "sections/09-conclusion.tex",
+      "line": 19,
+      "text": "Candidate detection, inventory completeness, owner-label validity, and"
+    },
+    {
+      "file": "sections/09-conclusion.tex",
+      "line": 20,
+      "text": "transformations outside path-only first-winner assembly remain external"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "aggregate_percent": 0.59,
+  "file_count": 14,
+  "files": [
+    {
+      "file": "results/campaign_summary.json",
+      "gzip_bytes": 364,
+      "ratio": 0.5977011494252874,
+      "raw_bytes": 609
+    },
+    {
+      "file": "results/clean_reproduction/campaign_summary.json",
+      "gzip_bytes": 364,
+      "ratio": 0.5986842105263158,
+      "raw_bytes": 608
+    },
+    {
+      "file": "results/clean_reproduction/java/b0.certificate.json",
+      "gzip_bytes": 248,
+      "ratio": 0.28604382929642447,
+      "raw_bytes": 867
+    },
+    {
+      "file": "results/clean_reproduction/java/b1.certificate.json",
+      "gzip_bytes": 257,
+      "ratio": 0.29506314580941445,
+      "raw_bytes": 871
+    },
+    {
+      "file": "results/clean_reproduction/public/retained/p001-ab.certificate.json",
+      "gzip_bytes": 2835,
+      "ratio": 0.004500378603279323,
+      "raw_bytes": 629947
+    },
+    {
+      "file": "results/clean_reproduction/public/retained/p021-ab.certificate.json",
+      "gzip_bytes": 2682,
+      "ratio": 0.004512614119333573,
+      "raw_bytes": 594334
+    },
+    {
+      "file": "results/clean_reproduction/public/retained/p039-ab.certificate.json",
+      "gzip_bytes": 676,
+      "ratio": 0.005922136174089778,
+      "raw_bytes": 114148
+    },
+    {
+      "file": "results/clean_reproduction/public/summary.json",
+      "gzip_bytes": 907,
+      "ratio": 0.3254395407247937,
+      "raw_bytes": 2787
+    },
+    {
+      "file": "results/java/b0.certificate.json",
+      "gzip_bytes": 248,
+      "ratio": 0.28604382929642447,
+      "raw_bytes": 867
+    },
+    {
+      "file": "results/java/b1.certificate.json",
+      "gzip_bytes": 257,
+      "ratio": 0.29506314580941445,
+      "raw_bytes": 871
+    },
+    {
+      "file": "results/public/retained/p001-ab.certificate.json",
+      "gzip_bytes": 2835,
+      "ratio": 0.004500378603279323,
+      "raw_bytes": 629947
+    },
+    {
+      "file": "results/public/retained/p021-ab.certificate.json",
+      "gzip_bytes": 2682,
+      "ratio": 0.004512614119333573,
+      "raw_bytes": 594334
+    },
+    {
+      "file": "results/public/retained/p039-ab.certificate.json",
+      "gzip_bytes": 676,
+      "ratio": 0.005922136174089778,
+      "raw_bytes": 114148
+    },
+    {
+      "file": "results/public/summary.json",
+      "gzip_bytes": 907,
+      "ratio": 0.3253228120516499,
+      "raw_bytes": 2788
+    }
+  ],
+  "gzip_max_bytes": 2835,
+  "gzip_total_bytes": 15938,
+  "interpretation": "gzip is evaluated only as a lossless storage/transport wrapper; it does not change certificate semantics or checker complexity.",
+  "raw_max_bytes": 629947,
+  "raw_total_bytes": 2687126,
+  "schema_version": 1
+}

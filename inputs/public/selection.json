@@ -1,0 +1,19 @@
+{
+  "corpus_definition": "Frozen offline corpus of 43 unmodified public JAR archives distributed by Debian packages, plus two Apache Ant builder archives.",
+  "selection_rule": "Enumerate all unordered pairs among the 43 bundled study providers and retain each pair sharing at least one entry outside META-INF after excluding META-INF/MANIFEST.MF from build interpretation.",
+  "pair_count": 40,
+  "build_count": 80,
+  "provider_count": 43,
+  "builder_count": 2,
+  "category_counts": {
+    "equal-only": 30,
+    "different-only": 9,
+    "mixed": 1
+  },
+  "builder_archives": [
+    "ant-1.10.15.jar",
+    "ant-launcher-1.10.15.jar"
+  ],
+  "license_records": "licenses/*.copyright",
+  "scope_note": "The corpus is a frozen collision-bearing sample, not a statistically representative sample of Android or Java builds."
+}

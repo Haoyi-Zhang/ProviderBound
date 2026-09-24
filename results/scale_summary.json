@@ -1,0 +1,41 @@
+[
+  {
+    "case": "repeated-collision",
+    "providers": 300,
+    "regions": 20000,
+    "incidences": 240000,
+    "orders": 12,
+    "certificate_bytes": 6273168,
+    "obstructions": 0,
+    "producer_cpu_seconds": 1.344628331,
+    "checker_cpu_seconds": 0.8191560420000001,
+    "wall_seconds": 2.238387363000129,
+    "peak_rss_kib": 241136
+  },
+  {
+    "case": "forced-repeated-collision",
+    "providers": 300,
+    "regions": 20000,
+    "incidences": 239890,
+    "orders": 1,
+    "certificate_bytes": 8602784,
+    "obstructions": 11,
+    "producer_cpu_seconds": 0.9647646779999999,
+    "checker_cpu_seconds": 0.8064376800000002,
+    "wall_seconds": 1.8783164930000567,
+    "peak_rss_kib": 300116
+  },
+  {
+    "case": "distributed-collision",
+    "providers": 300,
+    "regions": 900,
+    "incidences": 2700,
+    "orders": 599,
+    "certificate_bytes": 773434,
+    "obstructions": 0,
+    "producer_cpu_seconds": 0.5676220549999993,
+    "checker_cpu_seconds": 0.20603541000000014,
+    "wall_seconds": 0.7851842790000774,
+    "peak_rss_kib": 300116
+  }
+]

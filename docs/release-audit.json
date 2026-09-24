@@ -1,0 +1,58 @@
+{
+  "artifact": "artifact",
+  "checks": {
+    "archives": {
+      "count": 53,
+      "errors": []
+    },
+    "claim_index": {
+      "output": "",
+      "returncode": 0
+    },
+    "claim_language": {
+      "blocking_hits": []
+    },
+    "crossref": {
+      "blocking": [],
+      "statuses": {
+        "NO_DOI": 54
+      }
+    },
+    "csv": {
+      "count": 12,
+      "errors": []
+    },
+    "inventory": {
+      "bytes": 27061499,
+      "files": 369,
+      "symlinks": []
+    },
+    "json": {
+      "count": 226,
+      "errors": []
+    },
+    "paper": {
+      "bib_files": 1,
+      "bibliography_entries": 54,
+      "cited_keys": 54,
+      "issues": [
+        "missing scope guardrail: closed world",
+        "missing scope guardrail: census not random sample"
+      ],
+      "missing_keys": [],
+      "present": true,
+      "tex_files": 20,
+      "uncited_keys": []
+    },
+    "python": {
+      "count": 22,
+      "errors": []
+    }
+  },
+  "issues": [
+    "missing scope guardrail: closed world",
+    "missing scope guardrail: census not random sample"
+  ],
+  "schema_version": 1,
+  "status": "FAIL"
+}
