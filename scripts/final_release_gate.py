@@ -206,7 +206,7 @@ def main():
 
     # Root contract.
     root_names=sorted(p.name for p in ROOT.iterdir())
-    check('full-project-root-contract',root_names==['CURRENT-STATE.md','artifact','paper','research-plan.md'],f'{root_names}')
+    check('full-project-root-contract',root_names==["README.md", "artifact", "paper"],f'{root_names}')
 
     result={
       'schema_version':1,'canonical_title':TITLE,'paper_pdf':str(pdf.relative_to(ROOT)),
