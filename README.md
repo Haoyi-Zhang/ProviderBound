@@ -169,12 +169,6 @@ measurements are absent.  Passing commands demonstrate execution on the
 retained inputs; the ordinary mathematical proof remains distinct from finite
 testing and there is no mechanized proof of the Python implementation.
 
-Substantive AI assistance was used in research formulation, proof drafting,
-implementation, experiment design and execution, analysis, validation, and
-manuscript production.  This is disclosed so the work is not represented as
-human-only.  Human authors remain responsible for checking all claims and for
-satisfying any venue, authorship, originality, ethics, and AI-use policies before
-external use.
 
 Original repository material is under `LICENSE` (MIT).  The embedded public JARs
 retain their own upstream terms; `licenses/NOTICE.txt`, `inputs/public/providers.csv`,
