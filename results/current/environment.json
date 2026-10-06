@@ -1,0 +1,16 @@
+{
+  "python": "3.12.14 (main, Aug 13 2026, 02:47:42) [GCC 13.3.0]",
+  "executable": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "logical_cpu_count": 2,
+  "assertions_enabled": true,
+  "started_utc": "2026-10-06T04:19:18.117487+00:00",
+  "public_requested": true,
+  "java_requested": true,
+  "env": {
+    "PYTHONUTF8": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONHASHSEED": "0"
+  }
+}

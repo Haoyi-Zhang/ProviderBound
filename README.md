@@ -22,7 +22,7 @@ real Apache Ant archive builds.
 | Evidence | Result |
 |---|---:|
 | Exact finite oracle | 45,291 structural / 90,582 owner-labelled models; 0 mismatches |
-| Regression and mutation tests | 47 passed in the fresh Windows run |
+| Regression and mutation tests | 47 passed in the complete current Linux run |
 | Public provider archives | 43 licensed JARs, plus 2 Ant builder JARs |
 | Exhaustive public collision pairs | 40 of all 903 unordered pairs |
 | Concrete public builds | 80 Ant builds: both orders for every collision pair |
@@ -36,8 +36,12 @@ real Apache Ant archive builds.
 The public pair study is exact for its two-provider worlds: building `A,B` and
 `B,A` enumerates every total provider order.  It is a frozen collision-bearing
 sample of Debian-distributed Java archives, not a representative sample of
-Android applications or Maven Central. Ant/JVM rows retain earlier Linux
-execution; finite tests and scale disk replay were freshly executed on Windows.
+Android applications or Maven Central. `results/current/` contains the complete
+Linux 6.17 / CPython 3.12.14 / Temurin 21.0.12.1 campaign: eight successful
+stages in 72.17 wall seconds, including all 80 Ant builds and both owned Java
+builds. Its public stage took 58.43 seconds; all three scale certificates
+replayed. Earlier Linux records and `results/local/` Windows finite results
+retain their original measurements. The paper tables read only current results.
 
 ## Reproduce everything
 

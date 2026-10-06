@@ -1,0 +1,123 @@
+{
+  "status": "complete",
+  "commands": [
+    {
+      "command": "generate",
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-B",
+        "scripts/make_inputs.py",
+        "--output",
+        "/home/runner/work/_temp/p010-scientific/results/inputs"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.042014865999995266,
+      "timeout_seconds": 180
+    },
+    {
+      "command": "public-inputs",
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-B",
+        "scripts/verify_public_inputs.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.49683628500000054,
+      "timeout_seconds": 180
+    },
+    {
+      "command": "unit",
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.6337602950000019,
+      "timeout_seconds": 180
+    },
+    {
+      "command": "oracle",
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-B",
+        "tests/oracle.py",
+        "/home/runner/work/_temp/p010-scientific/results"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 4.3124680549999965,
+      "timeout_seconds": 180
+    },
+    {
+      "command": "campaign",
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-B",
+        "scripts/campaign.py",
+        "/home/runner/work/_temp/p010-scientific/results",
+        "--inputs",
+        "/home/runner/work/_temp/p010-scientific/results/inputs"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.06738877299999757,
+      "timeout_seconds": 180
+    },
+    {
+      "command": "public",
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-B",
+        "scripts/public_corpus.py",
+        "--output",
+        "/home/runner/work/_temp/p010-scientific/results/public",
+        "--workers",
+        "4"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 58.57706245200001,
+      "timeout_seconds": 900
+    },
+    {
+      "command": "scale",
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-B",
+        "scripts/scale.py",
+        "/home/runner/work/_temp/p010-scientific/results"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 4.401917330999993,
+      "timeout_seconds": 180
+    },
+    {
+      "command": "java",
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-B",
+        "scripts/java_pilot.py",
+        "/home/runner/work/_temp/p010-scientific/results"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 3.466223880000001,
+      "timeout_seconds": 180
+    }
+  ],
+  "unit_tests_run": 47,
+  "regenerated_input_files_compared": 61,
+  "public_requested": true,
+  "java_requested": true,
+  "deadline_seconds": 1650,
+  "maximum_workers": 4,
+  "scope": "Finite semantic comparisons and requested integrations, not a mechanized implementation proof.",
+  "wall_seconds": 72.17094498,
+  "cpu_seconds_children": 104.389972,
+  "child_peak_rss_kib": 221040,
+  "rss_scope": "getrusage child high-water mark"
+}

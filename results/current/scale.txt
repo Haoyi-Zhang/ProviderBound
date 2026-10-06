@@ -1,0 +1,44 @@
+[
+  {
+    "case": "repeated-collision",
+    "providers": 300,
+    "regions": 20000,
+    "incidences": 240000,
+    "orders": 12,
+    "certificate_bytes": 6273168,
+    "obstructions": 0,
+    "producer_cpu_seconds": 0.81326226,
+    "checker_cpu_seconds": 0.85706468,
+    "wall_seconds": 1.7604645440000013,
+    "peak_rss_kib": 162540,
+    "rss_scope": "getrusage process-lifetime high-water mark"
+  },
+  {
+    "case": "forced-repeated-collision",
+    "providers": 300,
+    "regions": 20000,
+    "incidences": 239890,
+    "orders": 1,
+    "certificate_bytes": 8602784,
+    "obstructions": 11,
+    "producer_cpu_seconds": 0.8166342869999998,
+    "checker_cpu_seconds": 0.8342582620000001,
+    "wall_seconds": 1.77010851,
+    "peak_rss_kib": 221040,
+    "rss_scope": "getrusage process-lifetime high-water mark"
+  },
+  {
+    "case": "distributed-collision",
+    "providers": 300,
+    "regions": 900,
+    "incidences": 2700,
+    "orders": 301,
+    "certificate_bytes": 447688,
+    "obstructions": 0,
+    "producer_cpu_seconds": 0.478473583,
+    "checker_cpu_seconds": 0.22398465699999992,
+    "wall_seconds": 0.7116132430000022,
+    "peak_rss_kib": 221040,
+    "rss_scope": "getrusage process-lifetime high-water mark"
+  }
+]

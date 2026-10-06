@@ -1,0 +1,40 @@
+{
+  "scope": "two owned Java builds; no public projects, Maven execution, or Android pipeline",
+  "cases": [
+    {
+      "case": "j001",
+      "assembly_order": [
+        0,
+        1
+      ],
+      "runtime_probe_value": 11,
+      "marker_byte_candidates": 2,
+      "marker_owners": [
+        "developer"
+      ],
+      "status": "classified",
+      "input_bytes": 2964,
+      "certificate_bytes": 867
+    },
+    {
+      "case": "j002",
+      "assembly_order": [
+        1,
+        0
+      ],
+      "runtime_probe_value": 22,
+      "marker_byte_candidates": 2,
+      "marker_owners": [
+        "lib:example"
+      ],
+      "status": "classified",
+      "input_bytes": 2964,
+      "certificate_bytes": 871
+    }
+  ],
+  "cpu_seconds": 2.8545623030000002,
+  "wall_seconds": 3.413726404000002,
+  "parent_peak_rss_kib": 16768,
+  "child_peak_rss_kib": 71648,
+  "byte_reproduction": "Exact consumed class bytes are retained in these JARs and JSON inventories. Recompilation need not be byte-identical across different compilers; semantic assertions must agree."
+}
