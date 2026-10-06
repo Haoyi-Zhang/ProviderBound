@@ -1,0 +1,34 @@
+{
+  "kind": "inventory",
+  "providers": [
+    {
+      "id": "p0",
+      "owner": "developer",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "owner": "lib:L1",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    }
+  ],
+  "before": [],
+  "observed": [
+    {
+      "name": "r/target.bin",
+      "payload": "616273656e74"
+    }
+  ]
+}

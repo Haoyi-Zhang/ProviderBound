@@ -1,0 +1,13 @@
+{
+  "bundled_jars": 45,
+  "experiment_provider_archives": 43,
+  "builder_archives": 2,
+  "recomputed_collision_pairs": 40,
+  "pair_categories": {
+    "different-only": 9,
+    "equal-only": 30,
+    "mixed": 1
+  },
+  "selection_scope": "all unordered pairs among the 43 bundled study providers; META-INF entries excluded",
+  "licensing_records_checked": 13
+}

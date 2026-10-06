@@ -187,11 +187,12 @@ def infer(data):
     base, trap = search(model)
     if base is None:
         return {'status': 'inconsistent', 'obstruction': trap}
-    orders = []; order_indices = {}; counterfactual = {}
+    orders = []; order_indices = {}; order_ranks = []; counterfactual = {}
     def intern(order):
         key = tuple(order)
         if key not in order_indices:
             order_indices[key] = len(orders); orders.append(order)
+            order_ranks.append({p: i for i, p in enumerate(order)})
         return order_indices[key]
     intern(base)
     classifications = []; obstructions = []; obstruction_indices = {}; object_indices = {}
@@ -204,9 +205,13 @@ def infer(data):
         object_indices[id(obj)] = obstruction_indices[key]
         return obstruction_indices[key]
     for r, row in enumerate(model['rows']):
-        good = sorted(row['good']); rank = {p: i for i, p in enumerate(base)}
-        winner = min(row['present'], key=rank.get)
-        supports = {model['owners'][winner]: 0}; impossible = {}
+        good = sorted(row['good']); supports = {}; impossible = {}
+        # All retained orders satisfy the entire input, so reuse their winners
+        # here even when this row has a different counterfactual candidate set.
+        # Ranks are constructed once per interned order, not once per row.
+        for w, rank in enumerate(order_ranks):
+            winner = min(row['present'], key=rank.get)
+            supports.setdefault(model['owners'][winner], w)
         for p in good:
             owner = model['owners'][p]
             if owner in supports:

@@ -1,17 +1,19 @@
 """Replay the fixed 40 generated cases and 20 fixtures; not a public-build study."""
 from pathlib import Path
-import csv, json, sys, time, resource
+import argparse, csv, json, sys, time
+from telemetry import usage
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]/'src'))
 from producer import infer, normalize, InputError
 from checker import verify, Rejected, read_model
 ROOT=Path(__file__).resolve().parents[1]
 
-def run(output):
+def run(output, inputs=None):
     output=Path(output); (output/'certificates').mkdir(parents=True,exist_ok=True)
-    index=json.loads((ROOT/'inputs/index.json').read_text()); records=[]
+    inputs=Path(inputs) if inputs is not None else ROOT/'inputs'
+    index=json.loads((inputs/'index.json').read_text()); records=[]
     t0=time.process_time(); wall=time.monotonic()
     for item in index:
-        raw=json.loads((ROOT/item['path']).read_text()); t=time.process_time()
+        raw=json.loads((inputs/Path(item['path']).relative_to('inputs')).read_text()); t=time.process_time()
         try:
             model=normalize(raw); cert=infer(raw)
         except (InputError,ValueError,TypeError,KeyError) as exc:
@@ -50,8 +52,13 @@ def run(output):
              'admission_rejected_inputs':sum(x['status']=='admission-rejected' for x in records),
              **{key:sum(x[key] for x in records) for key in ('rows','incidences','developer','library','ambiguous','dependency_strictly_narrowed','bytes_strictly_narrowed','certificate_bytes')},
              'cpu_seconds':time.process_time()-t0,'wall_seconds':time.monotonic()-wall,
-             'peak_rss_kib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
+             'peak_rss_kib':usage()['peak_rss_kib'], 'rss_scope':usage()['scope'],
              'baseline_scope':'Local provider membership and exact-byte owner sets only; no whitelist or package-frequency tool evaluation.'}
     (output/'campaign_summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     return summary
-if __name__=='__main__': print(json.dumps(run(sys.argv[1] if len(sys.argv)>1 else ROOT/'results'),indent=2))
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('output',nargs='?',default=ROOT/'results')
+    parser.add_argument('--inputs',type=Path)
+    args=parser.parse_args()
+    print(json.dumps(run(args.output,args.inputs),indent=2))

@@ -133,8 +133,9 @@ execution.
 
 Reproduction uses no more than four workers, no GPU, no model API, no private
 data, no network acquisition, no device, and no external compute.  Every stage
-has a timeout.  The runner records stage exit status, wall time, child CPU, and a
-child-process peak-RSS high-water mark.  Timing values are descriptive single
+has a timeout.  The runner records stage exit status and wall time. POSIX runs additionally
+record child CPU and a child-process peak-RSS high-water mark; these OS counters
+are unavailable and recorded as null in the fresh Windows run.  Timing values are descriptive single
 runs; correctness claims depend on discrete equality checks, not speed.
 
 All claimed experimental inputs are bundled.  The public-input verifier

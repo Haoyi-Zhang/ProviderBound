@@ -25,9 +25,9 @@ provider labels; the certificate answers a different, build-specific question.
 ## Established algorithmic foundation
 
 The feasibility construction specializes known Horn-rule/antimatroid accessible-
-set membership.  A provider may be selected only when every active row containing
-it has another remaining admissible candidate.  Greedily removing eligible
-providers either constructs an order or leaves a closed residual trap.  The
+set membership.  A provider may be appended only after its required predecessors, and after at
+least one good provider in every row where it is bad. Greedily appending eligible
+providers either constructs an order or leaves a self-blocking residual trap.  The
 project proves the specialization and certificate obligations in its notation,
 but does not claim invention of the general queue algorithm or antimatroid
 representation.

@@ -1,16 +1,5 @@
 # Proof-Carrying Library Boundary
 
-## Release-level reproduction
-
-The paper experiments remain reproducible with `scripts/reproduce.py`.  The release gate additionally reruns the independently implemented information-baseline analysis and the claim-traceability index:
-
-```bash
-python scripts/reproduce_release.py --output reproduced --java
-```
-
-The added stage does not import the production generator or checker when reconstructing the 107-archive collision graph, the four 3/4-provider components, their 42 orders, or their 14 output classes.
-
-
 This standalone repository implements and evaluates an independently replayable
 certificate protocol for **first-winner archive composition**.  The input is a
 closed finite inventory of providers, exact path-to-byte maps, caller-declared
@@ -30,10 +19,10 @@ real Apache Ant archive builds.
 
 ## Evidence at a glance
 
-| Evidence | Retained result |
+| Evidence | Result |
 |---|---:|
 | Exact finite oracle | 45,291 structural / 90,582 owner-labelled models; 0 mismatches |
-| Regression and mutation tests | 39 passed |
+| Regression and mutation tests | 47 passed in the fresh Windows run |
 | Public provider archives | 43 licensed JARs, plus 2 Ant builder JARs |
 | Exhaustive public collision pairs | 40 of all 903 unordered pairs |
 | Concrete public builds | 80 Ant builds: both orders for every collision pair |
@@ -47,13 +36,15 @@ real Apache Ant archive builds.
 The public pair study is exact for its two-provider worlds: building `A,B` and
 `B,A` enumerates every total provider order.  It is a frozen collision-bearing
 sample of Debian-distributed Java archives, not a representative sample of
-Android applications or Maven Central.
+Android applications or Maven Central. Ant/JVM rows retain earlier Linux
+execution; finite tests and scale disk replay were freshly executed on Windows.
 
 ## Reproduce everything
 
-Requirements are Linux, Python 3.10 or newer, and a JDK that can execute the
-bundled Apache Ant 1.10.15 builder.  The optional owned Java stage additionally
-needs `javac` with `--release 8` support.  No network access, pip package, GPU,
+The finite-only campaign requires Python 3.10 or newer and its standard
+library and runs on Windows or Linux. The complete external-builder campaign
+additionally requires a JDK that can execute bundled Apache Ant 1.10.15 and
+provide `javac` with `--release 8` support.  No network access, pip package, GPU,
 model API, private cache, paper directory, or external service is required.
 
 From the repository root:
@@ -64,7 +55,7 @@ python scripts/reproduce.py --output reproduced --java
 
 The command performs, in order:
 
-1. deterministic fixture regeneration;
+1. deterministic fixture regeneration into the fresh output and comparison with all 61 retained structured input files;
 2. independent public-input and collision-pair verification;
 3. all unit, negative, separation, and metamorphic tests;
 4. exhaustive tiny-model oracle comparison;
@@ -73,10 +64,28 @@ The command performs, in order:
 7. the three fixed representation/scale probes; and
 8. the two benign owned Java builds.
 
-Each stage has a timeout, failure stops the run, and the final
-`reproduction_summary.json` is written only after every requested stage exits
-successfully.  The public stage uses at most four workers; all other stages are
+Each stage has a timeout and the driver has a 1,650-second overall deadline.
+The destination must be absent or empty. Progress and failed-stage logs are
+retained; `reproduction_summary.json` has status `complete` only after every
+requested stage exits successfully.  The public stage uses at most four workers; all other stages are
 sequential.
+
+For the portable finite-only campaign (no Ant or JVM execution):
+
+```sh
+python -B scripts/reproduce.py --output fresh-finite --skip-public
+```
+
+The passive public-input census still reads the bundled archives and notices;
+it does not execute their classes. Windows RSS and child CPU counters are
+unavailable and recorded as null. See `ENVIRONMENT.md` for current versus
+retained measurements. `scripts/reproduce_release.py` is a compatibility entry
+point for this same campaign with release-manifest integrity verification. The older exploratory
+107-JAR analyses are not part of the current 43-provider study.
+
+`.github/workflows/scientific-checks.yml` runs the complete fresh Ant/JVM
+campaign on Ubuntu/Python 3.12 within 30 minutes and uploads raw results and
+logs even on failure. Preparing this workflow is not evidence of a CI run.
 
 Useful focused commands are:
 
@@ -149,7 +158,7 @@ The experiment includes transparent information probes, not reimplementations
 of published library detectors:
 
 - `catalogue_tiebreak`: choose one provider by a fixed catalogue order;
-- `inventory_size_proxy`: choose the smaller archive as a singleton proxy;
+- `inventory_size_proxy`: choose the archive with more entries as a singleton proxy (left wins ties);
 - `dependency`: return all declared providers of a path;
 - `local_bytes`: return all providers with bytes equal to the output;
 - `certified`: exact global owner set under the frozen semantics; and

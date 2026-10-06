@@ -1,0 +1,16 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "platform": "Windows-11-10.0.28000-SP0",
+  "machine": "AMD64",
+  "logical_cpu_count": 20,
+  "assertions_enabled": true,
+  "started_utc": "2026-10-06T04:03:34.819224+00:00",
+  "public_requested": false,
+  "java_requested": false,
+  "env": {
+    "PYTHONUTF8": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONHASHSEED": "0"
+  }
+}

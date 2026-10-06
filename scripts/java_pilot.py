@@ -33,7 +33,7 @@ def run(output):
     if not shutil.which('javac') or not shutil.which('java'):
         raise RuntimeError('Java development tools required for this explicitly documented integration command')
     output=Path(output); (output/'java').mkdir(parents=True,exist_ok=True)
-    sources=ROOT/'inputs/java'; sources.mkdir(parents=True,exist_ok=True)
+    sources=output/'java/sources'; sources.mkdir(parents=True,exist_ok=True)
     t=time.process_time(); children_before=resource.getrusage(resource.RUSAGE_CHILDREN); wall=time.monotonic()
     with tempfile.TemporaryDirectory(prefix='boundary-owned-java-') as work:
         work=Path(work); providers=[]

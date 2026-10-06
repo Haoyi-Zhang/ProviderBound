@@ -6,7 +6,7 @@ executes classes or resource transformers.  The checker has a separately
 written implementation in archive_checker.py.
 """
 from __future__ import annotations
-from pathlib import Path, PurePosixPath
+from pathlib import Path
 from zipfile import BadZipFile, ZipFile
 
 MAX_ARCHIVE_BYTES = 32 * 1024 * 1024
@@ -21,7 +21,7 @@ class ArchiveInputError(ValueError):
 def _safe_name(name: str) -> bool:
     if not isinstance(name, str) or not name or "\\" in name or "\x00" in name or name.startswith("/"):
         return False
-    parts = PurePosixPath(name).parts
+    parts = name.split('/')
     return bool(parts) and all(part not in ("", ".", "..") for part in parts)
 
 def read_archive(path: str | Path) -> dict[str, bytes]:

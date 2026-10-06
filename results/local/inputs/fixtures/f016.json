@@ -1,0 +1,43 @@
+{
+  "kind": "inventory",
+  "providers": [
+    {
+      "id": "p0",
+      "owner": "developer",
+      "relocations": [
+        [
+          "a/",
+          "q/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "a/x.bin",
+          "payload": "78"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "owner": "lib:A",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "ab/x.bin",
+          "payload": "79"
+        }
+      ]
+    }
+  ],
+  "before": [],
+  "observed": [
+    {
+      "name": "ab/x.bin",
+      "payload": "79"
+    },
+    {
+      "name": "q/x.bin",
+      "payload": "78"
+    }
+  ]
+}

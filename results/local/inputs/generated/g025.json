@@ -1,0 +1,256 @@
+{
+  "kind": "inventory",
+  "providers": [
+    {
+      "id": "p0",
+      "owner": "developer",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "616363657074"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "owner": "lib:L1",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "616363657074"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "owner": "lib:L2",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "72656a656374"
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "owner": "lib:L3",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "72656a656374"
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "owner": "lib:L4",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "72656a656374"
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "owner": "lib:L5",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "72656a656374"
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "owner": "lib:L6",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "72656a656374"
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "owner": "lib:L7",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "72656a656374"
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "owner": "lib:L8",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "72656a656374"
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "owner": "lib:L9",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "72656a656374"
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "owner": "lib:L10",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "72656a656374"
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "owner": "lib:L11",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "72656a656374"
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "owner": "lib:L12",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "72656a656374"
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "owner": "lib:L13",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "72656a656374"
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "owner": "lib:L14",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "72656a656374"
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "owner": "lib:L15",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "72656a656374"
+        }
+      ]
+    }
+  ],
+  "before": [],
+  "observed": [
+    {
+      "name": "r/target.bin",
+      "payload": "73616d65"
+    },
+    {
+      "name": "s/release.bin",
+      "payload": "616363657074"
+    }
+  ]
+}

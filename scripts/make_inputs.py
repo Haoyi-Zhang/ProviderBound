@@ -1,6 +1,6 @@
 """Deterministic, outcome-independent synthetic coverage; no public-build claim."""
 from pathlib import Path
-import json
+import argparse, json
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -74,18 +74,22 @@ def fixtures():
     ]
     return cases
 
-def main():
+def main(output=None):
+    output=Path(output) if output is not None else ROOT/'inputs'
     families=['identical','observed-chain','shared-owner','precedence-chain','disjunctive-roots','observation-cycle','path-relocation','missing-payload']
     index=[]
     for fi, family in enumerate(families):
         for j, n in enumerate([2,3,5,8,16]):
             name=f'g{fi*5+j+1:03}'
-            dump(ROOT/'inputs/generated'/f'{name}.json', generated(family,n))
+            dump(output/'generated'/f'{name}.json', generated(family,n))
             index.append({'case':name,'group':'generated','phenomenon':family,'providers':n,'path':f'inputs/generated/{name}.json','admission':'accepted'})
     for i,(name,data) in enumerate(fixtures(),1):
         case=f'f{i:03}'
-        dump(ROOT/'inputs/fixtures'/f'{case}.json',data)
+        dump(output/'fixtures'/f'{case}.json',data)
         index.append({'case':case,'group':'fixture','phenomenon':name,'providers':len(data.get('owners',data.get('providers',[]))), 'path':f'inputs/fixtures/{case}.json','admission':'rejected' if name.endswith('-rejected') else 'accepted'})
-    dump(ROOT/'inputs/index.json',index)
+    dump(output/'index.json',index)
     print(f'wrote {len(index)} cases: 40 generated + 20 boundary fixtures')
-if __name__=='__main__': main()
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output',type=Path)
+    main(parser.parse_args().output)

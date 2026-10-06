@@ -1,0 +1,28 @@
+{
+  "kind": "inventory",
+  "providers": [
+    {
+      "id": "p0",
+      "owner": "lib:A",
+      "relocations": [
+        [
+          "a/",
+          "b/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "a/X.class",
+          "payload": "78"
+        }
+      ]
+    }
+  ],
+  "before": [],
+  "observed": [
+    {
+      "name": "b/X.class",
+      "payload": "78"
+    }
+  ]
+}

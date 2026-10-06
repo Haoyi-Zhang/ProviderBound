@@ -1,0 +1,61 @@
+{
+  "kind": "inventory",
+  "providers": [
+    {
+      "id": "p0",
+      "owner": "developer",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "616363657074"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "owner": "lib:L1",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "616363657074"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "owner": "lib:L2",
+      "relocations": [],
+      "entries": [
+        {
+          "name": "r/target.bin",
+          "payload": "73616d65"
+        },
+        {
+          "name": "s/release.bin",
+          "payload": "72656a656374"
+        }
+      ]
+    }
+  ],
+  "before": [],
+  "observed": [
+    {
+      "name": "r/target.bin",
+      "payload": "73616d65"
+    },
+    {
+      "name": "s/release.bin",
+      "payload": "616363657074"
+    }
+  ]
+}

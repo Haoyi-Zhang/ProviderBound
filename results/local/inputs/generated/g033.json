@@ -1,0 +1,92 @@
+{
+  "kind": "inventory",
+  "providers": [
+    {
+      "id": "p0",
+      "owner": "developer",
+      "relocations": [
+        [
+          "origin0/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin0/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "owner": "lib:L1",
+      "relocations": [
+        [
+          "origin1/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin1/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "owner": "lib:L2",
+      "relocations": [
+        [
+          "origin2/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin2/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "owner": "lib:L3",
+      "relocations": [
+        [
+          "origin3/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin3/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "owner": "lib:L4",
+      "relocations": [
+        [
+          "origin4/",
+          "r/"
+        ]
+      ],
+      "entries": [
+        {
+          "name": "origin4/target.bin",
+          "payload": "73616d65"
+        }
+      ]
+    }
+  ],
+  "before": [],
+  "observed": [
+    {
+      "name": "r/target.bin",
+      "payload": "73616d65"
+    }
+  ]
+}

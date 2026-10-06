@@ -1,0 +1,44 @@
+[
+  {
+    "case": "repeated-collision",
+    "providers": 300,
+    "regions": 20000,
+    "incidences": 240000,
+    "orders": 12,
+    "certificate_bytes": 6273168,
+    "obstructions": 0,
+    "producer_cpu_seconds": 0.5625,
+    "checker_cpu_seconds": 0.609375,
+    "wall_seconds": 1.25,
+    "peak_rss_kib": null,
+    "rss_scope": "unavailable: resource.getrusage is not provided on this OS"
+  },
+  {
+    "case": "forced-repeated-collision",
+    "providers": 300,
+    "regions": 20000,
+    "incidences": 239890,
+    "orders": 1,
+    "certificate_bytes": 8602784,
+    "obstructions": 11,
+    "producer_cpu_seconds": 0.5625,
+    "checker_cpu_seconds": 0.5,
+    "wall_seconds": 1.1560000000026776,
+    "peak_rss_kib": null,
+    "rss_scope": "unavailable: resource.getrusage is not provided on this OS"
+  },
+  {
+    "case": "distributed-collision",
+    "providers": 300,
+    "regions": 900,
+    "incidences": 2700,
+    "orders": 301,
+    "certificate_bytes": 447688,
+    "obstructions": 0,
+    "producer_cpu_seconds": 0.25,
+    "checker_cpu_seconds": 0.15625,
+    "wall_seconds": 0.43800000000192085,
+    "peak_rss_kib": null,
+    "rss_scope": "unavailable: resource.getrusage is not provided on this OS"
+  }
+]

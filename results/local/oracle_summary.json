@@ -1,0 +1,25 @@
+{
+  "structural_cases": 45291,
+  "labelled_cases": 90582,
+  "feasible_labelled_cases": 11398,
+  "region_classifications_checked": 21918,
+  "mismatches": 0,
+  "provider_counts": [
+    1,
+    2,
+    3
+  ],
+  "region_counts": [
+    0,
+    1,
+    2
+  ],
+  "owner_schemes": [
+    "one distinct owner per provider; provider zero is developer",
+    "all providers belong to the same named library"
+  ],
+  "cpu_seconds": 2.640625,
+  "wall_seconds": 2.7189999999973224,
+  "peak_rss_kib": null,
+  "rss_scope": "unavailable: resource.getrusage is not provided on this OS"
+}

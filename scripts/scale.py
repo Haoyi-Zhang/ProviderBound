@@ -1,6 +1,7 @@
 """Fixed synthetic representation probes. No worst-case or Android-build claim."""
 from pathlib import Path
-import json, time, resource, sys, tempfile
+import json, time, sys, tempfile
+from telemetry import usage
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
 from producer import infer
 from checker import verify, load as load_certificate
@@ -34,7 +35,7 @@ def run(output):
           'incidences':sum(len(r['present']) for r in case['rows']),
           'orders':len(cert['orders']),'certificate_bytes':len(encoded.encode()),'obstructions':len(cert['obstructions']),
           'producer_cpu_seconds':produced,'checker_cpu_seconds':checked,'wall_seconds':time.monotonic()-wall,
-          'peak_rss_kib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss})
+          'peak_rss_kib':usage()['peak_rss_kib'], 'rss_scope':usage()['scope']})
     (output/'scale_summary.json').write_text(json.dumps(records,indent=2)+'\n')
     return records
 if __name__=='__main__': print(json.dumps(run(sys.argv[1] if len(sys.argv)>1 else ROOT/'results'),indent=2))

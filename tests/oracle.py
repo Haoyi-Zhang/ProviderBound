@@ -7,8 +7,10 @@ precedence relation, including cyclic ones, is included.
 """
 from itertools import product, permutations
 from pathlib import Path
-import csv, json, time, resource, sys
+import csv, json, time, sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
+from telemetry import usage
 from producer import infer
 from checker import verify
 
@@ -63,7 +65,7 @@ def run(output):
              'provider_counts':[1,2,3],'region_counts':[0,1,2],
              'owner_schemes':['one distinct owner per provider; provider zero is developer','all providers belong to the same named library'],
              'cpu_seconds':time.process_time()-t,'wall_seconds':time.monotonic()-wall,
-             'peak_rss_kib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss}
+             'peak_rss_kib':usage()['peak_rss_kib'], 'rss_scope':usage()['scope']}
     (output/'oracle_summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     return summary
 if __name__=='__main__':

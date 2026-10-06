@@ -6,7 +6,8 @@ Apache Ant in both orders.  The 80 concrete builds enumerate the complete order
 space for each pair and therefore act as an external exact oracle.
 """
 from __future__ import annotations
-import argparse, csv, hashlib, json, os, resource, subprocess, sys, time
+import argparse, csv, hashlib, json, os, statistics, subprocess, sys, time
+from telemetry import usage
 from collections import Counter
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from html import escape
@@ -18,7 +19,7 @@ sys.path.insert(0, str(ROOT / "src"))
 from archive_producer import lower_archives, read_archive
 from archive_checker import interpret_archives
 from producer import infer
-from checker import verify
+from checker import verify, load as load_certificate
 
 
 def _digest(path: Path) -> str:
@@ -51,6 +52,11 @@ def _ant_xml(pairs, jars: Path, out: Path):
 def _expected(first,second):
     answer=dict(second); answer.update(first); return answer
 
+def certificate_sizes(sizes):
+    return {'certificate_bytes_min':min(sizes),
+            'certificate_bytes_median':statistics.median(sizes),
+            'certificate_bytes_max':max(sizes)}
+
 def _process_pair(args):
     record, jars_text, outputs_text, retained_text = args
     jars=Path(jars_text); outputs=Path(outputs_text); retained=Path(retained_text)
@@ -72,8 +78,10 @@ def _process_pair(args):
         t=time.perf_counter(); graph=lower_archives(specs,output_path); t_lower=time.perf_counter()-t
         graph2=interpret_archives(checker_specs,output_path); adapters_equal=graph==graph2
         t=time.perf_counter(); cert=infer(graph); t_infer=time.perf_counter()-t
-        t=time.perf_counter(); answer=verify(graph2,cert); t_check=time.perf_counter()-t
         encoded=json.dumps(cert,separators=(',',':'),sort_keys=True).encode()
+        certificate_path=outputs/f'{build_id}.certificate.json'
+        certificate_path.write_bytes(encoded)
+        t=time.perf_counter(); answer=verify(graph2,load_certificate(certificate_path)); t_check=time.perf_counter()-t
         cert_sizes.append(len(encoded))
         admissible=[candidate for candidate,actual in zip(([0,1],[1,0]),output_maps) if actual==output_maps[number]]
         by_key={x['key']:x for x in answer['regions']}
@@ -149,13 +157,13 @@ def run(destination: Path, workers: int=4, prebuilt: Path|None=None):
     public=ROOT/'inputs/public'; jars=public/'jars'; pairs=_read_csv(public/'collision_pairs.csv')
     if len(pairs)!=40: raise RuntimeError(f'frozen corpus expected 40 pairs, found {len(pairs)}')
     workers=max(1,min(4,workers))
-    usage0=resource.getrusage(resource.RUSAGE_CHILDREN); wall=time.perf_counter(); cpu=time.process_time()
+    usage0=usage(children=True); wall=time.perf_counter(); cpu=time.process_time()
     temp=None
     try:
         if prebuilt is None:
             temp=TemporaryDirectory(prefix='boundary-public-', dir=str(destination.parent)); work=Path(temp.name); outputs=work/'outputs'; outputs.mkdir()
             build=work/'build.xml'; build.write_text(_ant_xml(pairs,jars,outputs))
-            cp=str(jars/'ant-1.10.15.jar')+':'+str(jars/'ant-launcher-1.10.15.jar')
+            cp=os.pathsep.join((str(jars/'ant-1.10.15.jar'),str(jars/'ant-launcher-1.10.15.jar')))
             command=['java','-Xmx768m','-cp',cp,'org.apache.tools.ant.Main','-q','-f',str(build)]
             result=subprocess.run(command,text=True,capture_output=True,timeout=900)
             (destination/'builder.log').write_text(result.stdout+result.stderr)
@@ -186,7 +194,7 @@ def run(destination: Path, workers: int=4, prebuilt: Path|None=None):
                 'oracle_conservative_rate':round(counts[f'baseline.{method}.oracle_conservative']/n,6),
                 'hidden_winner_coverage_rate':round(counts[f'baseline.{method}.hidden_winner_covered']/n,6),
                 'mean_owner_set_size':round(counts[f'baseline.{method}.set_size']/n,6)}
-        usage1=resource.getrusage(resource.RUSAGE_CHILDREN)
+        usage1=usage(children=True)
         summary={
             'public_provider_archives':43,'collision_pairs':40,'actual_ant_builds':80,
             'pair_categories':dict(sorted(categories.items())),
@@ -200,12 +208,10 @@ def run(destination: Path, workers: int=4, prebuilt: Path|None=None):
             'independent_archive_adapter_mismatches':counts['adapter_mismatch'],
             'certificate_vs_actual_two_order_oracle_mismatches':counts['oracle_mismatch'],
             'baseline_comparison_on_collision_regions':baseline_summary,
-            'certificate_bytes_min':min(cert_sizes),'certificate_bytes_median':sorted(cert_sizes)[len(cert_sizes)//2],
-            'certificate_bytes_max':max(cert_sizes),'elapsed_seconds':round(time.perf_counter()-wall,6),
+            **certificate_sizes(cert_sizes),'elapsed_seconds':round(time.perf_counter()-wall,6),
             'process_cpu_seconds':round(time.process_time()-cpu,6),
-            'child_user_cpu_seconds':round(usage1.ru_utime-usage0.ru_utime,6),
-            'child_system_cpu_seconds':round(usage1.ru_stime-usage0.ru_stime,6),
-            'child_peak_rss_kib':usage1.ru_maxrss,'workers':workers,
+            'child_cpu_seconds':None if usage1['cpu_seconds'] is None else round(usage1['cpu_seconds']-usage0['cpu_seconds'],6),
+            'child_peak_rss_kib':usage1['peak_rss_kib'],'rss_scope':usage1['scope'],'workers':workers,
             'builder':'Apache Ant 1.10.15 Zip task, duplicate=preserve, filesonly=true',
             'manifest_handling':'META-INF/MANIFEST.MF excluded from providers and outputs',
             'oracle_scope':'For each two-provider pair, concrete builds in both orders enumerate all total orders.'}

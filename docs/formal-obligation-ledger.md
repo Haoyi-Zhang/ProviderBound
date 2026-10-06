@@ -30,4 +30,6 @@ Passing a lower item never substitutes for a missing higher-level premise.
 
 ## Equality relation
 
-Every semantic comparison is over a canonical map from accepted entry paths to uncompressed entry bytes. Raw ZIP/JAR container bytes are intentionally not the equality object: timestamps, compression levels, extra fields, member order, and central-directory layout may differ while the modeled build result is identical. Signature files and transformed metadata are outside the uniform merge relation.
+Every semantic comparison is over a canonical map from accepted entry paths to uncompressed entry bytes. Raw ZIP/JAR container bytes are intentionally not the equality object: timestamps, compression levels, extra fields, member order, and central-directory layout may differ while the modeled build result is identical. The manifest is excluded by the current Ant configuration. Other retained
+metadata entries follow the same first-winner rule; category-specific metadata
+transformers are outside the implemented build language.

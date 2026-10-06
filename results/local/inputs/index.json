@@ -1,0 +1,482 @@
+[
+  {
+    "case": "g001",
+    "group": "generated",
+    "phenomenon": "identical",
+    "providers": 2,
+    "path": "inputs/generated/g001.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g002",
+    "group": "generated",
+    "phenomenon": "identical",
+    "providers": 3,
+    "path": "inputs/generated/g002.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g003",
+    "group": "generated",
+    "phenomenon": "identical",
+    "providers": 5,
+    "path": "inputs/generated/g003.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g004",
+    "group": "generated",
+    "phenomenon": "identical",
+    "providers": 8,
+    "path": "inputs/generated/g004.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g005",
+    "group": "generated",
+    "phenomenon": "identical",
+    "providers": 16,
+    "path": "inputs/generated/g005.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g006",
+    "group": "generated",
+    "phenomenon": "observed-chain",
+    "providers": 2,
+    "path": "inputs/generated/g006.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g007",
+    "group": "generated",
+    "phenomenon": "observed-chain",
+    "providers": 3,
+    "path": "inputs/generated/g007.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g008",
+    "group": "generated",
+    "phenomenon": "observed-chain",
+    "providers": 5,
+    "path": "inputs/generated/g008.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g009",
+    "group": "generated",
+    "phenomenon": "observed-chain",
+    "providers": 8,
+    "path": "inputs/generated/g009.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g010",
+    "group": "generated",
+    "phenomenon": "observed-chain",
+    "providers": 16,
+    "path": "inputs/generated/g010.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g011",
+    "group": "generated",
+    "phenomenon": "shared-owner",
+    "providers": 2,
+    "path": "inputs/generated/g011.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g012",
+    "group": "generated",
+    "phenomenon": "shared-owner",
+    "providers": 3,
+    "path": "inputs/generated/g012.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g013",
+    "group": "generated",
+    "phenomenon": "shared-owner",
+    "providers": 5,
+    "path": "inputs/generated/g013.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g014",
+    "group": "generated",
+    "phenomenon": "shared-owner",
+    "providers": 8,
+    "path": "inputs/generated/g014.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g015",
+    "group": "generated",
+    "phenomenon": "shared-owner",
+    "providers": 16,
+    "path": "inputs/generated/g015.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g016",
+    "group": "generated",
+    "phenomenon": "precedence-chain",
+    "providers": 2,
+    "path": "inputs/generated/g016.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g017",
+    "group": "generated",
+    "phenomenon": "precedence-chain",
+    "providers": 3,
+    "path": "inputs/generated/g017.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g018",
+    "group": "generated",
+    "phenomenon": "precedence-chain",
+    "providers": 5,
+    "path": "inputs/generated/g018.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g019",
+    "group": "generated",
+    "phenomenon": "precedence-chain",
+    "providers": 8,
+    "path": "inputs/generated/g019.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g020",
+    "group": "generated",
+    "phenomenon": "precedence-chain",
+    "providers": 16,
+    "path": "inputs/generated/g020.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g021",
+    "group": "generated",
+    "phenomenon": "disjunctive-roots",
+    "providers": 2,
+    "path": "inputs/generated/g021.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g022",
+    "group": "generated",
+    "phenomenon": "disjunctive-roots",
+    "providers": 3,
+    "path": "inputs/generated/g022.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g023",
+    "group": "generated",
+    "phenomenon": "disjunctive-roots",
+    "providers": 5,
+    "path": "inputs/generated/g023.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g024",
+    "group": "generated",
+    "phenomenon": "disjunctive-roots",
+    "providers": 8,
+    "path": "inputs/generated/g024.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g025",
+    "group": "generated",
+    "phenomenon": "disjunctive-roots",
+    "providers": 16,
+    "path": "inputs/generated/g025.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g026",
+    "group": "generated",
+    "phenomenon": "observation-cycle",
+    "providers": 2,
+    "path": "inputs/generated/g026.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g027",
+    "group": "generated",
+    "phenomenon": "observation-cycle",
+    "providers": 3,
+    "path": "inputs/generated/g027.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g028",
+    "group": "generated",
+    "phenomenon": "observation-cycle",
+    "providers": 5,
+    "path": "inputs/generated/g028.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g029",
+    "group": "generated",
+    "phenomenon": "observation-cycle",
+    "providers": 8,
+    "path": "inputs/generated/g029.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g030",
+    "group": "generated",
+    "phenomenon": "observation-cycle",
+    "providers": 16,
+    "path": "inputs/generated/g030.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g031",
+    "group": "generated",
+    "phenomenon": "path-relocation",
+    "providers": 2,
+    "path": "inputs/generated/g031.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g032",
+    "group": "generated",
+    "phenomenon": "path-relocation",
+    "providers": 3,
+    "path": "inputs/generated/g032.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g033",
+    "group": "generated",
+    "phenomenon": "path-relocation",
+    "providers": 5,
+    "path": "inputs/generated/g033.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g034",
+    "group": "generated",
+    "phenomenon": "path-relocation",
+    "providers": 8,
+    "path": "inputs/generated/g034.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g035",
+    "group": "generated",
+    "phenomenon": "path-relocation",
+    "providers": 16,
+    "path": "inputs/generated/g035.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g036",
+    "group": "generated",
+    "phenomenon": "missing-payload",
+    "providers": 2,
+    "path": "inputs/generated/g036.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g037",
+    "group": "generated",
+    "phenomenon": "missing-payload",
+    "providers": 3,
+    "path": "inputs/generated/g037.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g038",
+    "group": "generated",
+    "phenomenon": "missing-payload",
+    "providers": 5,
+    "path": "inputs/generated/g038.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g039",
+    "group": "generated",
+    "phenomenon": "missing-payload",
+    "providers": 8,
+    "path": "inputs/generated/g039.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "g040",
+    "group": "generated",
+    "phenomenon": "missing-payload",
+    "providers": 16,
+    "path": "inputs/generated/g040.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f001",
+    "group": "fixture",
+    "phenomenon": "developer-singleton",
+    "providers": 1,
+    "path": "inputs/fixtures/f001.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f002",
+    "group": "fixture",
+    "phenomenon": "library-singleton",
+    "providers": 1,
+    "path": "inputs/fixtures/f002.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f003",
+    "group": "fixture",
+    "phenomenon": "equal-bytes-distinct-owners",
+    "providers": 2,
+    "path": "inputs/fixtures/f003.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f004",
+    "group": "fixture",
+    "phenomenon": "equal-bytes-same-owner",
+    "providers": 2,
+    "path": "inputs/fixtures/f004.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f005",
+    "group": "fixture",
+    "phenomenon": "no-equal-payload",
+    "providers": 2,
+    "path": "inputs/fixtures/f005.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f006",
+    "group": "fixture",
+    "phenomenon": "no-provider",
+    "providers": 1,
+    "path": "inputs/fixtures/f006.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f007",
+    "group": "fixture",
+    "phenomenon": "incompatible-observations",
+    "providers": 2,
+    "path": "inputs/fixtures/f007.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f008",
+    "group": "fixture",
+    "phenomenon": "precedence-cycle",
+    "providers": 2,
+    "path": "inputs/fixtures/f008.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f009",
+    "group": "fixture",
+    "phenomenon": "self-precedence",
+    "providers": 1,
+    "path": "inputs/fixtures/f009.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f010",
+    "group": "fixture",
+    "phenomenon": "empty-region-set",
+    "providers": 2,
+    "path": "inputs/fixtures/f010.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f011",
+    "group": "fixture",
+    "phenomenon": "unused-provider",
+    "providers": 3,
+    "path": "inputs/fixtures/f011.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f012",
+    "group": "fixture",
+    "phenomenon": "cross-region-forcing",
+    "providers": 2,
+    "path": "inputs/fixtures/f012.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f013",
+    "group": "fixture",
+    "phenomenon": "or-not-and",
+    "providers": 3,
+    "path": "inputs/fixtures/f013.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f014",
+    "group": "fixture",
+    "phenomenon": "developer-precedence",
+    "providers": 2,
+    "path": "inputs/fixtures/f014.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f015",
+    "group": "fixture",
+    "phenomenon": "same-owner-shadowed-provider",
+    "providers": 3,
+    "path": "inputs/fixtures/f015.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f016",
+    "group": "fixture",
+    "phenomenon": "prefix-boundary",
+    "providers": 2,
+    "path": "inputs/fixtures/f016.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f017",
+    "group": "fixture",
+    "phenomenon": "longest-prefix",
+    "providers": 1,
+    "path": "inputs/fixtures/f017.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f018",
+    "group": "fixture",
+    "phenomenon": "simultaneous-not-cascading",
+    "providers": 1,
+    "path": "inputs/fixtures/f018.json",
+    "admission": "accepted"
+  },
+  {
+    "case": "f019",
+    "group": "fixture",
+    "phenomenon": "noninjective-provider-rejected",
+    "providers": 1,
+    "path": "inputs/fixtures/f019.json",
+    "admission": "rejected"
+  },
+  {
+    "case": "f020",
+    "group": "fixture",
+    "phenomenon": "bytecode-relocation-rejected",
+    "providers": 1,
+    "path": "inputs/fixtures/f020.json",
+    "admission": "rejected"
+  }
+]
