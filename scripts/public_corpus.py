@@ -44,7 +44,7 @@ def _ant_xml(pairs, jars: Path, out: Path):
             target=out/f"{r['pair_id']}-{suffix}.zip"
             lines.append(f'    <zip destfile="{escape(str(target),quote=True)}" duplicate="preserve" filesonly="true">')
             for source in seq:
-                lines.append(f'      <zipfileset src="{escape(str(source),quote=True)}" excludes="META-INF/MANIFEST.MF"/>')
+                lines.append(f'      <zipfileset src="{escape(str(source),quote=True)}" excludes="META-INF/MANIFEST.MF" defaultexcludes="no"/>')
             lines.append('    </zip>')
     lines += ['  </target>','</project>']
     return '\n'.join(lines)+'\n'

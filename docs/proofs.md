@@ -86,7 +86,9 @@ contradicting that the process is stuck. This proof also covers cycles in K:
 none can admit a total order, and the algorithm cannot finish them. ∎
 
 Relation to known theory. Introduce the Horn-style rules (G_r,b) for each
-b ∈ B_r and ({a},b) for each edge (a,b) ∈ K. A set accepts (A,q) when q's
+b ∈ B_r and ({a},b) for each edge (a,b) ∈ K with a ≠ b. Encode a self-edge
+(v,v) as (∅,v), which forbids selecting v, rather than the tautology ({v},v).
+A set accepts (A,q) when q's
 presence implies the presence of some element of A. Eligible prefixes are the
 accessible sets of this rule family. Theorem 1 instantiates the tight-path
 argument; it is not a new general antimatroid theorem. Keeping a good set once
