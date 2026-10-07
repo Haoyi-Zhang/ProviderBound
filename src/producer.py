@@ -206,6 +206,7 @@ def infer(data):
         return obstruction_indices[key]
     for r, row in enumerate(model['rows']):
         good = sorted(row['good']); supports = {}; impossible = {}
+        present_key = None
         # All retained orders satisfy the entire input, so reuse their winners
         # here even when this row has a different counterfactual candidate set.
         # Ranks are constructed once per interned order, not once per row.
@@ -218,7 +219,9 @@ def infer(data):
                 continue
             # The added edges depend only on p and the provider set, not on
             # the row name. Reuse only literally identical force obligations.
-            obligation = (p, tuple(sorted(row['present'])))
+            if present_key is None:
+                present_key = tuple(sorted(row['present']))
+            obligation = (p, present_key)
             if obligation not in counterfactual:
                 counterfactual[obligation] = search(model, (r, p))
             order, obstruction = counterfactual[obligation]

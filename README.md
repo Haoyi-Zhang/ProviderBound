@@ -98,7 +98,14 @@ python scripts/verify_public_inputs.py
 python scripts/public_corpus.py --output reproduced/public --workers 4
 python -m unittest discover -s tests -p 'test_*.py' -v
 python tests/oracle.py reproduced
+python -B -m unittest discover -s tests -p 'test_present_provider_tuple.py' -v
 ```
+
+The eight file-free provider-tuple regressions include a test-local literal-order
+reference over the 90,582 labelled tiny models, strict admission and exclusion
+mutations, exact force-query counts, and lazy per-row tuple preparation.
+They check correctness, not runtime. The full-run measurements above remain
+retained campaign evidence; they are not a fresh run of the expanded suite.
 
 ## Repository map
 
@@ -110,6 +117,8 @@ python tests/oracle.py reproduced
 - `tests/oracle.py` compares certificates with exhaustive literal permutation
   enumeration for the frozen up-to-three-provider space; `tests/test_boundary.py`
   also includes 128 fixed-seed four-to-seven-provider differential cases.
+- `tests/test_present_provider_tuple.py` is a self-contained finite regression
+  for the unchanged force keys and once-per-row canonical candidate tuple.
 - `inputs/public/` contains the frozen public JAR corpus, pair inventory, and
   verbatim Debian copyright records.
 - `scripts/public_corpus.py` materializes both Ant orders and checks builder,

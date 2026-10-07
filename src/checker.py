@@ -185,6 +185,7 @@ def verify(raw, cert):
         exclusions = item['excluded']; expected = {p for p in good[r] if model['owners'][p] not in label_set}
         demand(isinstance(exclusions, list) and len(exclusions) == len(expected), 'negative witness coverage')
         excluded = set()
+        present_key = None
         for block in exclusions:
             demand(isinstance(block, dict) and set(block) == {'provider', 'obstruction'}, 'excluded provider fields')
             p = block['provider']
@@ -192,7 +193,9 @@ def verify(raw, cert):
             oi = block['obstruction']
             demand(idx(oi, len(bank)), 'obstruction index')
             # Reuse only an identical obstruction and the identical forced edge set.
-            obligation = (oi, p, tuple(sorted(present[r])))
+            if present_key is None:
+                present_key = tuple(sorted(present[r]))
+            obligation = (oi, p, present_key)
             if obligation not in validated_forces:
                 obstruction(bank[oi], (r, p)); validated_forces.add(obligation)
             used_bank.add(oi); excluded.add(p)
