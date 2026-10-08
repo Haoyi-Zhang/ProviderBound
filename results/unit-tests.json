@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "tests_run": 55,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "wall_seconds": 3.344000000040978,
+  "observed_utc": "2026-10-08T17:15:01.771336+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.28000-SP0",
+    "machine": "AMD64"
+  },
+  "test_log": "unit.txt"
+}

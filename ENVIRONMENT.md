@@ -1,6 +1,6 @@
 # Execution environments and evidence scope
 
-The current finite campaign uses CPython 3.12.14, MSC v.1944 64-bit AMD64, on
+The separate retained Windows finite campaign uses CPython 3.12.14, MSC v.1944 64-bit AMD64, on
 Windows 11 build 28000. The OS reports 20 logical processors. The runner uses
 one scientific process at a time, no third-party Python packages, no network,
 and no JVM or Ant execution. Python assertions are enabled; every child uses
@@ -21,14 +21,22 @@ records the earlier 80 actual Ant builds (27.954036 s), while the historical
 including a 50.026345 s public stage). `results/java_summary.json` retains two
 owned JVM results. These are not new Windows or revised-runner outcomes.
 
-The fresh distributed probe uses 301 orders and 447,688 certificate bytes.
+The distributed probe uses 301 orders and 447,688 certificate bytes.
 The preserved earlier scale summary used 599 orders and 773,434 bytes. This is
 a representation comparison, not a timing speedup claim across machines.
 For the historical public case CSV, the conventional even-sample median is
 292,845 bytes, averaging 292,719 and 292,971; the prior summary stored the upper
 middle value. The table generator recomputes that statistic from raw rows.
 
-The complete Ubuntu/Python 3.12 workflow is supplied but has not been executed
-in this Windows review. Its full campaign requires the runner's existing JDK;
+The manuscript's complete Linux 6.17 / CPython 3.12.14 / Temurin 21.0.12.1
+campaign is in `results/current/`: eight stages, including 80 public Ant builds
+and two owned Java builds, completed in 72.17 wall seconds. The table generator
+uses these measurements, not `results/local/`.
+
+The expanded 55-test suite also passes in a separate Windows/Python 3.12.14
+execution recorded in `results/unit-tests.json` and `results/unit-tests.txt`.
+This test run does not repeat the external builder campaign.
+
+The complete Ubuntu/Python 3.12 workflow requires the runner's existing JDK;
 no dependency installation or toolchain download is performed by the scientific
 commands themselves.

@@ -6,7 +6,7 @@ For each normalized archive entry and caller-supplied label function, the method
 
 ## Units and frames
 
-The formal unit is an entry within a finite provider set. The paired public study unit is an unordered pair from a preserved 107-archive frame; all 5,671 pairs are enumerated. The multi-provider unit is a retained connected conflict group, for which every provider permutation is built. The scale study is a constructed workload.
+The formal unit is an entry within a finite provider set. The paired public study considers all 903 unordered pairs of 43 provider archives; 40 pairs contain collisions, and both orders of each are built, giving 80 concrete builds. Those two-provider worlds are exhaustively enumerated. The constructed multi-provider scale probes test representation and replay, not an external-build permutation study.
 
 ## Descriptive versus generalizable statements
 

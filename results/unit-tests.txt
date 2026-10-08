@@ -1,0 +1,61 @@
+test_all_equal_payload_orders_are_valid (test_boundary.BoundaryTests.test_all_equal_payload_orders_are_valid) ... ok
+test_ambiguity_not_inconsistency (test_boundary.BoundaryTests.test_ambiguity_not_inconsistency) ... ok
+test_bool_is_not_index (test_boundary.BoundaryTests.test_bool_is_not_index) ... ok
+test_cannot_certify_all_orders_from_one_witness (test_boundary.BoundaryTests.test_cannot_certify_all_orders_from_one_witness) ... ok
+test_concrete_archive_adapters_and_safety (test_boundary.BoundaryTests.test_concrete_archive_adapters_and_safety) ... ok
+test_concrete_archive_output_union_rejected (test_boundary.BoundaryTests.test_concrete_archive_output_union_rejected) ... ok
+test_delete_negative_obligation (test_boundary.BoundaryTests.test_delete_negative_obligation) ... ok
+test_duplicate_region_omission (test_boundary.BoundaryTests.test_duplicate_region_omission) ... ok
+test_empty_trap (test_boundary.BoundaryTests.test_empty_trap) ... ok
+test_empty_witness_bank (test_boundary.BoundaryTests.test_empty_witness_bank) ... ok
+test_every_stored_input (test_boundary.BoundaryTests.test_every_stored_input) ... ok
+test_false_inconsistency (test_boundary.BoundaryTests.test_false_inconsistency) ... ok
+test_false_row_blocker (test_boundary.BoundaryTests.test_false_row_blocker) ... ok
+test_forged_trap_without_reasons (test_boundary.BoundaryTests.test_forged_trap_without_reasons) ... ok
+test_invented_precedence_reason (test_boundary.BoundaryTests.test_invented_precedence_reason) ... ok
+test_json_duplicates_and_file_bounds (test_boundary.BoundaryTests.test_json_duplicates_and_file_bounds) ... ok
+test_missing_candidate_is_inconsistent (test_boundary.BoundaryTests.test_missing_candidate_is_inconsistent) ... ok
+test_missing_inventory_is_not_detectable_in_general (test_boundary.BoundaryTests.test_missing_inventory_is_not_detectable_in_general) ... ok
+test_no_checker_inference_import (test_boundary.BoundaryTests.test_no_checker_inference_import) ... ok
+test_nonlocal_unique (test_boundary.BoundaryTests.test_nonlocal_unique) ... ok
+test_observation_weakening_widens (test_boundary.BoundaryTests.test_observation_weakening_widens) ... ok
+test_obstruction_index_boolean (test_boundary.BoundaryTests.test_obstruction_index_boolean) ... ok
+test_obstruction_index_out_of_range (test_boundary.BoundaryTests.test_obstruction_index_out_of_range) ... ok
+test_or_is_not_and (test_boundary.BoundaryTests.test_or_is_not_and) ... ok
+test_owner_projection_is_not_provider_projection (test_boundary.BoundaryTests.test_owner_projection_is_not_provider_projection) ... ok
+test_renaming_invariance (test_boundary.BoundaryTests.test_renaming_invariance) ... ok
+test_repeated_provider_order (test_boundary.BoundaryTests.test_repeated_provider_order) ... ok
+test_same_trap_not_reusable_for_different_force (test_boundary.BoundaryTests.test_same_trap_not_reusable_for_different_force) ... ok
+test_seeded_larger_models_against_literal_orders (test_boundary.BoundaryTests.test_seeded_larger_models_against_literal_orders)
+Differentially check producer/checker on deterministic 4--7-provider cases. ... ok
+test_self_cycle (test_boundary.BoundaryTests.test_self_cycle) ... ok
+test_shared_obligation_round_trip (test_boundary.BoundaryTests.test_shared_obligation_round_trip) ... ok
+test_total_order_collapses_or_rejects (test_boundary.BoundaryTests.test_total_order_collapses_or_rejects) ... ok
+test_unsupported_input_is_not_ambiguous (test_boundary.BoundaryTests.test_unsupported_input_is_not_ambiguous) ... ok
+test_unused_obstruction_rejected (test_boundary.BoundaryTests.test_unused_obstruction_rejected) ... ok
+test_witness_for_wrong_owner (test_boundary.BoundaryTests.test_witness_for_wrong_owner) ... ok
+test_wrong_category (test_boundary.BoundaryTests.test_wrong_category) ... ok
+test_wrong_forced_edge (test_boundary.BoundaryTests.test_wrong_forced_edge) ... ok
+test_wrong_order (test_boundary.BoundaryTests.test_wrong_order) ... ok
+test_wrong_owner (test_boundary.BoundaryTests.test_wrong_owner) ... ok
+test_archive_path_grammar_agrees_without_normalizing_spelling (test_completion.CompletionTests.test_archive_path_grammar_agrees_without_normalizing_spelling) ... ok
+test_byte_equality_is_not_a_digest_premise (test_completion.CompletionTests.test_byte_equality_is_not_a_digest_premise) ... ok
+test_even_certificate_sample_uses_two_middle_values (test_completion.CompletionTests.test_even_certificate_sample_uses_two_middle_values) ... ok
+test_fresh_fixture_regeneration_matches_all_retained_inputs (test_completion.CompletionTests.test_fresh_fixture_regeneration_matches_all_retained_inputs) ... ok
+test_nonempty_output_is_rejected_without_overwrite (test_completion.CompletionTests.test_nonempty_output_is_rejected_without_overwrite) ... ok
+test_owned_archive_pair_replays_serialized_certificates (test_completion.CompletionTests.test_owned_archive_pair_replays_serialized_certificates) ... ok
+test_reuse_world_across_different_candidate_sets (test_completion.CompletionTests.test_reuse_world_across_different_candidate_sets) ... ok
+test_unavailable_rss_is_null (test_completion.CompletionTests.test_unavailable_rss_is_null) ... ok
+test_admission_stays_strict (test_present_provider_tuple.PresentProviderTupleTests.test_admission_stays_strict) ... ok
+test_checker_tuple_once_per_exclusion_row (test_present_provider_tuple.PresentProviderTupleTests.test_checker_tuple_once_per_exclusion_row) ... ok
+test_exclusion_reasons_and_scope_remain_mandatory (test_present_provider_tuple.PresentProviderTupleTests.test_exclusion_reasons_and_scope_remain_mandatory) ... ok
+test_frozen_finite_family_against_literal_orders (test_present_provider_tuple.PresentProviderTupleTests.test_frozen_finite_family_against_literal_orders) ... ok
+test_no_rows_empty_candidates_and_self_cycle (test_present_provider_tuple.PresentProviderTupleTests.test_no_rows_empty_candidates_and_self_cycle) ... ok
+test_one_tuple_per_queried_row_and_exact_query_count (test_present_provider_tuple.PresentProviderTupleTests.test_one_tuple_per_queried_row_and_exact_query_count) ... ok
+test_witness_reuse_with_different_present_sets (test_present_provider_tuple.PresentProviderTupleTests.test_witness_reuse_with_different_present_sets) ... ok
+test_zero_queries_do_not_prepare_tuple (test_present_provider_tuple.PresentProviderTupleTests.test_zero_queries_do_not_prepare_tuple) ... ok
+
+----------------------------------------------------------------------
+Ran 55 tests in 3.343s
+
+OK
