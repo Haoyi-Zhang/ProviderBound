@@ -89,7 +89,7 @@ point for this same campaign with release-manifest integrity verification. The o
 
 `.github/workflows/scientific-checks.yml` runs the complete fresh Ant/JVM
 campaign on Ubuntu/Python 3.12 within 30 minutes and uploads raw results and
-logs even on failure. Preparing this workflow is not evidence of a CI run.
+logs even on failure.
 
 Useful focused commands are:
 
