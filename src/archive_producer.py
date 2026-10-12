@@ -24,6 +24,18 @@ def _safe_name(name: str) -> bool:
     parts = name.split('/')
     return bool(parts) and all(part not in ("", ".", "..") for part in parts)
 
+def _member_name(info) -> str:
+    """Admit the original decoded member spelling, before any exclusions."""
+    original = info.orig_filename
+    # ZipInfo.filename may already be NUL-truncated or separator-normalized.
+    # A certificate must not silently attest to that altered spelling.
+    if not isinstance(original, str) or original != info.filename:
+        raise ArchiveInputError("archive entry name changed by ZIP metadata parser")
+    lexical = original[:-1] if original.endswith('/') else original
+    if not _safe_name(lexical):
+        raise ArchiveInputError("unsafe original archive entry name")
+    return original
+
 def read_archive(path: str | Path) -> dict[str, bytes]:
     source = Path(path)
     if not source.is_file() or source.stat().st_size > MAX_ARCHIVE_BYTES:
@@ -33,13 +45,11 @@ def read_archive(path: str | Path) -> dict[str, bytes]:
     try:
         with ZipFile(source) as archive:
             for info in archive.infolist():
+                name = _member_name(info)
                 if info.is_dir():
                     continue
-                name = info.filename
                 if name.upper() == MANIFEST.upper():
                     continue
-                if not _safe_name(name):
-                    raise ArchiveInputError("unsafe archive entry name")
                 if name in result:
                     raise ArchiveInputError("duplicate archive entry name")
                 if info.file_size < 0 or info.file_size > MAX_ENTRY_BYTES:

@@ -17,6 +17,15 @@ def _name_ok(value):
     fields = value.split('/')
     return all(field not in ('', '.', '..') for field in fields)
 
+def _entry_key(member):
+    raw = member.orig_filename
+    if type(raw) is not str or raw != member.filename:
+        raise ArchiveRejected('ZIP member spelling was altered during parsing')
+    fields_name = raw[:-1] if raw.endswith('/') else raw
+    if not _name_ok(fields_name):
+        raise ArchiveRejected('invalid original member spelling')
+    return raw
+
 def unpack_archive(filename):
     filename = Path(filename)
     if not filename.exists() or not filename.is_file():
@@ -31,9 +40,9 @@ def unpack_archive(filename):
     with archive:
         members = archive.infolist()
         for member in members:
+            key = _entry_key(member)
             if member.is_dir():
                 continue
-            key = member.filename
             if key.upper() == 'META-INF/MANIFEST.MF':
                 continue
             if not _name_ok(key) or key in table:
@@ -43,7 +52,7 @@ def unpack_archive(filename):
             amount += member.file_size
             if len(table) + 1 > _LIMIT_COUNT or amount > _LIMIT_TOTAL:
                 raise ArchiveRejected('expanded archive limit')
-            payload = archive.read(key)
+            payload = archive.read(member)
             if len(payload) != member.file_size:
                 raise ArchiveRejected('declared member size mismatch')
             table[key] = payload

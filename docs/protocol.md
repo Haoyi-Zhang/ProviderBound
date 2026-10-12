@@ -35,6 +35,28 @@ Any `.class` or `.dex` entry in a provider with relocation rules is rejected.
 The producer and checker independently reconstruct P and G from this form. The
 inventory still does not prove which artifacts the actual build consumed.
 
+Names in JSON inventory form are symbolic nonempty strings, not filesystem
+paths. Prefix substitution, uniqueness and the closed union are checked, but
+archive-relative spelling is not imposed by `producer.normalize` or
+`checker.read_model`. A symbolic inventory certificate therefore does not attest
+that its names can be admitted as ZIP/JAR members.
+
+## Concrete archive admission
+
+`archive_producer.read_archive` and `archive_checker.unpack_archive` separately
+validate ZIP/JAR member metadata. Each checks `ZipInfo.orig_filename`, the
+original decoded spelling, before excluding a directory or manifest. It must
+equal `filename` unchanged; NUL truncation or separator rewriting is rejected,
+not certified as a renamed entry. For file keys, the spelling must be nonempty,
+must not start with `/` or contain NUL or backslash, and its slash-separated
+components must exclude empty strings, `.` and `..`. A directory may have one
+terminal slash, with its preceding components subject to the same checks.
+Directories and `META-INF/MANIFEST.MF` are then excluded. Duplicate admitted file
+keys and the documented size/count limits remain checked. Payloads are read by
+member object and compared byte-for-byte; nothing is extracted to the filesystem.
+This lexical grammar is not a guarantee of safe extraction on every host and
+the adapters are not general archive-security validators.
+
 ## Classified certificate
 
 The exact top-level fields are `status`, `orders`, `obstructions`, and `regions`.

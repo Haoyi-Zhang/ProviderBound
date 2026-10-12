@@ -22,14 +22,14 @@ real Apache Ant archive builds.
 | Evidence | Result |
 |---|---:|
 | Exact finite oracle | 45,291 structural / 90,582 owner-labelled models; 0 mismatches |
-| Regression and mutation tests | 55 passed in a separate Windows run; 47 in the retained Linux campaign |
+| Regression and mutation tests | 68 passed in a separate Windows run; 47 in the retained Linux campaign |
 | Public provider archives | 43 licensed JARs, plus 2 Ant builder JARs |
 | Exhaustive public collision pairs | 40 of all 903 unordered pairs |
 | Concrete public builds | 80 Ant builds: both orders for every collision pair |
 | Public region observations | 165,630 total; 8,156 collision-region observations |
 | External-oracle/checker disagreement | 0 |
 | Hidden source flips with identical output maps | 3,471 regions across 30 reversed pairs |
-| Local equal-byte ambiguities resolved globally | 100 |
+| Local equal-byte ambiguities resolved globally | 100 with per-JAR labels; 0 with Debian-package labels |
 | Generated/boundary campaign | 60 cases: 43 classified, 15 inconsistent, 2 rejected |
 | Largest fixed probe | 300 providers and 20,000 regions; disk replay passed |
 
@@ -41,7 +41,8 @@ Linux 6.17 / CPython 3.12.14 / Temurin 21.0.12.1 campaign: eight successful
 stages in 72.17 wall seconds, including all 80 Ant builds and both owned Java
 builds. Its public stage took 58.43 seconds; all three scale certificates
 replayed. Earlier Linux records and `results/local/` Windows finite results
-retain their original measurements. The paper tables read only current results.
+retain their original measurements. Paper tables distinguish the retained
+campaign from the separate Windows tests and owner-granularity replay.
 
 ## Reproduce everything
 
@@ -99,14 +100,32 @@ python scripts/public_corpus.py --output reproduced/public --workers 4
 python -m unittest discover -s tests -p 'test_*.py' -v
 python tests/oracle.py reproduced
 python -B -m unittest discover -s tests -p 'test_present_provider_tuple.py' -v
+python -B scripts/analyze_owner_granularity.py
 ```
 
 The eight file-free provider-tuple regressions include a test-local literal-order
 reference over the 90,582 labelled tiny models, strict admission and exclusion
 mutations, exact force-query counts, and lazy per-row tuple preparation.
-They check correctness, not runtime. All 55 current tests pass in the separate
+They check correctness, not runtime. All 68 current tests pass in the separate
 Windows/Python 3.12.14 run recorded in `results/unit-tests.json` and
 `results/unit-tests.txt`; the full-campaign measurements above remain separate.
+
+The archive-metadata tests validate original decoded ZIP member names before
+directory or manifest filtering. They use in-memory metadata, not constructed
+malformed archives. The concrete adapters reject parser-altered names, including
+NUL truncation. JSON inventory names are symbolic nonempty strings and do not
+carry the stricter archive-path admission guarantee; see `docs/protocol.md`.
+
+`scripts/analyze_owner_granularity.py` reconstructs both first-winner content
+maps from retained bytes without executing Ant or provider classes. It compares
+local bytes and certified answers under the same information and the same label
+map, checking archive-label counts against all 80 retained case records.
+`results/owner-granularity.json` records 100 extra resolutions for per-JAR
+labels, but zero for the recorded Debian binary-package grouping: both methods
+are exact on all 8,156 collision observations with mean package-set size one.
+The 100 provider-level narrowings remain. No public provider is labelled
+developer, so the developer-inclusion policy changes on zero regions. This is
+not a downstream analyzer, vulnerability, suppression, or call-graph experiment.
 
 ## Repository map
 

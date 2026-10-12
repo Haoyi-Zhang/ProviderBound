@@ -110,6 +110,27 @@ whether both winners are retained when reversing a build changes provenance.
 These methods are information probes, not replicas of published library
 identification systems.
 
+## Owner-label granularity diagnostic
+
+The separate `scripts/analyze_owner_granularity.py` replay uses the current
+43-provider corpus, not the archived 107-JAR frame. It reconstructs both
+first-winner maps from retained bytes without running Ant or provider code.
+Certificates are checked against literal two-order enumeration, and the
+archive-label counts are compared with all 80 `results/current/public/cases.csv`
+records. The comparison changes only the owner-label map: the recorded per-JAR
+owner field versus the recorded Debian binary-package field (version omitted).
+Local bytes and certified sets receive the same map and the same inventories,
+observations and empty precedence. Historical order is not supplied to either
+method. `results/owner-granularity.json` retains the per-pair counts and paths.
+
+The 100 per-JAR narrowings occur in Batik pairs p021 (96) and p027 (four).
+Grouping both methods by binary package removes all 100 owner-level narrowings;
+local and certified package sets are exact on every collision observation.
+Provider-level exclusions remain. The public corpus contains no developer
+provider, so the manuscript's developer-inclusion policy does not change on any
+region. This diagnostic does not measure analyzer findings, call graphs,
+security defects or suppression changes.
+
 ## Additional probes
 
 Three deterministic scale recipes exercise repeated and distributed obligations:

@@ -1,3 +1,11 @@
+test_adapters_validate_before_manifest_or_directory_filter (test_archive_metadata.ArchiveMetadataTests.test_adapters_validate_before_manifest_or_directory_filter) ... ok
+test_changed_spelling_is_not_canonicalized (test_archive_metadata.ArchiveMetadataTests.test_changed_spelling_is_not_canonicalized) ... ok
+test_invalid_original_relative_names (test_archive_metadata.ArchiveMetadataTests.test_invalid_original_relative_names) ... ok
+test_nul_in_original_metadata_is_rejected (test_archive_metadata.ArchiveMetadataTests.test_nul_in_original_metadata_is_rejected) ... ok
+test_symbolic_inventory_names_are_not_archive_admission (test_archive_metadata.ArchiveMetadataTests.test_symbolic_inventory_names_are_not_archive_admission) ... ok
+test_unchanged_file_and_directory_metadata (test_archive_metadata.ArchiveMetadataTests.test_unchanged_file_and_directory_metadata) ... ok
+test_unchanged_nul_metadata_is_also_rejected (test_archive_metadata.ArchiveMetadataTests.test_unchanged_nul_metadata_is_also_rejected) ... ok
+test_valid_excluded_members_do_not_read_payloads (test_archive_metadata.ArchiveMetadataTests.test_valid_excluded_members_do_not_read_payloads) ... ok
 test_all_equal_payload_orders_are_valid (test_boundary.BoundaryTests.test_all_equal_payload_orders_are_valid) ... ok
 test_ambiguity_not_inconsistency (test_boundary.BoundaryTests.test_ambiguity_not_inconsistency) ... ok
 test_bool_is_not_index (test_boundary.BoundaryTests.test_bool_is_not_index) ... ok
@@ -46,6 +54,11 @@ test_nonempty_output_is_rejected_without_overwrite (test_completion.CompletionTe
 test_owned_archive_pair_replays_serialized_certificates (test_completion.CompletionTests.test_owned_archive_pair_replays_serialized_certificates) ... ok
 test_reuse_world_across_different_candidate_sets (test_completion.CompletionTests.test_reuse_world_across_different_candidate_sets) ... ok
 test_unavailable_rss_is_null (test_completion.CompletionTests.test_unavailable_rss_is_null) ... ok
+test_developer_inclusion_policy_is_measured_separately (test_owner_granularity.OwnerGranularityTests.test_developer_inclusion_policy_is_measured_separately) ... ok
+test_distinct_package_labels_preserve_owner_gain (test_owner_granularity.OwnerGranularityTests.test_distinct_package_labels_preserve_owner_gain) ... ok
+test_equal_outputs_remain_ambiguous_without_order_evidence (test_owner_granularity.OwnerGranularityTests.test_equal_outputs_remain_ambiguous_without_order_evidence) ... ok
+test_noncollision_regions_do_not_change_metric_denominator (test_owner_granularity.OwnerGranularityTests.test_noncollision_regions_do_not_change_metric_denominator) ... ok
+test_same_package_removes_owner_gain_not_provider_gain (test_owner_granularity.OwnerGranularityTests.test_same_package_removes_owner_gain_not_provider_gain) ... ok
 test_admission_stays_strict (test_present_provider_tuple.PresentProviderTupleTests.test_admission_stays_strict) ... ok
 test_checker_tuple_once_per_exclusion_row (test_present_provider_tuple.PresentProviderTupleTests.test_checker_tuple_once_per_exclusion_row) ... ok
 test_exclusion_reasons_and_scope_remain_mandatory (test_present_provider_tuple.PresentProviderTupleTests.test_exclusion_reasons_and_scope_remain_mandatory) ... ok
@@ -56,6 +69,7 @@ test_witness_reuse_with_different_present_sets (test_present_provider_tuple.Pres
 test_zero_queries_do_not_prepare_tuple (test_present_provider_tuple.PresentProviderTupleTests.test_zero_queries_do_not_prepare_tuple) ... ok
 
 ----------------------------------------------------------------------
-Ran 55 tests in 3.343s
+Ran 68 tests in 3.367s
 
 OK
+wrote 60 cases: 40 generated + 20 boundary fixtures

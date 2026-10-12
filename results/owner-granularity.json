@@ -1,0 +1,1395 @@
+{
+  "archive_adapter_disagreements": 0,
+  "certificate_oracle_disagreements": 0,
+  "downstream_interpretation": "No developer/library scope changes in this all-library corpus. Package-level attribution gains must be evaluated after applying the package map to both methods. Provider-history resolution does not disappear when labels are merged; no vulnerability, finding-suppression or call-graph outcome is measured.",
+  "information_control": "Same inventory, exact output bytes, empty precedence and identical label map for both methods; no historical order given to inference.",
+  "label_schemas": {
+    "archive": "Recorded per-JAR owner field",
+    "debian_package": "deb: plus recorded Debian binary-package field; version is not part of this label"
+  },
+  "metrics": {
+    "archive": {
+      "admissible_orders": 140,
+      "certified_ambiguous": 6942,
+      "certified_exact_count": 8156,
+      "certified_exact_rate": 1.0,
+      "certified_mean_set_size": 1.8511525257479156,
+      "certified_set_size_sum": 15098,
+      "collision_observations": 8156,
+      "developer_scope_differences": 0,
+      "entry_regions": 165630,
+      "identical_output_pair_paths_with_owner_flip": 3471,
+      "local_ambiguous": 7042,
+      "local_exact_count": 8056,
+      "local_exact_rate": 0.9877390877881315,
+      "local_mean_set_size": 1.8634134379597842,
+      "local_set_size_sum": 15198,
+      "provider_narrowings": 100,
+      "removed_owner_associations": 100,
+      "strict_narrowings": 100
+    },
+    "debian_package": {
+      "admissible_orders": 140,
+      "certified_ambiguous": 0,
+      "certified_exact_count": 8156,
+      "certified_exact_rate": 1.0,
+      "certified_mean_set_size": 1.0,
+      "certified_set_size_sum": 8156,
+      "collision_observations": 8156,
+      "developer_scope_differences": 0,
+      "entry_regions": 165630,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "local_ambiguous": 0,
+      "local_exact_count": 8156,
+      "local_exact_rate": 1.0,
+      "local_mean_set_size": 1.0,
+      "local_set_size_sum": 8156,
+      "provider_narrowings": 100,
+      "removed_owner_associations": 0,
+      "strict_narrowings": 0
+    }
+  },
+  "modeled_outputs_per_schema": 80,
+  "narrowing_pairs": [
+    "p021",
+    "p027"
+  ],
+  "pair_cases": 40,
+  "pairs": [
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-anim-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 401,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-anim-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p001",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-anim-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p001",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-awt-util-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 226,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-awt-util-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p002",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-awt-util-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p002",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-bridge-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 405,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-bridge-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p003",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-bridge-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p003",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-codec-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 50,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-codec-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p004",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-codec-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p004",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-constants-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 3,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-constants-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p005",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-constants-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p005",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-css-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 242,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-css-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p006",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-css-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p006",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-dom-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 118,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-dom-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p007",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-dom-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p007",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-ext-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 9,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-ext-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p008",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-ext-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p008",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-extension-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 52,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-extension-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p009",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-extension-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p009",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-gui-util-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 210,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-gui-util-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p010",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-gui-util-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p010",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-gvt-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 105,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-gvt-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p011",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-gvt-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p011",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-i18n-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 6,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-i18n-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p012",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-i18n-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p012",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-parser-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 59,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-parser-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p013",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-parser-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p013",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-rasterizer-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 3,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-rasterizer-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p014",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-rasterizer-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p014",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-script-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 16,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-script-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p015",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-script-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p015",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-slideshow-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 6,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-slideshow-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p016",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-slideshow-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p016",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svg-dom-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 121,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-svg-dom-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p017",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svg-dom-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p017",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svgbrowser-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 302,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-svgbrowser-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p018",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svgbrowser-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p018",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svggen-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 160,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-svggen-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p019",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svggen-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p019",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svgpp-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 13,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-svgpp-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p020",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svgpp-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p020",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svgrasterizer-1.18.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-svgrasterizer-1.18"
+      ],
+      "narrowed_paths": [
+        "META-INF/LICENSE",
+        "META-INF/NOTICE",
+        "org/apache/batik/apps/rasterizer/DefaultSVGConverterController.class",
+        "org/apache/batik/apps/rasterizer/DestinationType.class",
+        "org/apache/batik/apps/rasterizer/Main$1.class",
+        "org/apache/batik/apps/rasterizer/Main$10.class",
+        "org/apache/batik/apps/rasterizer/Main$11.class",
+        "org/apache/batik/apps/rasterizer/Main$12.class",
+        "org/apache/batik/apps/rasterizer/Main$13.class",
+        "org/apache/batik/apps/rasterizer/Main$14.class",
+        "org/apache/batik/apps/rasterizer/Main$15.class",
+        "org/apache/batik/apps/rasterizer/Main$16.class",
+        "org/apache/batik/apps/rasterizer/Main$17.class",
+        "org/apache/batik/apps/rasterizer/Main$18.class",
+        "org/apache/batik/apps/rasterizer/Main$19.class",
+        "org/apache/batik/apps/rasterizer/Main$2.class",
+        "org/apache/batik/apps/rasterizer/Main$20.class",
+        "org/apache/batik/apps/rasterizer/Main$21.class",
+        "org/apache/batik/apps/rasterizer/Main$22.class",
+        "org/apache/batik/apps/rasterizer/Main$23.class",
+        "org/apache/batik/apps/rasterizer/Main$3.class",
+        "org/apache/batik/apps/rasterizer/Main$4.class",
+        "org/apache/batik/apps/rasterizer/Main$5.class",
+        "org/apache/batik/apps/rasterizer/Main$6.class",
+        "org/apache/batik/apps/rasterizer/Main$7.class",
+        "org/apache/batik/apps/rasterizer/Main$8.class",
+        "org/apache/batik/apps/rasterizer/Main$9.class",
+        "org/apache/batik/apps/rasterizer/Main$AbstractOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$ColorOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$FloatOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$NoValueOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$OptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$RectangleOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$SingleValueOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$TimeOptionHandler$1.class",
+        "org/apache/batik/apps/rasterizer/Main$TimeOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main.class",
+        "org/apache/batik/apps/rasterizer/Messages.class",
+        "org/apache/batik/apps/rasterizer/SVGConverter$SVGFileFilter.class",
+        "org/apache/batik/apps/rasterizer/SVGConverter.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterController.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterException.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterFileSource.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterSource.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterURLSource.class",
+        "org/apache/batik/apps/rasterizer/resources/Messages.properties",
+        "org/apache/batik/apps/rasterizer/resources/rasterizer.bin.policy",
+        "org/apache/batik/apps/rasterizer/resources/rasterizer.policy.ref"
+      ],
+      "pair_id": "p021",
+      "scheme": "archive",
+      "strict_narrowings": 96
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svgrasterizer-1.18.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p021",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-swing-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 170,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-swing-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p022",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-swing-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p022",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-transcoder-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 63,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-transcoder-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p023",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-transcoder-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p023",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-ttf2svg-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 3,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-ttf2svg-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p024",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-ttf2svg-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p024",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-util-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 85,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-util-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p025",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-util-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p025",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-xml-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 9,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-xml-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p026",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-xml-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p026",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-rasterizer-1.18.jar",
+        "batik-svgrasterizer-1.18.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:batik-rasterizer-1.18",
+        "lib:batik-svgrasterizer-1.18"
+      ],
+      "narrowed_paths": [
+        "META-INF/LICENSE",
+        "META-INF/NOTICE"
+      ],
+      "pair_id": "p027",
+      "scheme": "archive",
+      "strict_narrowings": 4
+    },
+    {
+      "archives": [
+        "batik-rasterizer-1.18.jar",
+        "batik-svgrasterizer-1.18.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p027",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "flow-engine-0.9.4.jar",
+        "liblayout-0.2.10.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:flow-engine-0.9.4",
+        "lib:liblayout-0.2.10"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p028",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "flow-engine-0.9.4.jar",
+        "liblayout-0.2.10.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libpentaho-reporting-flow-engine-java",
+        "deb:liblayout-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p028",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "flow-engine-0.9.4.jar",
+        "libxml-1.1.7.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:flow-engine-0.9.4",
+        "lib:libxml-1.1.7"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p029",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "flow-engine-0.9.4.jar",
+        "libxml-1.1.7.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libpentaho-reporting-flow-engine-java",
+        "deb:libxml-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p029",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "hsqldb1.8.0-1.8.0.10+dfsg.jar",
+        "hsqldbutil1.8.0-1.8.0.10+dfsg.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 106,
+      "labels": [
+        "lib:hsqldb1.8.0-1.8.0.10+dfsg",
+        "lib:hsqldbutil1.8.0-1.8.0.10+dfsg"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p030",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "hsqldb1.8.0-1.8.0.10+dfsg.jar",
+        "hsqldbutil1.8.0-1.8.0.10+dfsg.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libhsqldb1.8.0-java",
+        "deb:libhsqldb1.8.0-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p030",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "javax.mail-1.6.5.jar",
+        "javax.mail-api-1.6.5.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 140,
+      "labels": [
+        "lib:javax.mail-1.6.5",
+        "lib:javax.mail-api-1.6.5"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p031",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "javax.mail-1.6.5.jar",
+        "javax.mail-api-1.6.5.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libmail-java",
+        "deb:libmail-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p031",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "javax.mail-1.6.5.jar",
+        "mailapi-1.6.5.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 203,
+      "labels": [
+        "lib:javax.mail-1.6.5",
+        "lib:mailapi-1.6.5"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p032",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "javax.mail-1.6.5.jar",
+        "mailapi-1.6.5.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libmail-java",
+        "deb:libmail-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p032",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "javax.mail-api-1.6.5.jar",
+        "mailapi-1.6.5.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 140,
+      "labels": [
+        "lib:javax.mail-api-1.6.5",
+        "lib:mailapi-1.6.5"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p033",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "javax.mail-api-1.6.5.jar",
+        "mailapi-1.6.5.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libmail-java",
+        "deb:libmail-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p033",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "liblayout-0.2.10.jar",
+        "libxml-1.1.7.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:liblayout-0.2.10",
+        "lib:libxml-1.1.7"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p034",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "liblayout-0.2.10.jar",
+        "libxml-1.1.7.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:liblayout-java",
+        "deb:libxml-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p034",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "libreoffice-25.2.3.jar",
+        "unoloader-25.2.3.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:libreoffice-25.2.3",
+        "lib:unoloader-25.2.3"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p035",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "libreoffice-25.2.3.jar",
+        "unoloader-25.2.3.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:liblibreoffice-java",
+        "deb:libunoloader-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p035",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "sac.jar",
+        "xml-apis-1.3.04.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:sac",
+        "lib:xml-apis-1.3.04"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p036",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "sac.jar",
+        "xml-apis-1.3.04.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libsac-java",
+        "deb:libjaxp1.3-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p036",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "sac.jar",
+        "xml-apis-ext-1.4.01.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:sac",
+        "lib:xml-apis-ext-1.4.01"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p037",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "sac.jar",
+        "xml-apis-ext-1.4.01.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libsac-java",
+        "deb:libxml-commons-external-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p037",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "websocket-api.jar",
+        "websocket-client-api.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 45,
+      "labels": [
+        "lib:websocket-api",
+        "lib:websocket-client-api"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p038",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "websocket-api.jar",
+        "websocket-client-api.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libwebsocket-api-java",
+        "deb:libwebsocket-api-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p038",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "xml-apis-1.3.04.jar",
+        "xml-apis-1.4.01.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:xml-apis-1.3.04",
+        "lib:xml-apis-1.4.01"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p039",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "xml-apis-1.3.04.jar",
+        "xml-apis-1.4.01.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libjaxp1.3-java",
+        "deb:libxml-commons-external-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p039",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "xml-apis-1.3.04.jar",
+        "xml-apis-ext-1.4.01.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:xml-apis-1.3.04",
+        "lib:xml-apis-ext-1.4.01"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p040",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "xml-apis-1.3.04.jar",
+        "xml-apis-ext-1.4.01.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libjaxp1.3-java",
+        "deb:libxml-commons-external-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p040",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    }
+  ],
+  "provider_archives": 43,
+  "retained_case_count_checks": 80,
+  "scope": "New model replay on retained provider bytes; no new Ant builds or downstream analyzer execution."
+}

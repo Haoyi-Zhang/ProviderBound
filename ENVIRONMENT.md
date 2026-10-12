@@ -33,9 +33,16 @@ campaign is in `results/current/`: eight stages, including 80 public Ant builds
 and two owned Java builds, completed in 72.17 wall seconds. The table generator
 uses these measurements, not `results/local/`.
 
-The expanded 55-test suite also passes in a separate Windows/Python 3.12.14
+The expanded 68-test suite also passes in a separate Windows/Python 3.12.14
 execution recorded in `results/unit-tests.json` and `results/unit-tests.txt`.
 This test run does not repeat the external builder campaign.
+
+`results/owner-granularity.json` is a separate Windows model replay using
+retained provider bytes and recorded Debian binary-package labels. It does not
+execute Ant or any provider class. Its archive-label counts match all 80 retained
+case records; package-labelled local and certified sets are compared under the
+same input information. No new timing comparison or downstream analyzer
+measurement is attached to this replay.
 
 The complete Ubuntu/Python 3.12 workflow requires the runner's existing JDK;
 no dependency installation or toolchain download is performed by the scientific
