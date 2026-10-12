@@ -48,7 +48,7 @@ def read_archive(path: str | Path) -> dict[str, bytes]:
                 name = _member_name(info)
                 if info.is_dir():
                     continue
-                if name.upper() == MANIFEST.upper():
+                if name == MANIFEST:
                     continue
                 if name in result:
                     raise ArchiveInputError("duplicate archive entry name")

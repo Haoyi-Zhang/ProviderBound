@@ -1,15 +1,39 @@
 {
-  "status": "passed",
-  "tests_run": 68,
-  "failures": 0,
-  "errors": 0,
-  "skipped": 0,
-  "wall_seconds": 3.5109938,
-  "observed_utc": "2026-10-11T23:18:57+00:00",
   "environment": {
-    "python": "3.12.14",
+    "assertions_enabled": true,
+    "bytecode_writes_disabled": true,
+    "machine": "AMD64",
     "platform": "Windows-11-10.0.28000-SP0",
-    "machine": "AMD64"
+    "python": "3.12.14"
   },
-  "test_log": "unit-tests.txt"
+  "errors": 0,
+  "failures": 0,
+  "observed_utc": "2026-10-12T18:20:47.181139+00:00",
+  "scope": "Full current artifact unit discovery; no Git, Ant/JVM, foreign program, network or extraction.",
+  "skipped": 0,
+  "source_manifest": {
+    "scripts/analyze_owner_granularity.py": "efbf9bf81f7d5c726e17fdd7b402b9402205c9100720236b686d03bc0fc8b8bd",
+    "scripts/make_inputs.py": "7ef39d0c763ea688b5eb9f1126259ba116a8572d0062e7fe438fec825fcd87d7",
+    "scripts/public_corpus.py": "869942f1807ca9da68fe2b65730a741a8d9576ac21d25d19df8f6e73212d1336",
+    "scripts/release_manifest.py": "157b6aa07f7df765d524836c4aaccedc17a9702ec8ea2afcf41b597ad4f0ecfd",
+    "scripts/reproduce.py": "2827b213b6b24c31c302e8a75a99d1f0f8cd291909bf4a7e7aed2f1fc06855f7",
+    "scripts/reproduce_release.py": "097770a6e765b7ed732367d9ca4dff4bd190ed73815f1cca96513144bf37777b",
+    "scripts/telemetry.py": "7b17bec09919358bcb906605a574e325ee5f66cea148b2a5f7b8cc7f2f6e476f",
+    "src/archive_checker.py": "49c902e28aee0fef474cd7023a533876ed50395941ab953dbe06fd9464957ebf",
+    "src/archive_producer.py": "6ef34241578656414dcd5e08d15bb1a76ae93b87e67d9138bb62d7135bdc6515",
+    "src/checker.py": "f5f2374309e74b7a2469e8d2011402e2898f5c4beb8409d386169aa80b6db8ee",
+    "src/producer.py": "3e750f893b5fb90745e2c568ec28a9d0b365079a55bf63a683c3d67f7ffadd3a",
+    "tests/test_archive_metadata.py": "01fb5fec03c745c5cdae0eac8d2a9404458919b48cae98126a3f797f533c5078",
+    "tests/test_boundary.py": "ba09d6f38ddfb5017fec792d0c2f543a6b3dd1f6e783d3dd90fe9b566bd6c0b2",
+    "tests/test_completion.py": "9e7a26b4617028830a4acc37a298a5b22a5f8018962573bf41ef84d2a37e2dab",
+    "tests/test_manifest_case.py": "fcc0cc15ef2281a3f2d371ec766965b6e2116f1da4e1e0eb5299b2054db52aa7",
+    "tests/test_owner_granularity.py": "3bc0bccfce851c2bcd62875268e15f4d1a62429ebeaf47aa17dda4aa9fca1efb",
+    "tests/test_present_provider_tuple.py": "5a33929267bebe4b3f9720d3fc066c9008a46d13ad6f3fcf465e1100dbbc0217",
+    "tests/test_release_manifest.py": "655ed75ee56421fc780a5388db2e42363da79eb70631aae7b7cfe7d83e9a5e60"
+  },
+  "started_utc": "2026-10-12T18:20:43.929619+00:00",
+  "status": "passed",
+  "test_log": "unit-tests.txt",
+  "tests_run": 74,
+  "wall_seconds": 3.250820200002636
 }

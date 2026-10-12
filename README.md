@@ -22,7 +22,7 @@ real Apache Ant archive builds.
 | Evidence | Result |
 |---|---:|
 | Exact finite oracle | 45,291 structural / 90,582 owner-labelled models; 0 mismatches |
-| Regression and mutation tests | 68 passed in a separate Windows run; 47 in the retained Linux campaign |
+| Regression and mutation tests | 74 passed in a separate Windows run; 47 in the retained Linux campaign |
 | Public provider archives | 43 licensed JARs, plus 2 Ant builder JARs |
 | Exhaustive public collision pairs | 40 of all 903 unordered pairs |
 | Concrete public builds | 80 Ant builds: both orders for every collision pair |
@@ -106,9 +106,10 @@ python -B scripts/analyze_owner_granularity.py
 The eight file-free provider-tuple regressions include a test-local literal-order
 reference over the 90,582 labelled tiny models, strict admission and exclusion
 mutations, exact force-query counts, and lazy per-row tuple preparation.
-They check correctness, not runtime. All 68 current tests pass in the separate
+They check correctness, not runtime. All 74 current tests pass in the separate
 Windows/Python 3.12.14 run recorded in `results/unit-tests.json` and
-`results/unit-tests.txt`; the full-campaign measurements above remain separate.
+`results/unit-tests.txt`; the retained Linux campaign ran 47 tests and remains
+the source of the full-campaign measurements above.
 
 The archive-metadata tests validate original decoded ZIP member names before
 directory or manifest filtering. They use in-memory metadata, not constructed

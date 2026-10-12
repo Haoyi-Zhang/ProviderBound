@@ -43,7 +43,7 @@ def unpack_archive(filename):
             key = _entry_key(member)
             if member.is_dir():
                 continue
-            if key.upper() == 'META-INF/MANIFEST.MF':
+            if key == 'META-INF/MANIFEST.MF':
                 continue
             if not _name_ok(key) or key in table:
                 raise ArchiveRejected('invalid or repeated entry')

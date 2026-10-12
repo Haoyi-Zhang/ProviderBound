@@ -12,6 +12,7 @@ def files(root):
  for p in sorted(root.rglob('*')):
   if not p.is_file() or p.is_symlink():continue
   rel=p.relative_to(root).as_posix()
+  if '.git' in p.relative_to(root).parts:continue
   if p.name in EXCLUDE or '__pycache__' in p.parts or p.suffix=='.pyc' or '/reproduced/' in '/'+rel+'/':continue
   yield rel,p
 def main():

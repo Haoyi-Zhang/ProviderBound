@@ -33,9 +33,10 @@ campaign is in `results/current/`: eight stages, including 80 public Ant builds
 and two owned Java builds, completed in 72.17 wall seconds. The table generator
 uses these measurements, not `results/local/`.
 
-The expanded 68-test suite also passes in a separate Windows/Python 3.12.14
+The current 74-test suite passes in the separate Windows/Python 3.12.14
 execution recorded in `results/unit-tests.json` and `results/unit-tests.txt`.
-This test run does not repeat the external builder campaign.
+The retained Linux campaign ran 47 tests; this separate unit execution does
+not repeat its external-builder experiment or replace its timing measurements.
 
 `results/owner-granularity.json` is a separate Windows model replay using
 retained provider bytes and recorded Debian binary-package labels. It does not
