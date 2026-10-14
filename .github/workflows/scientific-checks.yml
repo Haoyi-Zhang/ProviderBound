@@ -30,6 +30,10 @@ jobs:
         shell: bash
         run: |
           python -B scripts/reproduce.py --output "$RUNNER_TEMP/p010-scientific/results" --java
+      - name: Check retained semantic fields and bundled corpus
+        shell: bash
+        run: |
+          python -B scripts/final_release_gate.py --output-json "$RUNNER_TEMP/p010-scientific/retained-contract.json"
       - name: Upload raw results and logs, including failed stages
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02

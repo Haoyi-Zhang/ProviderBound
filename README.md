@@ -85,8 +85,14 @@ The passive public-input census still reads the bundled archives and notices;
 it does not execute their classes. Windows RSS and child CPU counters are
 unavailable and recorded as null. See `ENVIRONMENT.md` for current versus
 retained measurements. `scripts/reproduce_release.py` is a compatibility entry
-point for this same campaign with release-manifest integrity verification. The older exploratory
-107-JAR analyses are not part of the current 43-provider study.
+point for this same campaign with release-manifest integrity verification.
+
+For read-only result checks, run `python -B scripts/final_release_gate.py`.
+It binds the finite-oracle, fixture, public-build, scale and owner-label counts
+to their named JSON fields and CSV rows, independently recomputes the bundled
+collision-pair census, and checks manifest membership and Python syntax. It
+prints its report without changing the artifact. These checks reuse recorded
+executions; they do not run a new Ant or JVM experiment.
 
 `.github/workflows/scientific-checks.yml` runs the complete fresh Ant/JVM
 campaign on Ubuntu/Python 3.12 within 30 minutes and uploads raw results and
@@ -140,8 +146,8 @@ Run the current offline model/receipt checks into a fresh directory:
 python -B scripts/reproduce_diagnostics.py --output results/fresh-diagnostics
 ```
 
-`results/diagnostics/` records the current execution:
-84 of 85 discovered tests run and pass. The explicitly excluded retained test
+`results/diagnostics/current/` records the current execution:
+102 of 103 discovered tests run and pass. The explicitly excluded retained test
 writes a traversal-name ZIP; it is not executed or counted as a pass by this
 benign-fixture path. The other tests include the unchanged 90,582-model finite
 family, owned ordinary ZIP readback, metadata-only NUL admission controls, and
@@ -150,6 +156,11 @@ control that reaches the missing-JDK error without running Java. No generated
 population is added. Six command-capture and optimization-guard controls also
 test raw diagnostic preservation, nonzero compiler/builder exits and exact
 numeric probe decoding.
+
+Thirteen result-binding controls reject missing named sources, unrelated
+numeric reports, changed summary fields, inconsistent census rows, duplicate
+keys or columns, Boolean count substitutions and nonfinite numbers. Two
+manifest controls reject duplicate membership and invalid relative paths.
 
 The owner diagnostic admits exactly two complete provider maps and two labels,
 rejecting a third rather than omitting it. Zero-collision rates and means are

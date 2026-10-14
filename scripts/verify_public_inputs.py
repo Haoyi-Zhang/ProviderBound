@@ -31,27 +31,30 @@ def nonmeta(table: dict[str, bytes]) -> dict[str, bytes]:
             if not name.upper().startswith("META-INF/")}
 
 
-def run() -> dict[str, object]:
-    providers = read_csv(PUBLIC / "providers.csv")
+def run(root: Path | None = None) -> dict[str, object]:
+    public = PUBLIC if root is None else Path(root).resolve() / 'inputs' / 'public'
+    providers = read_csv(public / "providers.csv")
     listed = {row["archive"]: row for row in providers}
-    jar_files = {path.name for path in (PUBLIC / "jars").glob("*.jar")}
+    if len(listed) != len(providers):
+        raise RuntimeError('duplicate provider inventory row')
+    jar_files = {path.name for path in (public / "jars").glob("*.jar")}
     if set(listed) != jar_files:
         raise RuntimeError("providers.csv and bundled JAR names differ")
     for name, row in listed.items():
-        path = PUBLIC / "jars" / name
+        path = public / "jars" / name
         if path.is_symlink() or not path.is_file():
             raise RuntimeError(f"provider is not a regular bundled file: {name}")
         if path.stat().st_size != int(row["bytes"]):
             raise RuntimeError(f"provider size metadata differs: {name}")
         package = row["package"]
-        license_path = PUBLIC / "licenses" / f"{package}.copyright"
+        license_path = public / "licenses" / f"{package}.copyright"
         if not license_path.is_file() or not license_path.read_text(errors="replace").strip():
             raise RuntimeError(f"missing Debian copyright record: {package}")
 
     experiment = sorted(name for name in listed if name not in BUILDERS)
     if len(experiment) != 43:
         raise RuntimeError(f"expected 43 experiment providers, found {len(experiment)}")
-    stores = {name: nonmeta(read_archive(PUBLIC / "jars" / name)) for name in experiment}
+    stores = {name: nonmeta(read_archive(public / "jars" / name)) for name in experiment}
     recomputed: list[dict[str, object]] = []
     for left, right in combinations(experiment, 2):
         shared = sorted(set(stores[left]) & set(stores[right]))
@@ -64,7 +67,7 @@ def run() -> dict[str, object]:
                            "shared_nonmeta": len(shared), "equal_nonmeta": equal,
                            "different_nonmeta": different})
 
-    declared = read_csv(PUBLIC / "collision_pairs.csv")
+    declared = read_csv(public / "collision_pairs.csv")
     declared_core = [{key: (int(row[key]) if key.endswith("_nonmeta") else row[key])
                       for key in ("left", "right", "kind", "shared_nonmeta",
                                   "equal_nonmeta", "different_nonmeta")}

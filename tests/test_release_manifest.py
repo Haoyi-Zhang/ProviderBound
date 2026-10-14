@@ -58,6 +58,26 @@ class ReleaseManifestTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'manifest content differs'):
                 self.check_consumer(root)
 
+    def test_duplicate_manifest_row_is_rejected(self):
+        with TemporaryDirectory() as folder:
+            root = Path(folder)
+            self.fixture(root)
+            manifest = root / 'RELEASE-MANIFEST.sha256'
+            text = manifest.read_text(encoding='utf-8')
+            manifest.write_text(text + text.splitlines()[0] + '\n', encoding='utf-8')
+            with self.assertRaisesRegex(ValueError, 'duplicate manifest member'):
+                self.check_consumer(root)
+
+    def test_path_syntax_is_checked_before_file_access(self):
+        with TemporaryDirectory() as folder:
+            root = Path(folder)
+            self.fixture(root)
+            manifest = root / 'RELEASE-MANIFEST.sha256'
+            for path in ('../owned.txt', '/owned.txt', 'C:/owned.txt', 'nested\\owned.txt', './owned.txt'):
+                manifest.write_text('0' * 64 + '  ' + path + '\n', encoding='utf-8')
+                with self.assertRaisesRegex(ValueError, 'malformed manifest'):
+                    self.check_consumer(root)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -112,8 +112,8 @@ identification systems.
 
 ## Owner-label granularity diagnostic
 
-The separate `scripts/analyze_owner_granularity.py` replay uses the current
-43-provider corpus, not the archived 107-JAR frame. It reconstructs both
+The separate `scripts/analyze_owner_granularity.py` replay uses the bundled
+43-provider corpus. It reconstructs both
 first-winner maps from retained bytes without running Ant or provider code.
 Certificates are checked against literal two-order enumeration, and the
 archive-label counts are compared with all 80 `results/current/public/cases.csv`

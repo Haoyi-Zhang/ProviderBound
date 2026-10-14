@@ -1,235 +1,106 @@
-#!/usr/bin/env python3
-"""Fail-closed gate for the frozen paper/artifact release.
+"""Read-only checks for the bundled scientific objects and optional manuscript.
 
-This script intentionally distinguishes machine-verifiable release properties
-from human-only submission actions.  It produces a compact JSON/Markdown record
-and exits non-zero on any machine-verifiable blocker.
+This compatibility entry does not compile a paper, run an experiment, execute
+providers, or manufacture a claim by finding its number in unrelated reports.
 """
 from __future__ import annotations
-import argparse, ast, hashlib, json, os, re, shutil, subprocess, sys, tempfile
+import argparse
+import ast
+from contextlib import redirect_stdout
+import io
+import json
 from pathlib import Path
+import re
+import subprocess
 
-ART=Path(__file__).resolve().parents[1]
-ROOT=ART.parent
-PAPER=ROOT/'paper'
-TITLE='Proof-Carrying Provider Attribution under First-Winner Archive Merging'
-OLD_TITLES=('Proof-Carrying First-Winner Library Boundaries','Certifying First-Winner Library Boundaries')
-
-
-def run(cmd, cwd=None, timeout=900):
-    p=subprocess.run(cmd,cwd=cwd,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=timeout)
-    if p.returncode:
-        tail='\n'.join(p.stdout.splitlines()[-100:])
-        raise RuntimeError(f"command failed ({p.returncode}): {' '.join(map(str,cmd))}\n{tail}")
-    return p.stdout
+ART = Path(__file__).resolve().parents[1]
+PAPER = ART.parent / 'paper'
 
 
-def load(path):
-    return json.loads(path.read_text(encoding='utf-8'))
-
-
-def scalar_paths(obj, prefix='$'):
-    if isinstance(obj,dict):
-        for k,v in obj.items(): yield from scalar_paths(v,prefix+'.'+str(k))
-    elif isinstance(obj,list):
-        for i,v in enumerate(obj): yield from scalar_paths(v,f'{prefix}[{i}]')
-    else: yield prefix,obj
+def run(cmd, cwd=None, timeout=30):
+    result = subprocess.run(cmd, cwd=cwd, timeout=timeout, text=True,
+                            capture_output=True, encoding='utf-8', errors='replace')
+    if result.returncode:
+        raise RuntimeError(f'command failed ({result.returncode}): {result.stderr[-2000:]}')
+    return result.stdout
 
 
 def find_pdf():
-    pdf=PAPER/'main.pdf'
+    pdf = PAPER / 'main.pdf'
     if not pdf.is_file():
         raise RuntimeError('primary manuscript main.pdf is missing')
-    out=run(['pdfinfo',str(pdf)],timeout=30)
-    match=re.search(r'^Pages:\s+(\d+)\s*$',out,re.M)
-    if match is None or int(match.group(1))<=0:
+    out = run(['pdfinfo', str(pdf)], timeout=30)
+    match = re.search(r'^Pages:\s+(\d+)\s*$', out, re.M)
+    if match is None or int(match.group(1)) <= 0:
         raise RuntimeError('primary manuscript has no positive page count')
     return pdf
 
 
-def bib_closure():
-    tex='\n'.join(p.read_text(encoding='utf-8',errors='ignore') for p in PAPER.rglob('*.tex'))
-    bib='\n'.join(p.read_text(encoding='utf-8',errors='ignore') for p in PAPER.rglob('*.bib'))
-    entries=set(re.findall(r'@\w+\s*\{\s*([^,\s]+)',bib))
-    cited=set()
-    for chunk in re.findall(r'\\cite\w*\s*(?:\[[^\]]*\]\s*)*\{([^}]*)\}',tex):
-        cited.update(x.strip() for x in chunk.split(',') if x.strip())
-    missing=sorted(cited-entries)
-    uncited=sorted(entries-cited)
-    dois=[]
-    for m in re.finditer(r'(?i)\bdoi\s*=\s*[\{\"]([^}\"]+)',bib):
-        d=m.group(1).strip().lower().removeprefix('https://doi.org/').removeprefix('http://doi.org/')
-        dois.append(d)
-    dup=sorted({d for d in dois if dois.count(d)>1})
-    malformed=sorted(d for d in dois if not re.match(r'^10\.\d{4,9}/\S+$',d))
-    return {'entries':len(entries),'cited_keys':len(cited),'missing':missing,'uncited':uncited,'duplicate_dois':dup,'malformed_dois':malformed}
-
-
-def empty_field(path, keys):
-    obj=load(path); vals=dict(scalar_paths(obj)); bad=[]
-    for p,v in vals.items():
-        leaf=p.rsplit('.',1)[-1].lower()
-        if leaf in keys and v not in ([],{},None,0,'',False): bad.append((p,v))
-    return bad
-
-
-def audit_problems(obj, fields, require_status=False):
-    bad=[(field,obj[field]) for field in fields
-         if field in obj and obj[field] not in ([],{},0,None,'',False)]
-    if require_status and obj.get('status') != 'PASS':
-        bad.append(('status',obj.get('status','MISSING')))
-    return bad
-
-
-def main():
-    ap=argparse.ArgumentParser(); ap.add_argument('--skip-build',action='store_true'); args=ap.parse_args()
-    checks=[]; blockers=[]; notes=[]
-    def check(name, ok, detail):
-        checks.append({'name':name,'passed':bool(ok),'detail':detail})
-        if not ok: blockers.append(f'{name}: {detail}')
-
-    # Rebuild and rerun the release-facing audits from the same tree.
-    if not args.skip_build:
-        run([sys.executable,'build.py'],cwd=PAPER)
-        if Path('/mnt/data/enforce_paper_pages.py').exists():
-            run([sys.executable,'/mnt/data/enforce_paper_pages.py'],cwd=PAPER)
-    commands=[
-      ([sys.executable,'scripts/analyze_information_baselines.py'],ART),
-      ([sys.executable,'scripts/validate_infozip_merger.py'],ART),
-      ([sys.executable,'scripts/analyze_metadata_sensitivity.py'],ART),
-      ([sys.executable,'scripts/analyze_certificate_compression.py'],ART),
-      ([sys.executable,'scripts/audit_claims.py'],ART),
-      ([sys.executable,'scripts/audit_archive_safety.py','--strict'],ART),
-      ([sys.executable,'scripts/audit_independence.py','--strict'],ART),
-      ([sys.executable,'scripts/audit_security_test_evidence.py','--strict'],ART),
-      ([sys.executable,'scripts/audit_scope_consistency.py','--strict'],ART),
-      ([sys.executable,'scripts/audit_claim_language.py','--strict'],ART),
-      ([sys.executable,'scripts/audit_paper_claims.py','--paper',str(PAPER),'--strict'],ART),
-    ]
-    for cmd,cwd in commands:
-        run(cmd,cwd=cwd)
-    # audit_release must run after the component audits above.
-    run([sys.executable,'scripts/audit_release.py','--strict'],cwd=ART)
-    if (PAPER/'audit_acmart.py').exists(): run([sys.executable,'audit_acmart.py'],cwd=PAPER)
-
-    pdf=find_pdf()
-    info=run(['pdfinfo',str(pdf)],timeout=30)
-    pages=int(re.search(r'^Pages:\s+(\d+)\s*$',info,re.M).group(1))
-    check('paper-page-count',pages>0,f'{pages} pages; positive actual count recorded, with no locked journal ceiling asserted')
-    text=run(['pdftotext',str(pdf),'-'],timeout=60)
-    check('paper-title',TITLE in text,'canonical title present in extracted PDF text')
-    check('old-title-removed',not any(t in text for t in OLD_TITLES),'no superseded title in PDF')
-
-    fonts=run(['pdffonts',str(pdf)],timeout=30)
-    font_lines=[l.split() for l in fonts.splitlines()[2:] if l.strip()]
-    unembedded=[]
-    for line in font_lines:
-        # pdffonts columns vary; the penultimate yes/no columns include emb/sub.
-        if 'no' in [x.lower() for x in line[-5:]]:
-            # conservatively inspect the 'emb' column by header position when possible
-            header=fonts.splitlines()[0].split()
+def check_artifact(root):
+    import audit_claims
+    import verify_public_inputs
+    from reproduce_release import verify_manifest
+    root = Path(root).resolve()
+    result = {'checks': [], 'errors': []}
+    try:
+        with redirect_stdout(io.StringIO()):
+            count = verify_manifest(root)
+        result['checks'].append({'name': 'manifest', 'files': count, 'passed': True})
+    except (OSError, ValueError) as exc:
+        result['errors'].append(f'manifest: {exc}')
+    scientific = audit_claims.audit(root)
+    result['scientific_objects'] = scientific
+    if scientific['status'] != 'PASS':
+        result['errors'].append('one or more named scientific-object checks failed')
+    try:
+        corpus = verify_public_inputs.run(root)
+        result['public_input_census'] = corpus
+    except (OSError, ValueError, RuntimeError) as exc:
+        result['errors'].append(f'public input census: {exc}')
+    syntax = []
+    for directory in ('src', 'scripts', 'tests'):
+        for path in sorted((root / directory).rglob('*.py')):
             try:
-                idx=header.index('emb')
-                if idx < len(line) and line[idx].lower()=='no': unembedded.append(line[0])
-            except ValueError:
-                pass
-    check('embedded-fonts',not unembedded,f'unembedded={unembedded}')
-    if shutil.which('qpdf'):
-        run(['qpdf','--check',str(pdf)],timeout=60)
-        check('qpdf-structural-check',True,'qpdf --check passed')
+                ast.parse(path.read_text(encoding='utf-8-sig'), filename=str(path))
+            except (OSError, SyntaxError, UnicodeError) as exc:
+                syntax.append({'path': str(path.relative_to(root)), 'error': str(exc)})
+    result['checks'].append({'name': 'python-syntax', 'passed': not syntax, 'errors': syntax})
+    result['errors'].extend(f"syntax: {entry['path']}" for entry in syntax)
+    result['status'] = 'PASS' if not result['errors'] else 'FAIL'
+    result['scope'] = ('Bundled input/result contracts, exact manifest membership and Python syntax. '
+                       'No new native execution, proof certification, literature certification or submission approval.')
+    return result
 
-    # LaTeX diagnostics.
-    logs=list(PAPER.rglob('*.log'))
-    logtext='\n'.join(p.read_text(encoding='utf-8',errors='ignore') for p in logs)
-    badlog=[]
-    for pat in ('LaTeX Error','Undefined control sequence','There were undefined references','Citation `','Overfull \\hbox','Overfull \\vbox'):
-        if pat in logtext: badlog.append(pat)
-    check('latex-diagnostics',not badlog,f'blocking diagnostics={badlog}')
 
-    bib=bib_closure()
-    check('bibliography-count',bib['entries']>=54,f"{bib['entries']} entries")
-    check('bibliography-closure',not bib['missing'] and not bib['uncited'],f"missing={bib['missing']}; uncited={bib['uncited']}")
-    check('bibliography-dois',not bib['duplicate_dois'] and not bib['malformed_dois'],f"duplicate={bib['duplicate_dois']}; malformed={bib['malformed_dois']}")
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--artifact', type=Path, default=ART)
+    parser.add_argument('--paper', type=Path, help='inspect primary PDF metadata with pdfinfo')
+    parser.add_argument('--output-json', type=Path, help='optional report path outside the artifact')
+    parser.add_argument('--strict', action='store_true', help='compatibility flag; failures always exit nonzero')
+    parser.add_argument('--skip-build', action='store_true', help='compatibility flag; this entry never builds')
+    args = parser.parse_args(argv)
+    output = args.output_json.resolve() if args.output_json else None
+    root = args.artifact.resolve()
+    if output is not None and output.is_relative_to(root):
+        parser.error('report output must be outside the artifact')
+    result = check_artifact(root)
+    if args.paper:
+        global PAPER
+        PAPER = args.paper.resolve()
+        try:
+            pdf = find_pdf()
+            result['paper_metadata'] = {'primary': str(pdf), 'positive_page_count': True}
+        except (OSError, RuntimeError, subprocess.SubprocessError) as exc:
+            result['errors'].append(f'paper metadata: {exc}')
+            result['status'] = 'FAIL'
+    serialized = json.dumps(result, indent=2, sort_keys=True) + '\n'
+    if output is not None:
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(serialized, encoding='utf-8')
+    print(serialized)
+    return 0 if result['status'] == 'PASS' else 2
 
-    expected_audits={
-      'archive-safety-audit.json':('errors','archives_with_errors'),
-      'implementation-independence-audit.json':('violations',),
-      'security-test-evidence.json':('release_blockers',),
-      'scope-consistency-audit.json':('release_blockers',),
-      'claim-language-audit.json':('release_blockers','blocking_hits'),
-      'paper-claim-audit.json':('release_blockers','missing','forbidden_hits'),
-      'release-audit.json':('release_blockers','violations','issues'),
-    }
-    for filename,fields in expected_audits.items():
-        p=ART/'docs'/filename
-        check('audit-present:'+filename,p.exists(),str(p.relative_to(ROOT)) if p.exists() else 'missing')
-        if not p.exists(): continue
-        obj=load(p)
-        bad=audit_problems(obj,fields,filename in {'paper-claim-audit.json','release-audit.json'})
-        check('audit-clean:'+filename,not bad,f'{bad}')
 
-    security=load(ART/'docs'/'security-test-evidence.json')
-    check('test-inventory',security.get('test_functions',0)>=39,f"{security.get('test_functions',0)} statically discoverable tests")
-    archive=load(ART/'docs'/'archive-safety-audit.json')
-    check('archive-frame-size',archive.get('frame_archives')==107,f"{archive.get('frame_archives')} archives")
-
-    # Claim evidence index must cover every registered claim without a missing marker.
-    claim_path=ART/'docs'/'claim-evidence-index.json'
-    check('claim-index-present',claim_path.exists(),str(claim_path.relative_to(ROOT)) if claim_path.exists() else 'missing')
-    if claim_path.exists():
-        c=load(claim_path)
-        flat=list(scalar_paths(c))
-        bad=[(p,v) for p,v in flat if ('missing' in p.lower() or 'unresolved' in p.lower()) and v not in ([],{},0,None,'',False)]
-        check('claim-index-resolved',not bad,f'{bad[:10]}')
-        serialized=json.dumps(c,sort_keys=True)
-        for n in ('676354','107','5671','43','40','42','14','80','165630','8156','3471','100','300','20000','8602784'):
-            check('claim-index-number:'+n,n in serialized,f'{n} registered')
-
-    # Crossref/publisher audit: block semantic mismatches, tolerate recorded network failures.
-    cross=ART/'docs'/'reference-crossref-audit.json'
-    if cross.exists():
-        obj=load(cross); statuses=[]
-        for p,v in scalar_paths(obj):
-            if p.lower().endswith(('.status','.result','.classification')) and isinstance(v,str): statuses.append(v.upper())
-        semantic=[s for s in statuses if any(k in s for k in ('TITLE_MISMATCH','DOI_MISMATCH','PARSE_ERROR'))]
-        fetch=[s for s in statuses if 'FETCH_ERROR' in s or 'HTTP_ERROR' in s]
-        check('reference-semantic-audit',not semantic,f'semantic failures={semantic}')
-        notes.append(f'Reference audit recorded {len(fetch)} network-fetch failures; these are non-semantic and the retained publisher-resolution ledger remains available.')
-    else:
-        notes.append('No network Crossref audit JSON was available; bibliography closure and the retained manual ledger were still checked.')
-
-    # Python syntax and forbidden generated clutter.
-    syntax=[]
-    for p in ART.rglob('*.py'):
-        try: ast.parse(p.read_text(encoding='utf-8'),filename=str(p))
-        except Exception as e: syntax.append(f'{p.relative_to(ART)}: {e}')
-    check('python-syntax',not syntax,f'{syntax}')
-    clutter=[str(p.relative_to(ROOT)) for p in ROOT.rglob('*') if p.name in ('__pycache__','.pytest_cache','.mypy_cache') or p.suffix=='.pyc']
-    check('no-runtime-clutter',not clutter,f'{clutter[:20]}')
-
-    # Root contract.
-    root_names=sorted(p.name for p in ROOT.iterdir())
-    check('full-project-root-contract',root_names==["README.md", "artifact", "paper"],f'{root_names}')
-
-    result={
-      'schema_version':1,'canonical_title':TITLE,'paper_pdf':str(pdf.relative_to(ROOT)),
-      'checks':checks,'blockers':blockers,'notes':notes,
-      'machine_verifiable_status':'PASS' if not blockers else 'FAIL',
-      'human_only_submission_actions':[
-        'Confirm author names, affiliations, ORCIDs, contribution statements, and corresponding author.',
-        'Confirm conflicts of interest, prior-publication status, ethics disclosures, and any required data/code licenses.',
-        'Re-check the live TOSEM and ACM submission policies immediately before submission; live policy supersedes the retained probe.',
-        'Upload the artifact to an archival public host and replace local/package links with persistent URLs or DOIs.',
-        'Obtain independent coauthor review and, where appropriate, legal review of redistributed third-party materials.'
-      ]
-    }
-    out=ART/'docs'/'FINAL-RELEASE-GATE.json'; out.write_text(json.dumps(result,indent=2,sort_keys=True)+'\n',encoding='utf-8')
-    md=['# Final Release Gate','',f"Machine-verifiable status: **{result['machine_verifiable_status']}**",'',f"Paper: `{result['paper_pdf']}`",'', '## Checks','']
-    md += [f"- {'PASS' if c['passed'] else 'FAIL'} — **{c['name']}**: {c['detail']}" for c in checks]
-    if blockers: md += ['','## Blockers','']+[f'- {x}' for x in blockers]
-    md += ['','## Human-only submission actions','']+[f'- {x}' for x in result['human_only_submission_actions']]
-    if notes: md += ['','## Notes','']+[f'- {x}' for x in notes]
-    (ART/'docs'/'FINAL-RELEASE-GATE.md').write_text('\n'.join(md)+'\n',encoding='utf-8')
-    return 2 if blockers else 0
-
-if __name__=='__main__': raise SystemExit(main())
+if __name__ == '__main__':
+    raise SystemExit(main())
