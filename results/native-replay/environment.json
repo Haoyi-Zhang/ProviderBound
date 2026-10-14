@@ -1,0 +1,22 @@
+{
+  "platform": "Windows-11-10.0.28000-SP0",
+  "python": "3.12.14 (MSC v.1944 AMD64)",
+  "java": "Temurin OpenJDK 21.0.12.1+1-LTS",
+  "javac": "21.0.12.1",
+  "builder": "Apache Ant 1.10.15 from unchanged bundled builder JARs",
+  "processor": "12th Gen Intel(R) Core(TM) i7-12700KF",
+  "physical_cores": 12,
+  "logical_processors": 20,
+  "processor_source": "Win32_Processor queried after the executions",
+  "physical_disk_and_external_load": null,
+  "native_entrypoint_started_finished_utc": null,
+  "native_entrypoint_clock_note": "Entry points record monotonic elapsed time but did not record absolute start/finish UTC; those times are not reconstructed.",
+  "public_workers": 4,
+  "java_owned_probe_values": [11, 22],
+  "ant_actual_builds": 80,
+  "same_original_provider_corpus": true,
+  "child_cpu_rss_and_aggregate_java_cpu": null,
+  "resource_note": "Windows optional resource path supplies no child counters; parent CPU and elapsed fields remain separate in their original records.",
+  "toolchain_primary_api": "https://api.adoptium.net/v3/assets/latest/21/hotspot?architecture=x64&image_type=jdk&os=windows&vendor=eclipse",
+  "downloaded_jdk_sha256": "f9d6e191ab098c0d416e7d588a24420a8621cd2f4720dab2459b8b7b2d2d8b4e"
+}

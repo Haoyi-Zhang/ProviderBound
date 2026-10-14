@@ -1,0 +1,5359 @@
+{
+  "archive_adapter_disagreements": 0,
+  "certificate_oracle_disagreements": 0,
+  "downstream_interpretation": "No developer/library scope changes in this all-library corpus. Package-level attribution gains must be evaluated after applying the package map to both methods. Provider-history resolution does not disappear when labels are merged; no vulnerability, finding-suppression or call-graph outcome is measured.",
+  "information_control": "Same inventory, exact output bytes, empty precedence and identical label map for both methods; no historical order given to inference.",
+  "label_schemas": {
+    "archive": "Recorded per-JAR owner field",
+    "debian_package": "deb: plus recorded Debian binary-package field; version is not part of this label"
+  },
+  "metrics": {
+    "archive": {
+      "admissible_orders": 140,
+      "certified_ambiguous": 6942,
+      "certified_developer_inclusions": 0,
+      "certified_exact_count": 8156,
+      "certified_exact_rate": 1.0,
+      "certified_mean_set_size": 1.8511525257479156,
+      "certified_set_size_sum": 15098,
+      "collision_observations": 8156,
+      "developer_scope_differences": 0,
+      "direct_developer_inclusions": 0,
+      "entry_regions": 165630,
+      "identical_output_pair_paths_with_owner_flip": 3471,
+      "local_ambiguous": 7042,
+      "local_developer_inclusions": 0,
+      "local_exact_count": 8056,
+      "local_exact_rate": 0.9877390877881315,
+      "local_mean_set_size": 1.8634134379597842,
+      "local_set_size_sum": 15198,
+      "provider_narrowings": 100,
+      "removed_owner_associations": 100,
+      "same_information_direct_owner_matches": 8156,
+      "same_information_direct_scope_matches": 8156,
+      "strict_narrowings": 100
+    },
+    "debian_package": {
+      "admissible_orders": 140,
+      "certified_ambiguous": 0,
+      "certified_developer_inclusions": 0,
+      "certified_exact_count": 8156,
+      "certified_exact_rate": 1.0,
+      "certified_mean_set_size": 1.0,
+      "certified_set_size_sum": 8156,
+      "collision_observations": 8156,
+      "developer_scope_differences": 0,
+      "direct_developer_inclusions": 0,
+      "entry_regions": 165630,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "local_ambiguous": 0,
+      "local_developer_inclusions": 0,
+      "local_exact_count": 8156,
+      "local_exact_rate": 1.0,
+      "local_mean_set_size": 1.0,
+      "local_set_size_sum": 8156,
+      "provider_narrowings": 100,
+      "removed_owner_associations": 0,
+      "same_information_direct_owner_matches": 8156,
+      "same_information_direct_scope_matches": 8156,
+      "strict_narrowings": 0
+    }
+  },
+  "modeled_outputs_per_schema": 80,
+  "narrowing_pairs": [
+    "p021",
+    "p027"
+  ],
+  "observations": [
+    {
+      "build_id": "p001-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 401,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 401,
+        "certified_set_size_sum": 802,
+        "collision_observations": 401,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 401,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 401,
+        "local_set_size_sum": 802,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 401,
+        "same_information_direct_scope_matches": 401
+      },
+      "narrowed_paths": [],
+      "pair_id": "p001",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p001-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 401,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 401,
+        "certified_set_size_sum": 802,
+        "collision_observations": 401,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 401,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 401,
+        "local_set_size_sum": 802,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 401,
+        "same_information_direct_scope_matches": 401
+      },
+      "narrowed_paths": [],
+      "pair_id": "p001",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p002-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 226,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 226,
+        "certified_set_size_sum": 452,
+        "collision_observations": 226,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 226,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 226,
+        "local_set_size_sum": 452,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 226,
+        "same_information_direct_scope_matches": 226
+      },
+      "narrowed_paths": [],
+      "pair_id": "p002",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p002-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 226,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 226,
+        "certified_set_size_sum": 452,
+        "collision_observations": 226,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 226,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 226,
+        "local_set_size_sum": 452,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 226,
+        "same_information_direct_scope_matches": 226
+      },
+      "narrowed_paths": [],
+      "pair_id": "p002",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p003-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 405,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 405,
+        "certified_set_size_sum": 810,
+        "collision_observations": 405,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 405,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 405,
+        "local_set_size_sum": 810,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 405,
+        "same_information_direct_scope_matches": 405
+      },
+      "narrowed_paths": [],
+      "pair_id": "p003",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p003-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 405,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 405,
+        "certified_set_size_sum": 810,
+        "collision_observations": 405,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 405,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 405,
+        "local_set_size_sum": 810,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 405,
+        "same_information_direct_scope_matches": 405
+      },
+      "narrowed_paths": [],
+      "pair_id": "p003",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p004-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 50,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 50,
+        "certified_set_size_sum": 100,
+        "collision_observations": 50,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 50,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 50,
+        "local_set_size_sum": 100,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 50,
+        "same_information_direct_scope_matches": 50
+      },
+      "narrowed_paths": [],
+      "pair_id": "p004",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p004-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 50,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 50,
+        "certified_set_size_sum": 100,
+        "collision_observations": 50,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 50,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 50,
+        "local_set_size_sum": 100,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 50,
+        "same_information_direct_scope_matches": 50
+      },
+      "narrowed_paths": [],
+      "pair_id": "p004",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p005-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 3,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 3,
+        "certified_set_size_sum": 6,
+        "collision_observations": 3,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 3,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 3,
+        "local_set_size_sum": 6,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 3,
+        "same_information_direct_scope_matches": 3
+      },
+      "narrowed_paths": [],
+      "pair_id": "p005",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p005-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 3,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 3,
+        "certified_set_size_sum": 6,
+        "collision_observations": 3,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 3,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 3,
+        "local_set_size_sum": 6,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 3,
+        "same_information_direct_scope_matches": 3
+      },
+      "narrowed_paths": [],
+      "pair_id": "p005",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p006-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 242,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 242,
+        "certified_set_size_sum": 484,
+        "collision_observations": 242,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 242,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 242,
+        "local_set_size_sum": 484,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 242,
+        "same_information_direct_scope_matches": 242
+      },
+      "narrowed_paths": [],
+      "pair_id": "p006",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p006-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 242,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 242,
+        "certified_set_size_sum": 484,
+        "collision_observations": 242,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 242,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 242,
+        "local_set_size_sum": 484,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 242,
+        "same_information_direct_scope_matches": 242
+      },
+      "narrowed_paths": [],
+      "pair_id": "p006",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p007-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 118,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 118,
+        "certified_set_size_sum": 236,
+        "collision_observations": 118,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 118,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 118,
+        "local_set_size_sum": 236,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 118,
+        "same_information_direct_scope_matches": 118
+      },
+      "narrowed_paths": [],
+      "pair_id": "p007",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p007-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 118,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 118,
+        "certified_set_size_sum": 236,
+        "collision_observations": 118,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 118,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 118,
+        "local_set_size_sum": 236,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 118,
+        "same_information_direct_scope_matches": 118
+      },
+      "narrowed_paths": [],
+      "pair_id": "p007",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p008-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 9,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 9,
+        "certified_set_size_sum": 18,
+        "collision_observations": 9,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 9,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 9,
+        "local_set_size_sum": 18,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 9,
+        "same_information_direct_scope_matches": 9
+      },
+      "narrowed_paths": [],
+      "pair_id": "p008",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p008-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 9,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 9,
+        "certified_set_size_sum": 18,
+        "collision_observations": 9,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 9,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 9,
+        "local_set_size_sum": 18,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 9,
+        "same_information_direct_scope_matches": 9
+      },
+      "narrowed_paths": [],
+      "pair_id": "p008",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p009-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 52,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 52,
+        "certified_set_size_sum": 104,
+        "collision_observations": 52,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 52,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 52,
+        "local_set_size_sum": 104,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 52,
+        "same_information_direct_scope_matches": 52
+      },
+      "narrowed_paths": [],
+      "pair_id": "p009",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p009-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 52,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 52,
+        "certified_set_size_sum": 104,
+        "collision_observations": 52,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 52,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 52,
+        "local_set_size_sum": 104,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 52,
+        "same_information_direct_scope_matches": 52
+      },
+      "narrowed_paths": [],
+      "pair_id": "p009",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p010-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 210,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 210,
+        "certified_set_size_sum": 420,
+        "collision_observations": 210,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 210,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 210,
+        "local_set_size_sum": 420,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 210,
+        "same_information_direct_scope_matches": 210
+      },
+      "narrowed_paths": [],
+      "pair_id": "p010",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p010-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 210,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 210,
+        "certified_set_size_sum": 420,
+        "collision_observations": 210,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 210,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 210,
+        "local_set_size_sum": 420,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 210,
+        "same_information_direct_scope_matches": 210
+      },
+      "narrowed_paths": [],
+      "pair_id": "p010",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p011-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 105,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 105,
+        "certified_set_size_sum": 210,
+        "collision_observations": 105,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 105,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 105,
+        "local_set_size_sum": 210,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 105,
+        "same_information_direct_scope_matches": 105
+      },
+      "narrowed_paths": [],
+      "pair_id": "p011",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p011-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 105,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 105,
+        "certified_set_size_sum": 210,
+        "collision_observations": 105,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 105,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 105,
+        "local_set_size_sum": 210,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 105,
+        "same_information_direct_scope_matches": 105
+      },
+      "narrowed_paths": [],
+      "pair_id": "p011",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p012-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 6,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 6,
+        "certified_set_size_sum": 12,
+        "collision_observations": 6,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 6,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 6,
+        "local_set_size_sum": 12,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 6,
+        "same_information_direct_scope_matches": 6
+      },
+      "narrowed_paths": [],
+      "pair_id": "p012",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p012-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 6,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 6,
+        "certified_set_size_sum": 12,
+        "collision_observations": 6,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 6,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 6,
+        "local_set_size_sum": 12,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 6,
+        "same_information_direct_scope_matches": 6
+      },
+      "narrowed_paths": [],
+      "pair_id": "p012",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p013-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 59,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 59,
+        "certified_set_size_sum": 118,
+        "collision_observations": 59,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 59,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 59,
+        "local_set_size_sum": 118,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 59,
+        "same_information_direct_scope_matches": 59
+      },
+      "narrowed_paths": [],
+      "pair_id": "p013",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p013-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 59,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 59,
+        "certified_set_size_sum": 118,
+        "collision_observations": 59,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 59,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 59,
+        "local_set_size_sum": 118,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 59,
+        "same_information_direct_scope_matches": 59
+      },
+      "narrowed_paths": [],
+      "pair_id": "p013",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p014-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 3,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 3,
+        "certified_set_size_sum": 6,
+        "collision_observations": 3,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 3,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 3,
+        "local_set_size_sum": 6,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 3,
+        "same_information_direct_scope_matches": 3
+      },
+      "narrowed_paths": [],
+      "pair_id": "p014",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p014-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 3,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 3,
+        "certified_set_size_sum": 6,
+        "collision_observations": 3,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 3,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 3,
+        "local_set_size_sum": 6,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 3,
+        "same_information_direct_scope_matches": 3
+      },
+      "narrowed_paths": [],
+      "pair_id": "p014",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p015-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 16,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 16,
+        "certified_set_size_sum": 32,
+        "collision_observations": 16,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 16,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 16,
+        "local_set_size_sum": 32,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 16,
+        "same_information_direct_scope_matches": 16
+      },
+      "narrowed_paths": [],
+      "pair_id": "p015",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p015-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 16,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 16,
+        "certified_set_size_sum": 32,
+        "collision_observations": 16,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 16,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 16,
+        "local_set_size_sum": 32,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 16,
+        "same_information_direct_scope_matches": 16
+      },
+      "narrowed_paths": [],
+      "pair_id": "p015",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p016-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 6,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 6,
+        "certified_set_size_sum": 12,
+        "collision_observations": 6,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 6,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 6,
+        "local_set_size_sum": 12,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 6,
+        "same_information_direct_scope_matches": 6
+      },
+      "narrowed_paths": [],
+      "pair_id": "p016",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p016-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 6,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 6,
+        "certified_set_size_sum": 12,
+        "collision_observations": 6,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 6,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 6,
+        "local_set_size_sum": 12,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 6,
+        "same_information_direct_scope_matches": 6
+      },
+      "narrowed_paths": [],
+      "pair_id": "p016",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p017-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 121,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 121,
+        "certified_set_size_sum": 242,
+        "collision_observations": 121,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 121,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 121,
+        "local_set_size_sum": 242,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 121,
+        "same_information_direct_scope_matches": 121
+      },
+      "narrowed_paths": [],
+      "pair_id": "p017",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p017-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 121,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 121,
+        "certified_set_size_sum": 242,
+        "collision_observations": 121,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 121,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 121,
+        "local_set_size_sum": 242,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 121,
+        "same_information_direct_scope_matches": 121
+      },
+      "narrowed_paths": [],
+      "pair_id": "p017",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p018-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 302,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 302,
+        "certified_set_size_sum": 604,
+        "collision_observations": 302,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 302,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 302,
+        "local_set_size_sum": 604,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 302,
+        "same_information_direct_scope_matches": 302
+      },
+      "narrowed_paths": [],
+      "pair_id": "p018",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p018-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 302,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 302,
+        "certified_set_size_sum": 604,
+        "collision_observations": 302,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 302,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 302,
+        "local_set_size_sum": 604,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 302,
+        "same_information_direct_scope_matches": 302
+      },
+      "narrowed_paths": [],
+      "pair_id": "p018",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p019-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 160,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 160,
+        "certified_set_size_sum": 320,
+        "collision_observations": 160,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 160,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 160,
+        "local_set_size_sum": 320,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 160,
+        "same_information_direct_scope_matches": 160
+      },
+      "narrowed_paths": [],
+      "pair_id": "p019",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p019-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 160,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 160,
+        "certified_set_size_sum": 320,
+        "collision_observations": 160,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 160,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 160,
+        "local_set_size_sum": 320,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 160,
+        "same_information_direct_scope_matches": 160
+      },
+      "narrowed_paths": [],
+      "pair_id": "p019",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p020-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 13,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 13,
+        "certified_set_size_sum": 26,
+        "collision_observations": 13,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 13,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 13,
+        "local_set_size_sum": 26,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 13,
+        "same_information_direct_scope_matches": 13
+      },
+      "narrowed_paths": [],
+      "pair_id": "p020",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p020-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 13,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 13,
+        "certified_set_size_sum": 26,
+        "collision_observations": 13,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 13,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 13,
+        "local_set_size_sum": 26,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 13,
+        "same_information_direct_scope_matches": 13
+      },
+      "narrowed_paths": [],
+      "pair_id": "p020",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p021-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 49,
+        "certified_set_size_sum": 49,
+        "collision_observations": 49,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 48,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 97,
+        "provider_narrowings": 48,
+        "removed_owner_associations": 48,
+        "same_information_direct_owner_matches": 49,
+        "same_information_direct_scope_matches": 49,
+        "strict_narrowings": 48
+      },
+      "narrowed_paths": [
+        "META-INF/LICENSE",
+        "META-INF/NOTICE",
+        "org/apache/batik/apps/rasterizer/DefaultSVGConverterController.class",
+        "org/apache/batik/apps/rasterizer/DestinationType.class",
+        "org/apache/batik/apps/rasterizer/Main$1.class",
+        "org/apache/batik/apps/rasterizer/Main$10.class",
+        "org/apache/batik/apps/rasterizer/Main$11.class",
+        "org/apache/batik/apps/rasterizer/Main$12.class",
+        "org/apache/batik/apps/rasterizer/Main$13.class",
+        "org/apache/batik/apps/rasterizer/Main$14.class",
+        "org/apache/batik/apps/rasterizer/Main$15.class",
+        "org/apache/batik/apps/rasterizer/Main$16.class",
+        "org/apache/batik/apps/rasterizer/Main$17.class",
+        "org/apache/batik/apps/rasterizer/Main$18.class",
+        "org/apache/batik/apps/rasterizer/Main$19.class",
+        "org/apache/batik/apps/rasterizer/Main$2.class",
+        "org/apache/batik/apps/rasterizer/Main$20.class",
+        "org/apache/batik/apps/rasterizer/Main$21.class",
+        "org/apache/batik/apps/rasterizer/Main$22.class",
+        "org/apache/batik/apps/rasterizer/Main$23.class",
+        "org/apache/batik/apps/rasterizer/Main$3.class",
+        "org/apache/batik/apps/rasterizer/Main$4.class",
+        "org/apache/batik/apps/rasterizer/Main$5.class",
+        "org/apache/batik/apps/rasterizer/Main$6.class",
+        "org/apache/batik/apps/rasterizer/Main$7.class",
+        "org/apache/batik/apps/rasterizer/Main$8.class",
+        "org/apache/batik/apps/rasterizer/Main$9.class",
+        "org/apache/batik/apps/rasterizer/Main$AbstractOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$ColorOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$FloatOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$NoValueOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$OptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$RectangleOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$SingleValueOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$TimeOptionHandler$1.class",
+        "org/apache/batik/apps/rasterizer/Main$TimeOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main.class",
+        "org/apache/batik/apps/rasterizer/Messages.class",
+        "org/apache/batik/apps/rasterizer/SVGConverter$SVGFileFilter.class",
+        "org/apache/batik/apps/rasterizer/SVGConverter.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterController.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterException.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterFileSource.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterSource.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterURLSource.class",
+        "org/apache/batik/apps/rasterizer/resources/Messages.properties",
+        "org/apache/batik/apps/rasterizer/resources/rasterizer.bin.policy",
+        "org/apache/batik/apps/rasterizer/resources/rasterizer.policy.ref"
+      ],
+      "pair_id": "p021",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p021-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 49,
+        "certified_set_size_sum": 49,
+        "collision_observations": 49,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 48,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 97,
+        "provider_narrowings": 48,
+        "removed_owner_associations": 48,
+        "same_information_direct_owner_matches": 49,
+        "same_information_direct_scope_matches": 49,
+        "strict_narrowings": 48
+      },
+      "narrowed_paths": [
+        "META-INF/LICENSE",
+        "META-INF/NOTICE",
+        "org/apache/batik/apps/rasterizer/DefaultSVGConverterController.class",
+        "org/apache/batik/apps/rasterizer/DestinationType.class",
+        "org/apache/batik/apps/rasterizer/Main$1.class",
+        "org/apache/batik/apps/rasterizer/Main$10.class",
+        "org/apache/batik/apps/rasterizer/Main$11.class",
+        "org/apache/batik/apps/rasterizer/Main$12.class",
+        "org/apache/batik/apps/rasterizer/Main$13.class",
+        "org/apache/batik/apps/rasterizer/Main$14.class",
+        "org/apache/batik/apps/rasterizer/Main$15.class",
+        "org/apache/batik/apps/rasterizer/Main$16.class",
+        "org/apache/batik/apps/rasterizer/Main$17.class",
+        "org/apache/batik/apps/rasterizer/Main$18.class",
+        "org/apache/batik/apps/rasterizer/Main$19.class",
+        "org/apache/batik/apps/rasterizer/Main$2.class",
+        "org/apache/batik/apps/rasterizer/Main$20.class",
+        "org/apache/batik/apps/rasterizer/Main$21.class",
+        "org/apache/batik/apps/rasterizer/Main$22.class",
+        "org/apache/batik/apps/rasterizer/Main$23.class",
+        "org/apache/batik/apps/rasterizer/Main$3.class",
+        "org/apache/batik/apps/rasterizer/Main$4.class",
+        "org/apache/batik/apps/rasterizer/Main$5.class",
+        "org/apache/batik/apps/rasterizer/Main$6.class",
+        "org/apache/batik/apps/rasterizer/Main$7.class",
+        "org/apache/batik/apps/rasterizer/Main$8.class",
+        "org/apache/batik/apps/rasterizer/Main$9.class",
+        "org/apache/batik/apps/rasterizer/Main$AbstractOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$ColorOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$FloatOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$NoValueOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$OptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$RectangleOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$SingleValueOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$TimeOptionHandler$1.class",
+        "org/apache/batik/apps/rasterizer/Main$TimeOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main.class",
+        "org/apache/batik/apps/rasterizer/Messages.class",
+        "org/apache/batik/apps/rasterizer/SVGConverter$SVGFileFilter.class",
+        "org/apache/batik/apps/rasterizer/SVGConverter.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterController.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterException.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterFileSource.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterSource.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterURLSource.class",
+        "org/apache/batik/apps/rasterizer/resources/Messages.properties",
+        "org/apache/batik/apps/rasterizer/resources/rasterizer.bin.policy",
+        "org/apache/batik/apps/rasterizer/resources/rasterizer.policy.ref"
+      ],
+      "pair_id": "p021",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p022-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 170,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 170,
+        "certified_set_size_sum": 340,
+        "collision_observations": 170,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 170,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 170,
+        "local_set_size_sum": 340,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 170,
+        "same_information_direct_scope_matches": 170
+      },
+      "narrowed_paths": [],
+      "pair_id": "p022",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p022-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 170,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 170,
+        "certified_set_size_sum": 340,
+        "collision_observations": 170,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 170,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 170,
+        "local_set_size_sum": 340,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 170,
+        "same_information_direct_scope_matches": 170
+      },
+      "narrowed_paths": [],
+      "pair_id": "p022",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p023-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 63,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 63,
+        "certified_set_size_sum": 126,
+        "collision_observations": 63,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 63,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 63,
+        "local_set_size_sum": 126,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 63,
+        "same_information_direct_scope_matches": 63
+      },
+      "narrowed_paths": [],
+      "pair_id": "p023",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p023-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 63,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 63,
+        "certified_set_size_sum": 126,
+        "collision_observations": 63,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 63,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 63,
+        "local_set_size_sum": 126,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 63,
+        "same_information_direct_scope_matches": 63
+      },
+      "narrowed_paths": [],
+      "pair_id": "p023",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p024-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 3,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 3,
+        "certified_set_size_sum": 6,
+        "collision_observations": 3,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 3,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 3,
+        "local_set_size_sum": 6,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 3,
+        "same_information_direct_scope_matches": 3
+      },
+      "narrowed_paths": [],
+      "pair_id": "p024",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p024-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 3,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 3,
+        "certified_set_size_sum": 6,
+        "collision_observations": 3,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 3,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 3,
+        "local_set_size_sum": 6,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 3,
+        "same_information_direct_scope_matches": 3
+      },
+      "narrowed_paths": [],
+      "pair_id": "p024",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p025-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 85,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 85,
+        "certified_set_size_sum": 170,
+        "collision_observations": 85,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 85,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 85,
+        "local_set_size_sum": 170,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 85,
+        "same_information_direct_scope_matches": 85
+      },
+      "narrowed_paths": [],
+      "pair_id": "p025",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p025-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 85,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 85,
+        "certified_set_size_sum": 170,
+        "collision_observations": 85,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 85,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 85,
+        "local_set_size_sum": 170,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 85,
+        "same_information_direct_scope_matches": 85
+      },
+      "narrowed_paths": [],
+      "pair_id": "p025",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p026-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 9,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 9,
+        "certified_set_size_sum": 18,
+        "collision_observations": 9,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 9,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 9,
+        "local_set_size_sum": 18,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 9,
+        "same_information_direct_scope_matches": 9
+      },
+      "narrowed_paths": [],
+      "pair_id": "p026",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p026-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 9,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 9,
+        "certified_set_size_sum": 18,
+        "collision_observations": 9,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 9,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 9,
+        "local_set_size_sum": 18,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 9,
+        "same_information_direct_scope_matches": 9
+      },
+      "narrowed_paths": [],
+      "pair_id": "p026",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p027-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 3,
+        "certified_set_size_sum": 3,
+        "collision_observations": 3,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 53,
+        "local_ambiguous": 2,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 5,
+        "provider_narrowings": 2,
+        "removed_owner_associations": 2,
+        "same_information_direct_owner_matches": 3,
+        "same_information_direct_scope_matches": 3,
+        "strict_narrowings": 2
+      },
+      "narrowed_paths": [
+        "META-INF/LICENSE",
+        "META-INF/NOTICE"
+      ],
+      "pair_id": "p027",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p027-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 3,
+        "certified_set_size_sum": 3,
+        "collision_observations": 3,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 53,
+        "local_ambiguous": 2,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 5,
+        "provider_narrowings": 2,
+        "removed_owner_associations": 2,
+        "same_information_direct_owner_matches": 3,
+        "same_information_direct_scope_matches": 3,
+        "strict_narrowings": 2
+      },
+      "narrowed_paths": [
+        "META-INF/LICENSE",
+        "META-INF/NOTICE"
+      ],
+      "pair_id": "p027",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p028-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 1,
+        "certified_set_size_sum": 1,
+        "collision_observations": 1,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 1164,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 1,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 1,
+        "same_information_direct_scope_matches": 1
+      },
+      "narrowed_paths": [],
+      "pair_id": "p028",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p028-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 1,
+        "certified_set_size_sum": 1,
+        "collision_observations": 1,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 1164,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 1,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 1,
+        "same_information_direct_scope_matches": 1
+      },
+      "narrowed_paths": [],
+      "pair_id": "p028",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p029-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 1,
+        "certified_set_size_sum": 1,
+        "collision_observations": 1,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 349,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 1,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 1,
+        "same_information_direct_scope_matches": 1
+      },
+      "narrowed_paths": [],
+      "pair_id": "p029",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p029-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 1,
+        "certified_set_size_sum": 1,
+        "collision_observations": 1,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 349,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 1,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 1,
+        "same_information_direct_scope_matches": 1
+      },
+      "narrowed_paths": [],
+      "pair_id": "p029",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p030-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 106,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 106,
+        "certified_set_size_sum": 212,
+        "collision_observations": 106,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 389,
+        "local_ambiguous": 106,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 106,
+        "local_set_size_sum": 212,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 106,
+        "same_information_direct_scope_matches": 106
+      },
+      "narrowed_paths": [],
+      "pair_id": "p030",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p030-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 106,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 106,
+        "certified_set_size_sum": 212,
+        "collision_observations": 106,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 389,
+        "local_ambiguous": 106,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 106,
+        "local_set_size_sum": 212,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 106,
+        "same_information_direct_scope_matches": 106
+      },
+      "narrowed_paths": [],
+      "pair_id": "p030",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p031-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 140,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 140,
+        "certified_set_size_sum": 280,
+        "collision_observations": 140,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 358,
+        "local_ambiguous": 140,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 140,
+        "local_set_size_sum": 280,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 140,
+        "same_information_direct_scope_matches": 140
+      },
+      "narrowed_paths": [],
+      "pair_id": "p031",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p031-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 140,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 140,
+        "certified_set_size_sum": 280,
+        "collision_observations": 140,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 358,
+        "local_ambiguous": 140,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 140,
+        "local_set_size_sum": 280,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 140,
+        "same_information_direct_scope_matches": 140
+      },
+      "narrowed_paths": [],
+      "pair_id": "p031",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p032-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 203,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 203,
+        "certified_set_size_sum": 406,
+        "collision_observations": 203,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 358,
+        "local_ambiguous": 203,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 203,
+        "local_set_size_sum": 406,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 203,
+        "same_information_direct_scope_matches": 203
+      },
+      "narrowed_paths": [],
+      "pair_id": "p032",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p032-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 203,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 203,
+        "certified_set_size_sum": 406,
+        "collision_observations": 203,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 358,
+        "local_ambiguous": 203,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 203,
+        "local_set_size_sum": 406,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 203,
+        "same_information_direct_scope_matches": 203
+      },
+      "narrowed_paths": [],
+      "pair_id": "p032",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p033-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 140,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 140,
+        "certified_set_size_sum": 280,
+        "collision_observations": 140,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 207,
+        "local_ambiguous": 140,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 140,
+        "local_set_size_sum": 280,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 140,
+        "same_information_direct_scope_matches": 140
+      },
+      "narrowed_paths": [],
+      "pair_id": "p033",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p033-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 140,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 140,
+        "certified_set_size_sum": 280,
+        "collision_observations": 140,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 207,
+        "local_ambiguous": 140,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 140,
+        "local_set_size_sum": 280,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 140,
+        "same_information_direct_scope_matches": 140
+      },
+      "narrowed_paths": [],
+      "pair_id": "p033",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p034-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 1,
+        "certified_set_size_sum": 1,
+        "collision_observations": 1,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 908,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 1,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 1,
+        "same_information_direct_scope_matches": 1
+      },
+      "narrowed_paths": [],
+      "pair_id": "p034",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p034-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 1,
+        "certified_set_size_sum": 1,
+        "collision_observations": 1,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 908,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 1,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 1,
+        "same_information_direct_scope_matches": 1
+      },
+      "narrowed_paths": [],
+      "pair_id": "p034",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p035-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 1,
+        "certified_set_size_sum": 1,
+        "collision_observations": 1,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 3474,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 1,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 1,
+        "same_information_direct_scope_matches": 1
+      },
+      "narrowed_paths": [],
+      "pair_id": "p035",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p035-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 1,
+        "certified_set_size_sum": 1,
+        "collision_observations": 1,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 3474,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 1,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 1,
+        "same_information_direct_scope_matches": 1
+      },
+      "narrowed_paths": [],
+      "pair_id": "p035",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p036-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 29,
+        "certified_set_size_sum": 29,
+        "collision_observations": 29,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 500,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 29,
+        "local_set_size_sum": 29,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 29,
+        "same_information_direct_scope_matches": 29
+      },
+      "narrowed_paths": [],
+      "pair_id": "p036",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p036-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 29,
+        "certified_set_size_sum": 29,
+        "collision_observations": 29,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 500,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 29,
+        "local_set_size_sum": 29,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 29,
+        "same_information_direct_scope_matches": 29
+      },
+      "narrowed_paths": [],
+      "pair_id": "p036",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p037-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 29,
+        "certified_set_size_sum": 29,
+        "collision_observations": 29,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 194,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 29,
+        "local_set_size_sum": 29,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 29,
+        "same_information_direct_scope_matches": 29
+      },
+      "narrowed_paths": [],
+      "pair_id": "p037",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p037-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 29,
+        "certified_set_size_sum": 29,
+        "collision_observations": 29,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 194,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 29,
+        "local_set_size_sum": 29,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 29,
+        "same_information_direct_scope_matches": 29
+      },
+      "narrowed_paths": [],
+      "pair_id": "p037",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p038-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 45,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 45,
+        "certified_set_size_sum": 90,
+        "collision_observations": 45,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 58,
+        "local_ambiguous": 45,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 45,
+        "local_set_size_sum": 90,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 45,
+        "same_information_direct_scope_matches": 45
+      },
+      "narrowed_paths": [],
+      "pair_id": "p038",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p038-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 45,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 45,
+        "certified_set_size_sum": 90,
+        "collision_observations": 45,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 58,
+        "local_ambiguous": 45,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 45,
+        "local_set_size_sum": 90,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 45,
+        "same_information_direct_scope_matches": 45
+      },
+      "narrowed_paths": [],
+      "pair_id": "p038",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p039-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 301,
+        "certified_set_size_sum": 301,
+        "collision_observations": 301,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 543,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 301,
+        "local_set_size_sum": 301,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 301,
+        "same_information_direct_scope_matches": 301
+      },
+      "narrowed_paths": [],
+      "pair_id": "p039",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p039-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 301,
+        "certified_set_size_sum": 301,
+        "collision_observations": 301,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 543,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 301,
+        "local_set_size_sum": 301,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 301,
+        "same_information_direct_scope_matches": 301
+      },
+      "narrowed_paths": [],
+      "pair_id": "p039",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p040-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 192,
+        "certified_set_size_sum": 192,
+        "collision_observations": 192,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 498,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 192,
+        "local_set_size_sum": 192,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 192,
+        "same_information_direct_scope_matches": 192
+      },
+      "narrowed_paths": [],
+      "pair_id": "p040",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p040-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 192,
+        "certified_set_size_sum": 192,
+        "collision_observations": 192,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 498,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 192,
+        "local_set_size_sum": 192,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 192,
+        "same_information_direct_scope_matches": 192
+      },
+      "narrowed_paths": [],
+      "pair_id": "p040",
+      "scheme": "archive"
+    },
+    {
+      "build_id": "p001-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 401,
+        "certified_set_size_sum": 401,
+        "collision_observations": 401,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 401,
+        "local_set_size_sum": 401,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 401,
+        "same_information_direct_scope_matches": 401
+      },
+      "narrowed_paths": [],
+      "pair_id": "p001",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p001-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 401,
+        "certified_set_size_sum": 401,
+        "collision_observations": 401,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 401,
+        "local_set_size_sum": 401,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 401,
+        "same_information_direct_scope_matches": 401
+      },
+      "narrowed_paths": [],
+      "pair_id": "p001",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p002-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 226,
+        "certified_set_size_sum": 226,
+        "collision_observations": 226,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 226,
+        "local_set_size_sum": 226,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 226,
+        "same_information_direct_scope_matches": 226
+      },
+      "narrowed_paths": [],
+      "pair_id": "p002",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p002-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 226,
+        "certified_set_size_sum": 226,
+        "collision_observations": 226,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 226,
+        "local_set_size_sum": 226,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 226,
+        "same_information_direct_scope_matches": 226
+      },
+      "narrowed_paths": [],
+      "pair_id": "p002",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p003-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 405,
+        "certified_set_size_sum": 405,
+        "collision_observations": 405,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 405,
+        "local_set_size_sum": 405,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 405,
+        "same_information_direct_scope_matches": 405
+      },
+      "narrowed_paths": [],
+      "pair_id": "p003",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p003-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 405,
+        "certified_set_size_sum": 405,
+        "collision_observations": 405,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 405,
+        "local_set_size_sum": 405,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 405,
+        "same_information_direct_scope_matches": 405
+      },
+      "narrowed_paths": [],
+      "pair_id": "p003",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p004-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 50,
+        "certified_set_size_sum": 50,
+        "collision_observations": 50,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 50,
+        "local_set_size_sum": 50,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 50,
+        "same_information_direct_scope_matches": 50
+      },
+      "narrowed_paths": [],
+      "pair_id": "p004",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p004-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 50,
+        "certified_set_size_sum": 50,
+        "collision_observations": 50,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 50,
+        "local_set_size_sum": 50,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 50,
+        "same_information_direct_scope_matches": 50
+      },
+      "narrowed_paths": [],
+      "pair_id": "p004",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p005-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 3,
+        "certified_set_size_sum": 3,
+        "collision_observations": 3,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 3,
+        "local_set_size_sum": 3,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 3,
+        "same_information_direct_scope_matches": 3
+      },
+      "narrowed_paths": [],
+      "pair_id": "p005",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p005-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 3,
+        "certified_set_size_sum": 3,
+        "collision_observations": 3,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 3,
+        "local_set_size_sum": 3,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 3,
+        "same_information_direct_scope_matches": 3
+      },
+      "narrowed_paths": [],
+      "pair_id": "p005",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p006-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 242,
+        "certified_set_size_sum": 242,
+        "collision_observations": 242,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 242,
+        "local_set_size_sum": 242,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 242,
+        "same_information_direct_scope_matches": 242
+      },
+      "narrowed_paths": [],
+      "pair_id": "p006",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p006-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 242,
+        "certified_set_size_sum": 242,
+        "collision_observations": 242,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 242,
+        "local_set_size_sum": 242,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 242,
+        "same_information_direct_scope_matches": 242
+      },
+      "narrowed_paths": [],
+      "pair_id": "p006",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p007-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 118,
+        "certified_set_size_sum": 118,
+        "collision_observations": 118,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 118,
+        "local_set_size_sum": 118,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 118,
+        "same_information_direct_scope_matches": 118
+      },
+      "narrowed_paths": [],
+      "pair_id": "p007",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p007-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 118,
+        "certified_set_size_sum": 118,
+        "collision_observations": 118,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 118,
+        "local_set_size_sum": 118,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 118,
+        "same_information_direct_scope_matches": 118
+      },
+      "narrowed_paths": [],
+      "pair_id": "p007",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p008-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 9,
+        "certified_set_size_sum": 9,
+        "collision_observations": 9,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 9,
+        "local_set_size_sum": 9,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 9,
+        "same_information_direct_scope_matches": 9
+      },
+      "narrowed_paths": [],
+      "pair_id": "p008",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p008-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 9,
+        "certified_set_size_sum": 9,
+        "collision_observations": 9,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 9,
+        "local_set_size_sum": 9,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 9,
+        "same_information_direct_scope_matches": 9
+      },
+      "narrowed_paths": [],
+      "pair_id": "p008",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p009-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 52,
+        "certified_set_size_sum": 52,
+        "collision_observations": 52,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 52,
+        "local_set_size_sum": 52,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 52,
+        "same_information_direct_scope_matches": 52
+      },
+      "narrowed_paths": [],
+      "pair_id": "p009",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p009-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 52,
+        "certified_set_size_sum": 52,
+        "collision_observations": 52,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 52,
+        "local_set_size_sum": 52,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 52,
+        "same_information_direct_scope_matches": 52
+      },
+      "narrowed_paths": [],
+      "pair_id": "p009",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p010-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 210,
+        "certified_set_size_sum": 210,
+        "collision_observations": 210,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 210,
+        "local_set_size_sum": 210,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 210,
+        "same_information_direct_scope_matches": 210
+      },
+      "narrowed_paths": [],
+      "pair_id": "p010",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p010-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 210,
+        "certified_set_size_sum": 210,
+        "collision_observations": 210,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 210,
+        "local_set_size_sum": 210,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 210,
+        "same_information_direct_scope_matches": 210
+      },
+      "narrowed_paths": [],
+      "pair_id": "p010",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p011-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 105,
+        "certified_set_size_sum": 105,
+        "collision_observations": 105,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 105,
+        "local_set_size_sum": 105,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 105,
+        "same_information_direct_scope_matches": 105
+      },
+      "narrowed_paths": [],
+      "pair_id": "p011",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p011-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 105,
+        "certified_set_size_sum": 105,
+        "collision_observations": 105,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 105,
+        "local_set_size_sum": 105,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 105,
+        "same_information_direct_scope_matches": 105
+      },
+      "narrowed_paths": [],
+      "pair_id": "p011",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p012-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 6,
+        "certified_set_size_sum": 6,
+        "collision_observations": 6,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 6,
+        "local_set_size_sum": 6,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 6,
+        "same_information_direct_scope_matches": 6
+      },
+      "narrowed_paths": [],
+      "pair_id": "p012",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p012-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 6,
+        "certified_set_size_sum": 6,
+        "collision_observations": 6,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 6,
+        "local_set_size_sum": 6,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 6,
+        "same_information_direct_scope_matches": 6
+      },
+      "narrowed_paths": [],
+      "pair_id": "p012",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p013-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 59,
+        "certified_set_size_sum": 59,
+        "collision_observations": 59,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 59,
+        "local_set_size_sum": 59,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 59,
+        "same_information_direct_scope_matches": 59
+      },
+      "narrowed_paths": [],
+      "pair_id": "p013",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p013-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 59,
+        "certified_set_size_sum": 59,
+        "collision_observations": 59,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 59,
+        "local_set_size_sum": 59,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 59,
+        "same_information_direct_scope_matches": 59
+      },
+      "narrowed_paths": [],
+      "pair_id": "p013",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p014-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 3,
+        "certified_set_size_sum": 3,
+        "collision_observations": 3,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 3,
+        "local_set_size_sum": 3,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 3,
+        "same_information_direct_scope_matches": 3
+      },
+      "narrowed_paths": [],
+      "pair_id": "p014",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p014-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 3,
+        "certified_set_size_sum": 3,
+        "collision_observations": 3,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 3,
+        "local_set_size_sum": 3,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 3,
+        "same_information_direct_scope_matches": 3
+      },
+      "narrowed_paths": [],
+      "pair_id": "p014",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p015-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 16,
+        "certified_set_size_sum": 16,
+        "collision_observations": 16,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 16,
+        "local_set_size_sum": 16,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 16,
+        "same_information_direct_scope_matches": 16
+      },
+      "narrowed_paths": [],
+      "pair_id": "p015",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p015-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 16,
+        "certified_set_size_sum": 16,
+        "collision_observations": 16,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 16,
+        "local_set_size_sum": 16,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 16,
+        "same_information_direct_scope_matches": 16
+      },
+      "narrowed_paths": [],
+      "pair_id": "p015",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p016-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 6,
+        "certified_set_size_sum": 6,
+        "collision_observations": 6,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 6,
+        "local_set_size_sum": 6,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 6,
+        "same_information_direct_scope_matches": 6
+      },
+      "narrowed_paths": [],
+      "pair_id": "p016",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p016-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 6,
+        "certified_set_size_sum": 6,
+        "collision_observations": 6,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 6,
+        "local_set_size_sum": 6,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 6,
+        "same_information_direct_scope_matches": 6
+      },
+      "narrowed_paths": [],
+      "pair_id": "p016",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p017-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 121,
+        "certified_set_size_sum": 121,
+        "collision_observations": 121,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 121,
+        "local_set_size_sum": 121,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 121,
+        "same_information_direct_scope_matches": 121
+      },
+      "narrowed_paths": [],
+      "pair_id": "p017",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p017-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 121,
+        "certified_set_size_sum": 121,
+        "collision_observations": 121,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 121,
+        "local_set_size_sum": 121,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 121,
+        "same_information_direct_scope_matches": 121
+      },
+      "narrowed_paths": [],
+      "pair_id": "p017",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p018-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 302,
+        "certified_set_size_sum": 302,
+        "collision_observations": 302,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 302,
+        "local_set_size_sum": 302,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 302,
+        "same_information_direct_scope_matches": 302
+      },
+      "narrowed_paths": [],
+      "pair_id": "p018",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p018-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 302,
+        "certified_set_size_sum": 302,
+        "collision_observations": 302,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 302,
+        "local_set_size_sum": 302,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 302,
+        "same_information_direct_scope_matches": 302
+      },
+      "narrowed_paths": [],
+      "pair_id": "p018",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p019-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 160,
+        "certified_set_size_sum": 160,
+        "collision_observations": 160,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 160,
+        "local_set_size_sum": 160,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 160,
+        "same_information_direct_scope_matches": 160
+      },
+      "narrowed_paths": [],
+      "pair_id": "p019",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p019-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 160,
+        "certified_set_size_sum": 160,
+        "collision_observations": 160,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 160,
+        "local_set_size_sum": 160,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 160,
+        "same_information_direct_scope_matches": 160
+      },
+      "narrowed_paths": [],
+      "pair_id": "p019",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p020-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 13,
+        "certified_set_size_sum": 13,
+        "collision_observations": 13,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 13,
+        "local_set_size_sum": 13,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 13,
+        "same_information_direct_scope_matches": 13
+      },
+      "narrowed_paths": [],
+      "pair_id": "p020",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p020-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 13,
+        "certified_set_size_sum": 13,
+        "collision_observations": 13,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 13,
+        "local_set_size_sum": 13,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 13,
+        "same_information_direct_scope_matches": 13
+      },
+      "narrowed_paths": [],
+      "pair_id": "p020",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p021-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 49,
+        "certified_set_size_sum": 49,
+        "collision_observations": 49,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 49,
+        "local_set_size_sum": 49,
+        "provider_narrowings": 48,
+        "same_information_direct_owner_matches": 49,
+        "same_information_direct_scope_matches": 49
+      },
+      "narrowed_paths": [],
+      "pair_id": "p021",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p021-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 49,
+        "certified_set_size_sum": 49,
+        "collision_observations": 49,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 49,
+        "local_set_size_sum": 49,
+        "provider_narrowings": 48,
+        "same_information_direct_owner_matches": 49,
+        "same_information_direct_scope_matches": 49
+      },
+      "narrowed_paths": [],
+      "pair_id": "p021",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p022-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 170,
+        "certified_set_size_sum": 170,
+        "collision_observations": 170,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 170,
+        "local_set_size_sum": 170,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 170,
+        "same_information_direct_scope_matches": 170
+      },
+      "narrowed_paths": [],
+      "pair_id": "p022",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p022-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 170,
+        "certified_set_size_sum": 170,
+        "collision_observations": 170,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 170,
+        "local_set_size_sum": 170,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 170,
+        "same_information_direct_scope_matches": 170
+      },
+      "narrowed_paths": [],
+      "pair_id": "p022",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p023-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 63,
+        "certified_set_size_sum": 63,
+        "collision_observations": 63,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 63,
+        "local_set_size_sum": 63,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 63,
+        "same_information_direct_scope_matches": 63
+      },
+      "narrowed_paths": [],
+      "pair_id": "p023",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p023-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 63,
+        "certified_set_size_sum": 63,
+        "collision_observations": 63,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 63,
+        "local_set_size_sum": 63,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 63,
+        "same_information_direct_scope_matches": 63
+      },
+      "narrowed_paths": [],
+      "pair_id": "p023",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p024-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 3,
+        "certified_set_size_sum": 3,
+        "collision_observations": 3,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 3,
+        "local_set_size_sum": 3,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 3,
+        "same_information_direct_scope_matches": 3
+      },
+      "narrowed_paths": [],
+      "pair_id": "p024",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p024-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 3,
+        "certified_set_size_sum": 3,
+        "collision_observations": 3,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 3,
+        "local_set_size_sum": 3,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 3,
+        "same_information_direct_scope_matches": 3
+      },
+      "narrowed_paths": [],
+      "pair_id": "p024",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p025-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 85,
+        "certified_set_size_sum": 85,
+        "collision_observations": 85,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 85,
+        "local_set_size_sum": 85,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 85,
+        "same_information_direct_scope_matches": 85
+      },
+      "narrowed_paths": [],
+      "pair_id": "p025",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p025-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 85,
+        "certified_set_size_sum": 85,
+        "collision_observations": 85,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 85,
+        "local_set_size_sum": 85,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 85,
+        "same_information_direct_scope_matches": 85
+      },
+      "narrowed_paths": [],
+      "pair_id": "p025",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p026-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 9,
+        "certified_set_size_sum": 9,
+        "collision_observations": 9,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 9,
+        "local_set_size_sum": 9,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 9,
+        "same_information_direct_scope_matches": 9
+      },
+      "narrowed_paths": [],
+      "pair_id": "p026",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p026-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 9,
+        "certified_set_size_sum": 9,
+        "collision_observations": 9,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 2837,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 9,
+        "local_set_size_sum": 9,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 9,
+        "same_information_direct_scope_matches": 9
+      },
+      "narrowed_paths": [],
+      "pair_id": "p026",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p027-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 3,
+        "certified_set_size_sum": 3,
+        "collision_observations": 3,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 53,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 3,
+        "local_set_size_sum": 3,
+        "provider_narrowings": 2,
+        "same_information_direct_owner_matches": 3,
+        "same_information_direct_scope_matches": 3
+      },
+      "narrowed_paths": [],
+      "pair_id": "p027",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p027-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 3,
+        "certified_set_size_sum": 3,
+        "collision_observations": 3,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 53,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 3,
+        "local_set_size_sum": 3,
+        "provider_narrowings": 2,
+        "same_information_direct_owner_matches": 3,
+        "same_information_direct_scope_matches": 3
+      },
+      "narrowed_paths": [],
+      "pair_id": "p027",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p028-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 1,
+        "certified_set_size_sum": 1,
+        "collision_observations": 1,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 1164,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 1,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 1,
+        "same_information_direct_scope_matches": 1
+      },
+      "narrowed_paths": [],
+      "pair_id": "p028",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p028-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 1,
+        "certified_set_size_sum": 1,
+        "collision_observations": 1,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 1164,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 1,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 1,
+        "same_information_direct_scope_matches": 1
+      },
+      "narrowed_paths": [],
+      "pair_id": "p028",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p029-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 1,
+        "certified_set_size_sum": 1,
+        "collision_observations": 1,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 349,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 1,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 1,
+        "same_information_direct_scope_matches": 1
+      },
+      "narrowed_paths": [],
+      "pair_id": "p029",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p029-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 1,
+        "certified_set_size_sum": 1,
+        "collision_observations": 1,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 349,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 1,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 1,
+        "same_information_direct_scope_matches": 1
+      },
+      "narrowed_paths": [],
+      "pair_id": "p029",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p030-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 106,
+        "certified_set_size_sum": 106,
+        "collision_observations": 106,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 389,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 106,
+        "local_set_size_sum": 106,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 106,
+        "same_information_direct_scope_matches": 106
+      },
+      "narrowed_paths": [],
+      "pair_id": "p030",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p030-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 106,
+        "certified_set_size_sum": 106,
+        "collision_observations": 106,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 389,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 106,
+        "local_set_size_sum": 106,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 106,
+        "same_information_direct_scope_matches": 106
+      },
+      "narrowed_paths": [],
+      "pair_id": "p030",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p031-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 140,
+        "certified_set_size_sum": 140,
+        "collision_observations": 140,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 358,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 140,
+        "local_set_size_sum": 140,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 140,
+        "same_information_direct_scope_matches": 140
+      },
+      "narrowed_paths": [],
+      "pair_id": "p031",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p031-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 140,
+        "certified_set_size_sum": 140,
+        "collision_observations": 140,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 358,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 140,
+        "local_set_size_sum": 140,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 140,
+        "same_information_direct_scope_matches": 140
+      },
+      "narrowed_paths": [],
+      "pair_id": "p031",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p032-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 203,
+        "certified_set_size_sum": 203,
+        "collision_observations": 203,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 358,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 203,
+        "local_set_size_sum": 203,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 203,
+        "same_information_direct_scope_matches": 203
+      },
+      "narrowed_paths": [],
+      "pair_id": "p032",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p032-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 203,
+        "certified_set_size_sum": 203,
+        "collision_observations": 203,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 358,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 203,
+        "local_set_size_sum": 203,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 203,
+        "same_information_direct_scope_matches": 203
+      },
+      "narrowed_paths": [],
+      "pair_id": "p032",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p033-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 140,
+        "certified_set_size_sum": 140,
+        "collision_observations": 140,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 207,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 140,
+        "local_set_size_sum": 140,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 140,
+        "same_information_direct_scope_matches": 140
+      },
+      "narrowed_paths": [],
+      "pair_id": "p033",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p033-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 140,
+        "certified_set_size_sum": 140,
+        "collision_observations": 140,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 207,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 140,
+        "local_set_size_sum": 140,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 140,
+        "same_information_direct_scope_matches": 140
+      },
+      "narrowed_paths": [],
+      "pair_id": "p033",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p034-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 1,
+        "certified_set_size_sum": 1,
+        "collision_observations": 1,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 908,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 1,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 1,
+        "same_information_direct_scope_matches": 1
+      },
+      "narrowed_paths": [],
+      "pair_id": "p034",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p034-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 1,
+        "certified_set_size_sum": 1,
+        "collision_observations": 1,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 908,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 1,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 1,
+        "same_information_direct_scope_matches": 1
+      },
+      "narrowed_paths": [],
+      "pair_id": "p034",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p035-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 1,
+        "certified_set_size_sum": 1,
+        "collision_observations": 1,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 3474,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 1,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 1,
+        "same_information_direct_scope_matches": 1
+      },
+      "narrowed_paths": [],
+      "pair_id": "p035",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p035-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 1,
+        "certified_set_size_sum": 1,
+        "collision_observations": 1,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 3474,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 1,
+        "local_set_size_sum": 1,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 1,
+        "same_information_direct_scope_matches": 1
+      },
+      "narrowed_paths": [],
+      "pair_id": "p035",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p036-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 29,
+        "certified_set_size_sum": 29,
+        "collision_observations": 29,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 500,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 29,
+        "local_set_size_sum": 29,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 29,
+        "same_information_direct_scope_matches": 29
+      },
+      "narrowed_paths": [],
+      "pair_id": "p036",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p036-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 29,
+        "certified_set_size_sum": 29,
+        "collision_observations": 29,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 500,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 29,
+        "local_set_size_sum": 29,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 29,
+        "same_information_direct_scope_matches": 29
+      },
+      "narrowed_paths": [],
+      "pair_id": "p036",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p037-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 29,
+        "certified_set_size_sum": 29,
+        "collision_observations": 29,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 194,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 29,
+        "local_set_size_sum": 29,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 29,
+        "same_information_direct_scope_matches": 29
+      },
+      "narrowed_paths": [],
+      "pair_id": "p037",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p037-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 29,
+        "certified_set_size_sum": 29,
+        "collision_observations": 29,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 194,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 29,
+        "local_set_size_sum": 29,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 29,
+        "same_information_direct_scope_matches": 29
+      },
+      "narrowed_paths": [],
+      "pair_id": "p037",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p038-ab",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 45,
+        "certified_set_size_sum": 45,
+        "collision_observations": 45,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 58,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 45,
+        "local_set_size_sum": 45,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 45,
+        "same_information_direct_scope_matches": 45
+      },
+      "narrowed_paths": [],
+      "pair_id": "p038",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p038-ba",
+      "counts": {
+        "admissible_orders": 2,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 45,
+        "certified_set_size_sum": 45,
+        "collision_observations": 45,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 58,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 45,
+        "local_set_size_sum": 45,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 45,
+        "same_information_direct_scope_matches": 45
+      },
+      "narrowed_paths": [],
+      "pair_id": "p038",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p039-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 301,
+        "certified_set_size_sum": 301,
+        "collision_observations": 301,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 543,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 301,
+        "local_set_size_sum": 301,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 301,
+        "same_information_direct_scope_matches": 301
+      },
+      "narrowed_paths": [],
+      "pair_id": "p039",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p039-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 301,
+        "certified_set_size_sum": 301,
+        "collision_observations": 301,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 543,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 301,
+        "local_set_size_sum": 301,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 301,
+        "same_information_direct_scope_matches": 301
+      },
+      "narrowed_paths": [],
+      "pair_id": "p039",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p040-ab",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 192,
+        "certified_set_size_sum": 192,
+        "collision_observations": 192,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 498,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 192,
+        "local_set_size_sum": 192,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 192,
+        "same_information_direct_scope_matches": 192
+      },
+      "narrowed_paths": [],
+      "pair_id": "p040",
+      "scheme": "debian_package"
+    },
+    {
+      "build_id": "p040-ba",
+      "counts": {
+        "admissible_orders": 1,
+        "certified_ambiguous": 0,
+        "certified_developer_inclusions": 0,
+        "certified_exact_count": 192,
+        "certified_set_size_sum": 192,
+        "collision_observations": 192,
+        "developer_scope_differences": 0,
+        "direct_developer_inclusions": 0,
+        "entry_regions": 498,
+        "local_ambiguous": 0,
+        "local_developer_inclusions": 0,
+        "local_exact_count": 192,
+        "local_set_size_sum": 192,
+        "provider_narrowings": 0,
+        "same_information_direct_owner_matches": 192,
+        "same_information_direct_scope_matches": 192
+      },
+      "narrowed_paths": [],
+      "pair_id": "p040",
+      "scheme": "debian_package"
+    }
+  ],
+  "pair_cases": 40,
+  "pairs": [
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-anim-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 401,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-anim-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p001",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-anim-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p001",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-awt-util-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 226,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-awt-util-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p002",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-awt-util-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p002",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-bridge-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 405,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-bridge-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p003",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-bridge-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p003",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-codec-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 50,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-codec-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p004",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-codec-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p004",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-constants-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 3,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-constants-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p005",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-constants-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p005",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-css-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 242,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-css-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p006",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-css-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p006",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-dom-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 118,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-dom-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p007",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-dom-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p007",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-ext-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 9,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-ext-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p008",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-ext-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p008",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-extension-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 52,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-extension-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p009",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-extension-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p009",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-gui-util-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 210,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-gui-util-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p010",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-gui-util-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p010",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-gvt-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 105,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-gvt-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p011",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-gvt-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p011",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-i18n-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 6,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-i18n-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p012",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-i18n-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p012",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-parser-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 59,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-parser-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p013",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-parser-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p013",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-rasterizer-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 3,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-rasterizer-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p014",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-rasterizer-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p014",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-script-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 16,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-script-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p015",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-script-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p015",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-slideshow-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 6,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-slideshow-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p016",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-slideshow-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p016",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svg-dom-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 121,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-svg-dom-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p017",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svg-dom-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p017",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svgbrowser-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 302,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-svgbrowser-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p018",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svgbrowser-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p018",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svggen-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 160,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-svggen-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p019",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svggen-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p019",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svgpp-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 13,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-svgpp-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p020",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svgpp-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p020",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svgrasterizer-1.18.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-svgrasterizer-1.18"
+      ],
+      "narrowed_paths": [
+        "META-INF/LICENSE",
+        "META-INF/NOTICE",
+        "org/apache/batik/apps/rasterizer/DefaultSVGConverterController.class",
+        "org/apache/batik/apps/rasterizer/DestinationType.class",
+        "org/apache/batik/apps/rasterizer/Main$1.class",
+        "org/apache/batik/apps/rasterizer/Main$10.class",
+        "org/apache/batik/apps/rasterizer/Main$11.class",
+        "org/apache/batik/apps/rasterizer/Main$12.class",
+        "org/apache/batik/apps/rasterizer/Main$13.class",
+        "org/apache/batik/apps/rasterizer/Main$14.class",
+        "org/apache/batik/apps/rasterizer/Main$15.class",
+        "org/apache/batik/apps/rasterizer/Main$16.class",
+        "org/apache/batik/apps/rasterizer/Main$17.class",
+        "org/apache/batik/apps/rasterizer/Main$18.class",
+        "org/apache/batik/apps/rasterizer/Main$19.class",
+        "org/apache/batik/apps/rasterizer/Main$2.class",
+        "org/apache/batik/apps/rasterizer/Main$20.class",
+        "org/apache/batik/apps/rasterizer/Main$21.class",
+        "org/apache/batik/apps/rasterizer/Main$22.class",
+        "org/apache/batik/apps/rasterizer/Main$23.class",
+        "org/apache/batik/apps/rasterizer/Main$3.class",
+        "org/apache/batik/apps/rasterizer/Main$4.class",
+        "org/apache/batik/apps/rasterizer/Main$5.class",
+        "org/apache/batik/apps/rasterizer/Main$6.class",
+        "org/apache/batik/apps/rasterizer/Main$7.class",
+        "org/apache/batik/apps/rasterizer/Main$8.class",
+        "org/apache/batik/apps/rasterizer/Main$9.class",
+        "org/apache/batik/apps/rasterizer/Main$AbstractOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$ColorOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$FloatOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$NoValueOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$OptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$RectangleOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$SingleValueOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main$TimeOptionHandler$1.class",
+        "org/apache/batik/apps/rasterizer/Main$TimeOptionHandler.class",
+        "org/apache/batik/apps/rasterizer/Main.class",
+        "org/apache/batik/apps/rasterizer/Messages.class",
+        "org/apache/batik/apps/rasterizer/SVGConverter$SVGFileFilter.class",
+        "org/apache/batik/apps/rasterizer/SVGConverter.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterController.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterException.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterFileSource.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterSource.class",
+        "org/apache/batik/apps/rasterizer/SVGConverterURLSource.class",
+        "org/apache/batik/apps/rasterizer/resources/Messages.properties",
+        "org/apache/batik/apps/rasterizer/resources/rasterizer.bin.policy",
+        "org/apache/batik/apps/rasterizer/resources/rasterizer.policy.ref"
+      ],
+      "pair_id": "p021",
+      "scheme": "archive",
+      "strict_narrowings": 96
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-svgrasterizer-1.18.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p021",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-swing-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 170,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-swing-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p022",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-swing-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p022",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-transcoder-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 63,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-transcoder-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p023",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-transcoder-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p023",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-ttf2svg-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 3,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-ttf2svg-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p024",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-ttf2svg-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p024",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-util-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 85,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-util-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p025",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-util-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p025",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-xml-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 9,
+      "labels": [
+        "lib:batik-all-1.18",
+        "lib:batik-xml-1.18"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p026",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-all-1.18.jar",
+        "batik-xml-1.18.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p026",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "batik-rasterizer-1.18.jar",
+        "batik-svgrasterizer-1.18.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:batik-rasterizer-1.18",
+        "lib:batik-svgrasterizer-1.18"
+      ],
+      "narrowed_paths": [
+        "META-INF/LICENSE",
+        "META-INF/NOTICE"
+      ],
+      "pair_id": "p027",
+      "scheme": "archive",
+      "strict_narrowings": 4
+    },
+    {
+      "archives": [
+        "batik-rasterizer-1.18.jar",
+        "batik-svgrasterizer-1.18.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libbatik-java",
+        "deb:libbatik-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p027",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "flow-engine-0.9.4.jar",
+        "liblayout-0.2.10.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:flow-engine-0.9.4",
+        "lib:liblayout-0.2.10"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p028",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "flow-engine-0.9.4.jar",
+        "liblayout-0.2.10.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libpentaho-reporting-flow-engine-java",
+        "deb:liblayout-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p028",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "flow-engine-0.9.4.jar",
+        "libxml-1.1.7.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:flow-engine-0.9.4",
+        "lib:libxml-1.1.7"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p029",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "flow-engine-0.9.4.jar",
+        "libxml-1.1.7.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libpentaho-reporting-flow-engine-java",
+        "deb:libxml-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p029",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "hsqldb1.8.0-1.8.0.10+dfsg.jar",
+        "hsqldbutil1.8.0-1.8.0.10+dfsg.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 106,
+      "labels": [
+        "lib:hsqldb1.8.0-1.8.0.10+dfsg",
+        "lib:hsqldbutil1.8.0-1.8.0.10+dfsg"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p030",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "hsqldb1.8.0-1.8.0.10+dfsg.jar",
+        "hsqldbutil1.8.0-1.8.0.10+dfsg.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libhsqldb1.8.0-java",
+        "deb:libhsqldb1.8.0-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p030",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "javax.mail-1.6.5.jar",
+        "javax.mail-api-1.6.5.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 140,
+      "labels": [
+        "lib:javax.mail-1.6.5",
+        "lib:javax.mail-api-1.6.5"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p031",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "javax.mail-1.6.5.jar",
+        "javax.mail-api-1.6.5.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libmail-java",
+        "deb:libmail-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p031",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "javax.mail-1.6.5.jar",
+        "mailapi-1.6.5.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 203,
+      "labels": [
+        "lib:javax.mail-1.6.5",
+        "lib:mailapi-1.6.5"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p032",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "javax.mail-1.6.5.jar",
+        "mailapi-1.6.5.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libmail-java",
+        "deb:libmail-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p032",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "javax.mail-api-1.6.5.jar",
+        "mailapi-1.6.5.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 140,
+      "labels": [
+        "lib:javax.mail-api-1.6.5",
+        "lib:mailapi-1.6.5"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p033",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "javax.mail-api-1.6.5.jar",
+        "mailapi-1.6.5.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libmail-java",
+        "deb:libmail-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p033",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "liblayout-0.2.10.jar",
+        "libxml-1.1.7.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:liblayout-0.2.10",
+        "lib:libxml-1.1.7"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p034",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "liblayout-0.2.10.jar",
+        "libxml-1.1.7.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:liblayout-java",
+        "deb:libxml-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p034",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "libreoffice-25.2.3.jar",
+        "unoloader-25.2.3.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:libreoffice-25.2.3",
+        "lib:unoloader-25.2.3"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p035",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "libreoffice-25.2.3.jar",
+        "unoloader-25.2.3.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:liblibreoffice-java",
+        "deb:libunoloader-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p035",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "sac.jar",
+        "xml-apis-1.3.04.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:sac",
+        "lib:xml-apis-1.3.04"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p036",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "sac.jar",
+        "xml-apis-1.3.04.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libsac-java",
+        "deb:libjaxp1.3-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p036",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "sac.jar",
+        "xml-apis-ext-1.4.01.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:sac",
+        "lib:xml-apis-ext-1.4.01"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p037",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "sac.jar",
+        "xml-apis-ext-1.4.01.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libsac-java",
+        "deb:libxml-commons-external-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p037",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "websocket-api.jar",
+        "websocket-client-api.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 45,
+      "labels": [
+        "lib:websocket-api",
+        "lib:websocket-client-api"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p038",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "websocket-api.jar",
+        "websocket-client-api.jar"
+      ],
+      "identical_content_maps": true,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libwebsocket-api-java",
+        "deb:libwebsocket-api-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p038",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "xml-apis-1.3.04.jar",
+        "xml-apis-1.4.01.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:xml-apis-1.3.04",
+        "lib:xml-apis-1.4.01"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p039",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "xml-apis-1.3.04.jar",
+        "xml-apis-1.4.01.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libjaxp1.3-java",
+        "deb:libxml-commons-external-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p039",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "xml-apis-1.3.04.jar",
+        "xml-apis-ext-1.4.01.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "lib:xml-apis-1.3.04",
+        "lib:xml-apis-ext-1.4.01"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p040",
+      "scheme": "archive",
+      "strict_narrowings": 0
+    },
+    {
+      "archives": [
+        "xml-apis-1.3.04.jar",
+        "xml-apis-ext-1.4.01.jar"
+      ],
+      "identical_content_maps": false,
+      "identical_output_pair_paths_with_owner_flip": 0,
+      "labels": [
+        "deb:libjaxp1.3-java",
+        "deb:libxml-commons-external-java"
+      ],
+      "narrowed_paths": [],
+      "pair_id": "p040",
+      "scheme": "debian_package",
+      "strict_narrowings": 0
+    }
+  ],
+  "provider_archives": 43,
+  "retained_case_count_checks": 80,
+  "scope": "New model replay on retained provider bytes; no new Ant builds or downstream analyzer execution."
+}

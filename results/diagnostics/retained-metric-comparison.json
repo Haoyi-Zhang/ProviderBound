@@ -1,0 +1,218 @@
+[
+  {
+    "current": 140,
+    "field": "admissible_orders",
+    "retained": 140,
+    "scheme": "archive"
+  },
+  {
+    "current": 6942,
+    "field": "certified_ambiguous",
+    "retained": 6942,
+    "scheme": "archive"
+  },
+  {
+    "current": 8156,
+    "field": "certified_exact_count",
+    "retained": 8156,
+    "scheme": "archive"
+  },
+  {
+    "current": 1.0,
+    "field": "certified_exact_rate",
+    "retained": 1.0,
+    "scheme": "archive"
+  },
+  {
+    "current": 1.8511525257479156,
+    "field": "certified_mean_set_size",
+    "retained": 1.8511525257479156,
+    "scheme": "archive"
+  },
+  {
+    "current": 15098,
+    "field": "certified_set_size_sum",
+    "retained": 15098,
+    "scheme": "archive"
+  },
+  {
+    "current": 8156,
+    "field": "collision_observations",
+    "retained": 8156,
+    "scheme": "archive"
+  },
+  {
+    "current": 0,
+    "field": "developer_scope_differences",
+    "retained": 0,
+    "scheme": "archive"
+  },
+  {
+    "current": 165630,
+    "field": "entry_regions",
+    "retained": 165630,
+    "scheme": "archive"
+  },
+  {
+    "current": 3471,
+    "field": "identical_output_pair_paths_with_owner_flip",
+    "retained": 3471,
+    "scheme": "archive"
+  },
+  {
+    "current": 7042,
+    "field": "local_ambiguous",
+    "retained": 7042,
+    "scheme": "archive"
+  },
+  {
+    "current": 8056,
+    "field": "local_exact_count",
+    "retained": 8056,
+    "scheme": "archive"
+  },
+  {
+    "current": 0.9877390877881315,
+    "field": "local_exact_rate",
+    "retained": 0.9877390877881315,
+    "scheme": "archive"
+  },
+  {
+    "current": 1.8634134379597842,
+    "field": "local_mean_set_size",
+    "retained": 1.8634134379597842,
+    "scheme": "archive"
+  },
+  {
+    "current": 15198,
+    "field": "local_set_size_sum",
+    "retained": 15198,
+    "scheme": "archive"
+  },
+  {
+    "current": 100,
+    "field": "provider_narrowings",
+    "retained": 100,
+    "scheme": "archive"
+  },
+  {
+    "current": 100,
+    "field": "removed_owner_associations",
+    "retained": 100,
+    "scheme": "archive"
+  },
+  {
+    "current": 100,
+    "field": "strict_narrowings",
+    "retained": 100,
+    "scheme": "archive"
+  },
+  {
+    "current": 140,
+    "field": "admissible_orders",
+    "retained": 140,
+    "scheme": "debian_package"
+  },
+  {
+    "current": 0,
+    "field": "certified_ambiguous",
+    "retained": 0,
+    "scheme": "debian_package"
+  },
+  {
+    "current": 8156,
+    "field": "certified_exact_count",
+    "retained": 8156,
+    "scheme": "debian_package"
+  },
+  {
+    "current": 1.0,
+    "field": "certified_exact_rate",
+    "retained": 1.0,
+    "scheme": "debian_package"
+  },
+  {
+    "current": 1.0,
+    "field": "certified_mean_set_size",
+    "retained": 1.0,
+    "scheme": "debian_package"
+  },
+  {
+    "current": 8156,
+    "field": "certified_set_size_sum",
+    "retained": 8156,
+    "scheme": "debian_package"
+  },
+  {
+    "current": 8156,
+    "field": "collision_observations",
+    "retained": 8156,
+    "scheme": "debian_package"
+  },
+  {
+    "current": 0,
+    "field": "developer_scope_differences",
+    "retained": 0,
+    "scheme": "debian_package"
+  },
+  {
+    "current": 165630,
+    "field": "entry_regions",
+    "retained": 165630,
+    "scheme": "debian_package"
+  },
+  {
+    "current": 0,
+    "field": "identical_output_pair_paths_with_owner_flip",
+    "retained": 0,
+    "scheme": "debian_package"
+  },
+  {
+    "current": 0,
+    "field": "local_ambiguous",
+    "retained": 0,
+    "scheme": "debian_package"
+  },
+  {
+    "current": 8156,
+    "field": "local_exact_count",
+    "retained": 8156,
+    "scheme": "debian_package"
+  },
+  {
+    "current": 1.0,
+    "field": "local_exact_rate",
+    "retained": 1.0,
+    "scheme": "debian_package"
+  },
+  {
+    "current": 1.0,
+    "field": "local_mean_set_size",
+    "retained": 1.0,
+    "scheme": "debian_package"
+  },
+  {
+    "current": 8156,
+    "field": "local_set_size_sum",
+    "retained": 8156,
+    "scheme": "debian_package"
+  },
+  {
+    "current": 100,
+    "field": "provider_narrowings",
+    "retained": 100,
+    "scheme": "debian_package"
+  },
+  {
+    "current": 0,
+    "field": "removed_owner_associations",
+    "retained": 0,
+    "scheme": "debian_package"
+  },
+  {
+    "current": 0,
+    "field": "strict_narrowings",
+    "retained": 0,
+    "scheme": "debian_package"
+  }
+]

@@ -4,8 +4,13 @@ These are ordinary mathematical proofs, not mechanically checked general
 proofs. Executable finite validation is reported separately. The feasibility
 construction is a specialization of the established Horn-rule representation of
 antimatroids by Yoshikawa, Hirai, and Makino (Journal of Mathematical Psychology
-77, 2017, 82–93, DOI 10.1016/j.jmp.2016.09.002), particularly the tight-path
-membership algorithm in Section 3.1 of the accessible author manuscript.
+77, 2017, 82–93, DOI 10.1016/j.jmp.2016.09.002), particularly Section 3.1,
+Proposition 3.1 (tight-path extensions), Algorithm 3.3 and Theorem 3.4
+(membership in explicit Horn-rule encoding length). The accessible author
+manuscript arXiv:1508.05465v4 is the 2018 revised version. Row-factorized good
+sets, force-query multiplication and deterministic sorting are separate costs
+of this implementation; the cited linear membership result is not a bound for
+the whole attribution producer or compact certificate replay.
 
 ## Definitions
 

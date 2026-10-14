@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "javac",
+    "-J-Xmx256m",
+    "-J-XX:ActiveProcessorCount=1",
+    "-J-XX:+UseSerialGC",
+    "-J-Xint",
+    "--release",
+    "8",
+    "-g:none",
+    "-d",
+    "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\boundary-owned-java-cx1yhdyh\\p0",
+    "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\private\\substantive_library_completion\\P010\\coordinator-java-current\\java\\sources\\p0\\demo\\Marker.java",
+    "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\private\\substantive_library_completion\\P010\\coordinator-java-current\\java\\sources\\p0\\demo\\Probe.java"
+  ],
+  "returncode": 0,
+  "stdout_bytes": 0,
+  "stderr_bytes": 188
+}

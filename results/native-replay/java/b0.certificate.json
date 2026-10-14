@@ -1,0 +1,63 @@
+{
+  "status": "classified",
+  "orders": [
+    [
+      0,
+      1
+    ]
+  ],
+  "obstructions": [
+    {
+      "kind": "trap",
+      "nodes": [
+        0,
+        1
+      ],
+      "reasons": [
+        {
+          "node": 0,
+          "kind": "forced",
+          "pred": 1
+        },
+        {
+          "node": 1,
+          "kind": "row",
+          "row": 1
+        }
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "owners": [
+        "developer"
+      ],
+      "class": "developer",
+      "support": [
+        [
+          "developer",
+          0
+        ]
+      ],
+      "excluded": [
+        {
+          "provider": 1,
+          "obstruction": 0
+        }
+      ]
+    },
+    {
+      "owners": [
+        "developer"
+      ],
+      "class": "developer",
+      "support": [
+        [
+          "developer",
+          0
+        ]
+      ],
+      "excluded": []
+    }
+  ]
+}

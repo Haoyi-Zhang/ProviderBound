@@ -57,6 +57,18 @@ def certificate_sizes(sizes):
             'certificate_bytes_median':statistics.median(sizes),
             'certificate_bytes_max':max(sizes)}
 
+
+def run_builder(command, destination):
+    """Keep host-locale diagnostics intact; decoding is display-only."""
+    result=subprocess.run(command,capture_output=True,timeout=900)
+    (destination/'builder.stdout.bin').write_bytes(result.stdout)
+    (destination/'builder.stderr.bin').write_bytes(result.stderr)
+    (destination/'builder.log').write_text(
+        result.stdout.decode('utf-8',errors='replace')+
+        result.stderr.decode('utf-8',errors='replace'),encoding='utf-8')
+    if result.returncode:
+        raise RuntimeError(f'Apache Ant failed: {result.returncode}')
+
 def _process_pair(args):
     record, jars_text, outputs_text, retained_text = args
     jars=Path(jars_text); outputs=Path(outputs_text); retained=Path(retained_text)
@@ -165,12 +177,10 @@ def run(destination: Path, workers: int=4, prebuilt: Path|None=None):
             build=work/'build.xml'; build.write_text(_ant_xml(pairs,jars,outputs))
             cp=os.pathsep.join((str(jars/'ant-1.10.15.jar'),str(jars/'ant-launcher-1.10.15.jar')))
             command=['java','-Xmx768m','-cp',cp,'org.apache.tools.ant.Main','-q','-f',str(build)]
-            result=subprocess.run(command,text=True,capture_output=True,timeout=900)
-            (destination/'builder.log').write_text(result.stdout+result.stderr)
-            if result.returncode: raise RuntimeError(f'Apache Ant failed: {result.returncode}')
+            run_builder(command,destination)
         else:
             outputs=prebuilt
-            (destination/'builder.log').write_text('Reused previously generated Apache Ant outputs for this run.\n')
+            (destination/'builder.log').write_text('Supplied prebuilt ZIP outputs; no Ant process was executed. Historical builder identity is not authenticated.\n')
         missing=[f"{r['pair_id']}-{s}.zip" for r in pairs for s in ('ab','ba') if not (outputs/f"{r['pair_id']}-{s}.zip").is_file()]
         if missing: raise RuntimeError('missing build outputs: '+','.join(missing[:3]))
         retained=destination/'retained'; retained.mkdir(exist_ok=True)
@@ -180,6 +190,11 @@ def run(destination: Path, workers: int=4, prebuilt: Path|None=None):
             futures=[pool.submit(_process_pair,x) for x in payload]
             for f in as_completed(futures): results.append(f.result())
         rows=sorted((row for result in results for row in result['rows']),key=lambda x:x['build_id'])
+        for row in rows:
+            if 'ant_matches_first_winner' in row:
+                row['output_matches_first_winner'] = row['ant_matches_first_winner']
+                if prebuilt is not None:
+                    row['ant_matches_first_winner'] = None
         counts=Counter(); cert_sizes=[]
         for result in results:
             counts.update(result['counts']); cert_sizes.extend(result['cert_sizes'])
@@ -196,7 +211,10 @@ def run(destination: Path, workers: int=4, prebuilt: Path|None=None):
                 'mean_owner_set_size':round(counts[f'baseline.{method}.set_size']/n,6)}
         usage1=usage(children=True)
         summary={
-            'public_provider_archives':43,'collision_pairs':40,'actual_ant_builds':80,
+            'public_provider_archives':43,'collision_pairs':40,
+            'actual_ant_builds':2*len(pairs) if prebuilt is None else 0,
+            'output_archives_checked':len(rows),
+            'execution_mode':'fresh-ant-build' if prebuilt is None else 'prebuilt-output-replay',
             'pair_categories':dict(sorted(categories.items())),
             'reversed_pairs_with_identical_output_maps':sum(r['equal_outputs'] for r in results),
             'indistinguishable_shared_regions_with_owner_flip':sum(r['flips'] for r in results),
@@ -204,7 +222,8 @@ def run(destination: Path, workers: int=4, prebuilt: Path|None=None):
             'local_byte_ambiguous_regions':counts['local_amb'],'certified_ambiguous_regions':counts['cert_amb'],
             'global_narrowings_over_local_bytes':counts['narrow'],
             'equal_byte_regions_resolved_by_global_coupling':counts['coupled'],
-            'ant_first_winner_mismatches':counts['ant_mismatch'],
+            'output_first_winner_mismatches':counts['ant_mismatch'],
+            'ant_first_winner_mismatches':counts['ant_mismatch'] if prebuilt is None else None,
             'independent_archive_adapter_mismatches':counts['adapter_mismatch'],
             'certificate_vs_actual_two_order_oracle_mismatches':counts['oracle_mismatch'],
             'baseline_comparison_on_collision_regions':baseline_summary,
@@ -212,9 +231,10 @@ def run(destination: Path, workers: int=4, prebuilt: Path|None=None):
             'process_cpu_seconds':round(time.process_time()-cpu,6),
             'child_cpu_seconds':None if usage1['cpu_seconds'] is None else round(usage1['cpu_seconds']-usage0['cpu_seconds'],6),
             'child_peak_rss_kib':usage1['peak_rss_kib'],'rss_scope':usage1['scope'],'workers':workers,
-            'builder':'Apache Ant 1.10.15 Zip task, duplicate=preserve, filesonly=true',
+            'builder':'Apache Ant 1.10.15 Zip task, duplicate=preserve, filesonly=true' if prebuilt is None else None,
             'manifest_handling':'META-INF/MANIFEST.MF excluded from providers and outputs',
-            'oracle_scope':'For each two-provider pair, concrete builds in both orders enumerate all total orders.'}
+            'oracle_scope':('For each two-provider pair, fresh concrete Ant builds in both orders enumerate all total orders.'
+                            if prebuilt is None else 'Supplied outputs are checked against both declared first-winner orders; no fresh external-builder or historical builder-origin claim.')}
         if counts['ant_mismatch'] or counts['adapter_mismatch'] or counts['oracle_mismatch']:
             raise RuntimeError('public-corpus conformance mismatch')
         _write_csv(destination/'cases.csv',rows)

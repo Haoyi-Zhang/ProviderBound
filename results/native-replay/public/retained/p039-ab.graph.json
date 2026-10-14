@@ -1,0 +1,5198 @@
+{
+  "kind": "graph",
+  "owners": [
+    "lib:xml-apis-1.3.04",
+    "lib:xml-apis-1.4.01"
+  ],
+  "before": [],
+  "rows": [
+    {
+      "key": "javax/xml/XMLConstants.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/datatype/DatatypeConfigurationException.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/datatype/DatatypeConstants$1.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/datatype/DatatypeConstants$Field.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/datatype/DatatypeConstants.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/datatype/DatatypeFactory.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/datatype/Duration.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/datatype/FactoryFinder$ConfigurationError.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/datatype/FactoryFinder.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/datatype/SecuritySupport$1.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/datatype/SecuritySupport$2.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/datatype/SecuritySupport$3.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/datatype/SecuritySupport$4.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/datatype/SecuritySupport$5.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/datatype/SecuritySupport.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/datatype/XMLGregorianCalendar.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/namespace/NamespaceContext.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/namespace/QName$1.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/namespace/QName.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/parsers/DocumentBuilder.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/parsers/DocumentBuilderFactory.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/parsers/FactoryConfigurationError.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/parsers/FactoryFinder$ConfigurationError.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/parsers/FactoryFinder.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/parsers/FilePathToURI.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/parsers/ParserConfigurationException.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/parsers/SAXParser.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/parsers/SAXParserFactory.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/parsers/SecuritySupport$1.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/parsers/SecuritySupport$2.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/parsers/SecuritySupport$3.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/parsers/SecuritySupport$4.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/parsers/SecuritySupport$5.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/parsers/SecuritySupport.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/stream/EventFilter.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/FactoryConfigurationError.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/FactoryFinder$ConfigurationError.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/FactoryFinder.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/Location.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/SecuritySupport$1.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/SecuritySupport$2.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/SecuritySupport$3.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/SecuritySupport$4.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/SecuritySupport$5.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/SecuritySupport.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/StreamFilter.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/XMLEventFactory.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/XMLEventReader.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/XMLEventWriter.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/XMLInputFactory.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/XMLOutputFactory.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/XMLReporter.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/XMLResolver.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/XMLStreamConstants.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/XMLStreamException.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/XMLStreamReader.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/XMLStreamWriter.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/events/Attribute.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/events/Characters.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/events/Comment.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/events/DTD.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/events/EndDocument.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/events/EndElement.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/events/EntityDeclaration.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/events/EntityReference.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/events/Namespace.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/events/NotationDeclaration.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/events/ProcessingInstruction.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/events/StartDocument.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/events/StartElement.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/events/XMLEvent.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/util/EventReaderDelegate.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/util/StreamReaderDelegate.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/util/XMLEventAllocator.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/stream/util/XMLEventConsumer.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/transform/ErrorListener.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/FactoryFinder$ConfigurationError.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/FactoryFinder.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/OutputKeys.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/Result.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/SecuritySupport$1.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/SecuritySupport$2.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/SecuritySupport$3.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/SecuritySupport$4.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/SecuritySupport$5.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/SecuritySupport.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/Source.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/SourceLocator.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/Templates.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/Transformer.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/TransformerConfigurationException.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/TransformerException.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/TransformerFactory.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/TransformerFactoryConfigurationError.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/URIResolver.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/dom/DOMLocator.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/dom/DOMResult.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/dom/DOMSource.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/sax/SAXResult.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/sax/SAXSource.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/sax/SAXTransformerFactory.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/sax/TemplatesHandler.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/sax/TransformerHandler.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/stax/StAXResult.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/transform/stax/StAXSource.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "javax/xml/transform/stream/FilePathToURI.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/stream/StreamResult.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/transform/stream/StreamSource.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/Schema.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/SchemaFactory.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/SchemaFactoryFinder$1.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/SchemaFactoryFinder$2.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/SchemaFactoryFinder$SingleIterator.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/SchemaFactoryFinder.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/SchemaFactoryLoader.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport$1.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport$2.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport$3.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport$4.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport$5.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport$6.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport$7.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport$8.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/SecuritySupport.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/TypeInfoProvider.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/Validator.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/validation/ValidatorHandler.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport$1.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport$2.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport$3.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport$4.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport$5.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport$6.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport$7.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport$8.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/SecuritySupport.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/XPath.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/XPathConstants.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/XPathException.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/XPathExpression.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/XPathExpressionException.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/XPathFactory.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/XPathFactoryConfigurationException.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/XPathFactoryFinder$1.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/XPathFactoryFinder$2.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/XPathFactoryFinder$SingleIterator.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/XPathFactoryFinder.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/XPathFunction.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/XPathFunctionException.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/XPathFunctionResolver.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "javax/xml/xpath/XPathVariableResolver.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "license/LICENSE.dom-documentation.txt",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "license/LICENSE.dom-software.txt",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "license/LICENSE.sax.txt",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "license/README.dom.txt",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "license/README.sax.txt",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/apache/xmlcommons/Version.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/AttributeCondition.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/CSSException.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/CSSParseException.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/CharacterDataSelector.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/CombinatorCondition.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/Condition.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/ConditionFactory.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/ConditionalSelector.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/ContentCondition.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/DescendantSelector.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/DocumentHandler.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/ElementSelector.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/ErrorHandler.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/InputSource.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/LangCondition.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/LexicalUnit.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/Locator.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/NegativeCondition.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/NegativeSelector.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/Parser.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/PositionalCondition.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/ProcessingInstructionSelector.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/SACMediaList.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/Selector.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/SelectorFactory.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/SelectorList.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/SiblingSelector.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/SimpleSelector.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/css/sac/helpers/ParserFactory.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/Attr.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/CDATASection.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/CharacterData.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/Comment.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/DOMConfiguration.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/DOMError.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/DOMErrorHandler.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/DOMException.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/DOMImplementation.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/DOMImplementationList.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/DOMImplementationSource.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/DOMLocator.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/DOMStringList.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/Document.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/DocumentFragment.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/DocumentType.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/Element.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/ElementTraversal.class",
+      "present": [
+        1
+      ],
+      "good": [
+        1
+      ]
+    },
+    {
+      "key": "org/w3c/dom/Entity.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/EntityReference.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/NameList.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/NamedNodeMap.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/Node.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/NodeList.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/Notation.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/ProcessingInstruction.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/Text.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/TypeInfo.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/UserDataHandler.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/bootstrap/DOMImplementationRegistry$1.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/bootstrap/DOMImplementationRegistry$2.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/bootstrap/DOMImplementationRegistry$3.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/bootstrap/DOMImplementationRegistry$4.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/bootstrap/DOMImplementationRegistry.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/CSS2Properties.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/CSSCharsetRule.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/CSSFontFaceRule.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/CSSImportRule.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/CSSMediaRule.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/CSSPageRule.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/CSSPrimitiveValue.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/CSSRule.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/CSSRuleList.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/CSSStyleDeclaration.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/CSSStyleRule.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/CSSStyleSheet.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/CSSUnknownRule.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/CSSValue.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/CSSValueList.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/Counter.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/DOMImplementationCSS.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/DocumentCSS.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/ElementCSSInlineStyle.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/RGBColor.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/Rect.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/css/ViewCSS.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/events/DocumentEvent.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/events/Event.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/events/EventException.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/events/EventListener.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/events/EventTarget.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/events/MouseEvent.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/events/MutationEvent.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/events/UIEvent.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLAnchorElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLAppletElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLAreaElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLBRElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLBaseElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLBaseFontElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLBodyElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLButtonElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLCollection.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLDListElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLDirectoryElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLDivElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLDocument.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLFieldSetElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLFontElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLFormElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLFrameElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLFrameSetElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLHRElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLHeadElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLHeadingElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLHtmlElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLIFrameElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLImageElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLInputElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLIsIndexElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLLIElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLLabelElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLLegendElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLLinkElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLMapElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLMenuElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLMetaElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLModElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLOListElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLObjectElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLOptGroupElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLOptionElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLParagraphElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLParamElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLPreElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLQuoteElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLScriptElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLSelectElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLStyleElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLTableCaptionElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLTableCellElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLTableColElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLTableElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLTableRowElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLTableSectionElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLTextAreaElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLTitleElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/html/HTMLUListElement.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/ls/DOMImplementationLS.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/ls/LSException.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/ls/LSInput.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/ls/LSLoadEvent.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/ls/LSOutput.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/ls/LSParser.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/ls/LSParserFilter.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/ls/LSProgressEvent.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/ls/LSResourceResolver.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/ls/LSSerializer.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/ls/LSSerializerFilter.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/ranges/DocumentRange.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/ranges/Range.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/ranges/RangeException.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/smil/ElementTimeControl.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/smil/TimeEvent.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/stylesheets/DocumentStyle.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/stylesheets/LinkStyle.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/stylesheets/MediaList.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/stylesheets/StyleSheet.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/stylesheets/StyleSheetList.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/EventListenerInitializer.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/GetSVGDocument.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAltGlyphDefElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAltGlyphElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAltGlyphItemElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAngle.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimateColorElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimateElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimateMotionElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimateTransformElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedAngle.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedBoolean.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedEnumeration.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedInteger.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedLength.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedLengthList.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedNumber.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedNumberList.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedPathData.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedPoints.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedPreserveAspectRatio.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedRect.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedString.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimatedTransformList.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGAnimationElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGCSSRule.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGCircleElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGClipPathElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGColor.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGColorProfileElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGColorProfileRule.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGComponentTransferFunctionElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGCursorElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGDefinitionSrcElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGDefsElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGDescElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGDocument.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGElementInstance.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGElementInstanceList.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGEllipseElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGEvent.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGException.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGExternalResourcesRequired.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEBlendElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEColorMatrixElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEComponentTransferElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFECompositeElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEConvolveMatrixElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEDiffuseLightingElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEDisplacementMapElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEDistantLightElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEFloodElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEFuncAElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEFuncBElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEFuncGElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEFuncRElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEGaussianBlurElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEImageElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEMergeElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEMergeNodeElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEMorphologyElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEOffsetElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFEPointLightElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFESpecularLightingElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFESpotLightElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFETileElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFETurbulenceElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFilterElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFilterPrimitiveStandardAttributes.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFitToViewBox.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFontElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFontFaceElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFontFaceFormatElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFontFaceNameElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFontFaceSrcElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGFontFaceUriElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGForeignObjectElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGGElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGGlyphElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGGlyphRefElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGGradientElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGHKernElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGICCColor.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGImageElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGLangSpace.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGLength.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGLengthList.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGLineElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGLinearGradientElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGLocatable.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGMPathElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGMarkerElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGMaskElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGMatrix.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGMetadataElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGMissingGlyphElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGNumber.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGNumberList.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPaint.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSeg.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegArcAbs.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegArcRel.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegClosePath.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegCurvetoCubicAbs.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegCurvetoCubicRel.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegCurvetoCubicSmoothAbs.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegCurvetoCubicSmoothRel.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegCurvetoQuadraticAbs.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegCurvetoQuadraticRel.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegCurvetoQuadraticSmoothAbs.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegCurvetoQuadraticSmoothRel.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegLinetoAbs.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegLinetoHorizontalAbs.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegLinetoHorizontalRel.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegLinetoRel.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegLinetoVerticalAbs.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegLinetoVerticalRel.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegList.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegMovetoAbs.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPathSegMovetoRel.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPatternElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPoint.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPointList.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPolygonElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPolylineElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGPreserveAspectRatio.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGRadialGradientElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGRect.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGRectElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGRenderingIntent.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGSVGElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGScriptElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGSetElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGStopElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGStringList.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGStylable.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGStyleElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGSwitchElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGSymbolElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTRefElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTSpanElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTests.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTextContentElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTextElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTextPathElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTextPositioningElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTitleElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTransform.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTransformList.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGTransformable.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGURIReference.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGUnitTypes.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGUseElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGVKernElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGViewElement.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGViewSpec.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGZoomAndPan.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/svg/SVGZoomEvent.class",
+      "present": [
+        0
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/traversal/DocumentTraversal.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/traversal/NodeFilter.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/traversal/NodeIterator.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/traversal/TreeWalker.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/views/AbstractView.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/views/DocumentView.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/xpath/XPathEvaluator.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/xpath/XPathException.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/xpath/XPathExpression.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/xpath/XPathNSResolver.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/xpath/XPathNamespace.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/w3c/dom/xpath/XPathResult.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/AttributeList.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/Attributes.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/ContentHandler.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/DTDHandler.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/DocumentHandler.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/EntityResolver.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/ErrorHandler.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/HandlerBase.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/InputSource.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/Locator.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/Parser.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/SAXException.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/SAXNotRecognizedException.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/SAXNotSupportedException.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/SAXParseException.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/XMLFilter.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/XMLReader.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/ext/Attributes2.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/ext/Attributes2Impl.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/ext/DeclHandler.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/ext/DefaultHandler2.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/ext/EntityResolver2.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/ext/LexicalHandler.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/ext/Locator2.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/ext/Locator2Impl.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/AttributeListImpl.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/AttributesImpl.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/DefaultHandler.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/LocatorImpl.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/NamespaceSupport$Context.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/NamespaceSupport.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/NewInstance.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/ParserAdapter$AttributeListAdapter.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/ParserAdapter.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/ParserFactory.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/SecuritySupport$1.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/SecuritySupport$2.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/SecuritySupport$3.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/SecuritySupport$4.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/SecuritySupport.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/XMLFilterImpl.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/XMLReaderAdapter$AttributesAdapter.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/XMLReaderAdapter.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    },
+    {
+      "key": "org/xml/sax/helpers/XMLReaderFactory.class",
+      "present": [
+        0,
+        1
+      ],
+      "good": [
+        0
+      ]
+    }
+  ]
+}

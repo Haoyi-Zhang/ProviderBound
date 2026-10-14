@@ -33,7 +33,7 @@ campaign is in `results/current/`: eight stages, including 80 public Ant builds
 and two owned Java builds, completed in 72.17 wall seconds. The table generator
 uses these measurements, not `results/local/`.
 
-The current 74-test suite passes in the separate Windows/Python 3.12.14
+The retained 74-test suite passes in the separate Windows/Python 3.12.14
 execution recorded in `results/unit-tests.json` and `results/unit-tests.txt`.
 The retained Linux campaign ran 47 tests; this separate unit execution does
 not repeat its external-builder experiment or replace its timing measurements.
@@ -48,3 +48,29 @@ measurement is attached to this replay.
 The complete Ubuntu/Python 3.12 workflow requires the runner's existing JDK;
 no dependency installation or toolchain download is performed by the scientific
 commands themselves.
+
+The `results/diagnostics/receipt.json` records
+Windows-11-10.0.28000-SP0, CPython 3.12.14 MSC v.1944 AMD64, disabled bytecode
+writes (`-B`) and hash seed 0. Its UTC times correspond to 2026-10-14 in
+Asia/Shanghai. It runs 84 of 85 discovered tests; one retained test that writes
+a traversal-name ZIP is explicitly not executed. Temporary owned fixtures stay
+inside the selected output and are removed after the run. The full test IDs,
+raw log, source/input SHA-256 bindings and current provider-byte replay are
+retained there. The measured single-run wall time describes this diagnostic
+only; no CPU/RSS or comparative speed result is inferred from it.
+
+This current execution performs no Ant/JVM build, provider-class execution,
+archive extraction, network acquisition or public-output ZIP replay. The same
+80 modeled content maps are each evaluated under two label schemes; those 160
+count records are neither 160 builds nor additional independent public cases.
+Actual ownership labels and downstream analyzer findings remain unmeasured.
+
+The separate native replay in `results/native-replay/` uses Temurin OpenJDK
+21.0.12.1 on the same Windows/Python host. It actually runs 80 Apache Ant builds
+from the 40 retained public pairs and two owned Java assemblies. The probe
+returns 11 and 22, and the same-byte marker has the corresponding developer
+and library attribution. Localized compiler/builder stdout and stderr are
+retained as bytes. Probe stdout is decoded under its ASCII-integer contract.
+Unavailable child CPU/RSS and total Java CPU remain null; parent CPU is separate.
+Its timings are separate from the Linux table measurements and are not a
+cross-platform speed comparison.

@@ -38,6 +38,9 @@ def merge(stores, order):
 
 def analyze_pair(stores, labels):
     """Compare local bytes, replayed certificates and a literal two-order oracle."""
+    if (type(stores) not in (list, tuple) or len(stores) != 2
+            or type(labels) not in (list, tuple) or len(labels) != 2):
+        raise ValueError('exactly two complete provider maps and two owner labels required')
     outputs = [merge(stores, (0, 1)), merge(stores, (1, 0))]
     universe = sorted(set(stores[0]) | set(stores[1]))
     results = []
@@ -71,6 +74,11 @@ def analyze_pair(stores, labels):
             counts['local_ambiguous'] += len(local) > 1
             counts['certified_ambiguous'] += len(exact) > 1
             # Developer inclusion is the manuscript's conservative scope policy.
+            counts['local_developer_inclusions'] += 'developer' in local
+            counts['certified_developer_inclusions'] += 'developer' in exact
+            counts['direct_developer_inclusions'] += 'developer' in oracle
+            counts['same_information_direct_owner_matches'] += exact == oracle
+            counts['same_information_direct_scope_matches'] += ('developer' in exact) == ('developer' in oracle)
             counts['developer_scope_differences'] += ('developer' in local) != ('developer' in exact)
             if exact < local:
                 counts['strict_narrowings'] += 1
@@ -87,15 +95,20 @@ def aggregate(rows):
     for row in rows:
         counts.update(row['counts'])
     # Zero-valued findings must be explicit in the result, not missing fields.
-    for key in ('strict_narrowings', 'removed_owner_associations', 'local_ambiguous',
-                'certified_ambiguous', 'developer_scope_differences', 'provider_narrowings'):
+    for key in ('collision_observations', 'local_exact_count', 'certified_exact_count',
+                'local_set_size_sum', 'certified_set_size_sum', 'strict_narrowings',
+                'removed_owner_associations', 'local_ambiguous', 'certified_ambiguous',
+                'developer_scope_differences', 'provider_narrowings',
+                'local_developer_inclusions', 'certified_developer_inclusions',
+                'direct_developer_inclusions', 'same_information_direct_owner_matches',
+                'same_information_direct_scope_matches'):
         counts.setdefault(key, 0)
     n = counts['collision_observations']
     return {**dict(counts),
-            'local_exact_rate': counts['local_exact_count'] / n,
-            'certified_exact_rate': counts['certified_exact_count'] / n,
-            'local_mean_set_size': counts['local_set_size_sum'] / n,
-            'certified_mean_set_size': counts['certified_set_size_sum'] / n}
+            'local_exact_rate': counts['local_exact_count'] / n if n else None,
+            'certified_exact_rate': counts['certified_exact_count'] / n if n else None,
+            'local_mean_set_size': counts['local_set_size_sum'] / n if n else None,
+            'certified_mean_set_size': counts['certified_set_size_sum'] / n if n else None}
 
 
 def run():
@@ -136,8 +149,8 @@ def run():
                             ('strict_narrowings', 'global_narrowings')):
                         if counts.get(current, 0) != int(historical[previous]):
                             raise ValueError('model replay differs from retained case counts: ' + build_id)
-                    row['build_id'] = build_id
-                    row['pair_id'] = pair['pair_id']
+                row['build_id'] = build_id
+                row['pair_id'] = pair['pair_id']
                 schemes[scheme].append(row)
             pair_rows.append({'pair_id': pair['pair_id'], 'scheme': scheme,
                               'archives': list(names), 'labels': owner_map,
@@ -162,6 +175,8 @@ def run():
         'retained_case_count_checks': len(schemes['archive']),
         'archive_adapter_disagreements': 0, 'certificate_oracle_disagreements': 0,
         'metrics': metrics, 'narrowing_pairs': narrowing_pairs, 'pairs': pair_rows,
+        'observations': [{'scheme': scheme, **row}
+                         for scheme, rows in schemes.items() for row in rows],
         'downstream_interpretation': 'No developer/library scope changes in this all-library corpus. Package-level attribution gains must be evaluated after applying the package map to both methods. Provider-history resolution does not disappear when labels are merged; no vulnerability, finding-suppression or call-graph outcome is measured.'}
 
 

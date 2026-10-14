@@ -1,0 +1,63 @@
+{
+  "status": "classified",
+  "orders": [
+    [
+      1,
+      0
+    ]
+  ],
+  "obstructions": [
+    {
+      "kind": "trap",
+      "nodes": [
+        0,
+        1
+      ],
+      "reasons": [
+        {
+          "node": 0,
+          "kind": "row",
+          "row": 1
+        },
+        {
+          "node": 1,
+          "kind": "forced",
+          "pred": 0
+        }
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "owners": [
+        "lib:example"
+      ],
+      "class": "library",
+      "support": [
+        [
+          "lib:example",
+          0
+        ]
+      ],
+      "excluded": [
+        {
+          "provider": 0,
+          "obstruction": 0
+        }
+      ]
+    },
+    {
+      "owners": [
+        "lib:example"
+      ],
+      "class": "library",
+      "support": [
+        [
+          "lib:example",
+          0
+        ]
+      ],
+      "excluded": []
+    }
+  ]
+}

@@ -131,6 +131,33 @@ provider, so the manuscript's developer-inclusion policy does not change on any
 region. This diagnostic does not measure analyzer findings, call graphs,
 security defects or suppression changes.
 
+The current diagnostic record is separate in
+`results/diagnostics/`. Its two-provider interface rejects
+other arities; empty collision denominators yield null rates/means with zero
+counts. It records per-output/schema counts for local, certified and literal
+two-order developer inclusions and direct--certificate owner/decision equality.
+No owner labels are authenticated. Four owned controls include an independently
+written tiny reference that enumerates and merges complete maps without calling
+producer/checker routines. The fixed 90,582-model regression is unchanged.
+A fifth control reaches explicit JDK admission without POSIX resource counters;
+it never runs a compiler or Java code. Optional Java telemetry leaves unavailable
+child CPU/RSS and aggregate CPU null, reporting parent process CPU separately.
+
+The Windows native replay in `results/native-replay/` separately executes all
+80 Ant builds and both owned Java cases. Raw compiler/builder byte streams are
+retained before exit checking, with strict ASCII interpretation of the numeric
+probe. Six current capture/guard tests check localized diagnostic bytes, failed
+commands, exact probe output and early rejection of optimized Python. These
+native executions reuse the original corpus and are not additional independent
+engineering subjects. Linux measurement tables retain their own original scope.
+
+The bounded diagnostic driver discovers all tests but explicitly excludes the
+retained test that writes a traversal-name ZIP. Coverage and that exclusion are
+recorded, not silently reported as a full suite. The native reproduction driver
+remains a different workflow. A supplied-output public replay must report zero
+new Ant builds and an absent Ant-conformance measurement; content-map agreement
+does not establish the historical source of supplied archives.
+
 ## Additional probes
 
 Three deterministic scale recipes exercise repeated and distributed obligations:

@@ -57,6 +57,14 @@ member object and compared byte-for-byte; nothing is extracted to the filesystem
 This lexical grammar is not a guarantee of safe extraction on every host and
 the adapters are not general archive-security validators.
 
+`orig_filename` is the standard parser's original decoded spelling, not a
+commitment to raw header bytes. The adapter does not authenticate header
+encodings or prove agreement between arbitrary ZIP parsers. The concrete
+limits are 32 MiB compressed archive bytes, 16 MiB per retained entry, 128 MiB
+retained payload bytes and 20,000 retained file entries. Directory/manifest
+metadata is checked before exclusion; the retained-entry count is not a bound
+on every central-directory record or total parser memory.
+
 ## Classified certificate
 
 The exact top-level fields are `status`, `orders`, `obstructions`, and `regions`.

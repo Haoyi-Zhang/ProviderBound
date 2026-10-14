@@ -106,7 +106,7 @@ python -B scripts/analyze_owner_granularity.py
 The eight file-free provider-tuple regressions include a test-local literal-order
 reference over the 90,582 labelled tiny models, strict admission and exclusion
 mutations, exact force-query counts, and lazy per-row tuple preparation.
-They check correctness, not runtime. All 74 current tests pass in the separate
+They check correctness, not runtime. The retained 74-test suite passes in the separate
 Windows/Python 3.12.14 run recorded in `results/unit-tests.json` and
 `results/unit-tests.txt`; the retained Linux campaign ran 47 tests and remains
 the source of the full-campaign measurements above.
@@ -127,6 +127,71 @@ are exact on all 8,156 collision observations with mean package-set size one.
 The 100 provider-level narrowings remain. No public provider is labelled
 developer, so the developer-inclusion policy changes on zero regions. This is
 not a downstream analyzer, vulnerability, suppression, or call-graph experiment.
+
+## Current bounded diagnostics
+
+OpenAI Codex assisted manuscript revision, implementation and test development,
+and checking of the ordinary arguments. Reported measurements come from the
+executed artifact workflows.
+
+Run the current offline model/receipt checks into a fresh directory:
+
+```sh
+python -B scripts/reproduce_diagnostics.py --output results/fresh-diagnostics
+```
+
+`results/diagnostics/` records the current execution:
+84 of 85 discovered tests run and pass. The explicitly excluded retained test
+writes a traversal-name ZIP; it is not executed or counted as a pass by this
+benign-fixture path. The other tests include the unchanged 90,582-model finite
+family, owned ordinary ZIP readback, metadata-only NUL admission controls, and
+four new interface/receipt/decision controls and one Java-entry portability
+control that reaches the missing-JDK error without running Java. No generated
+population is added. Six command-capture and optimization-guard controls also
+test raw diagnostic preservation, nonzero compiler/builder exits and exact
+numeric probe decoding.
+
+The owner diagnostic admits exactly two complete provider maps and two labels,
+rejecting a third rather than omitting it. Zero-collision rates and means are
+undefined (`null`), not a division error or an exactness score. It records
+actual developer-inclusion counts for local, certified and direct two-order
+methods. Both label schemes have 8,156 direct--certificate owner and decision
+matches and zero developer inclusions for all three methods. The package map
+removes the 100 per-JAR owner narrowings, not the provider-level exclusions.
+These are conditional calculations under supplied labels, not label validation.
+
+The current record contains all 160 per-output/schema count observations, the
+40-pair input census, 36 unchanged retained-metric checks, selected test IDs,
+raw logs, source/input bindings and the Windows/Python environment. It records
+**zero new Ant builds**, zero provider-code execution and zero extraction.
+The earlier `results/current/`, `results/unit-tests.*` and
+`results/owner-granularity.json` stay separate and unchanged. The manuscript
+table generator consumes the new diagnostic receipt without relabelling those
+historical executions as current-code validation.
+
+The separate current native replay in `results/native-replay/` executes all 80
+Ant builds and both owned Java assemblies. All 165,630 regional observations
+agree with the native two-order oracle, and the owned probe returns 11 and 22.
+The same frozen input corpus is used; these are not extra independent projects.
+
+The public study's optional `--prebuilt-output-dir` mode checks supplied ZIP
+contents but records `execution_mode: prebuilt-output-replay`,
+`actual_ant_builds: 0`, `builder: null` and
+`ant_first_winner_mismatches: null`. `output_first_winner_mismatches` reports the
+content check separately. Its orchestration is covered by a mock receipt test;
+that test's forty slots are not forty actual public builds. The owned two-ZIP
+readback test exercises serialized certificates independently. Native execution
+is represented by the separate current replay, not by the mock.
+
+The owned Java entry now uses the common optional OS-counter interface instead
+of importing POSIX-only `resource` unconditionally. A platform without those
+counters can reach explicit JDK admission. If a native run is performed there,
+unavailable child CPU/RSS and aggregate CPU are null, while measured parent
+CPU remains separate. The native replay used an isolated Temurin JDK
+21.0.12.1. Compiler and builder streams are retained as raw bytes; display-only
+decoding does not determine build success or change the numeric probe contract.
+Standalone Java and diagnostic commands reject optimized Python before output
+creation because their scientific checks require active assertions.
 
 ## Repository map
 
