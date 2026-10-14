@@ -37,17 +37,14 @@ def scalar_paths(obj, prefix='$'):
 
 
 def find_pdf():
-    candidates=[]
-    for p in PAPER.rglob('*.pdf'):
-        try:
-            out=run(['pdfinfo',str(p)],timeout=30)
-            m=re.search(r'^Pages:\s+(\d+)\s*$',out,re.M)
-            if m and int(m.group(1))>0:
-                candidates.append((p.stat().st_mtime,p.stat().st_size,p))
-        except Exception:
-            pass
-    if not candidates: raise RuntimeError('no positive-page-count PDF found in paper tree')
-    return sorted(candidates)[-1][2]
+    pdf=PAPER/'main.pdf'
+    if not pdf.is_file():
+        raise RuntimeError('primary manuscript main.pdf is missing')
+    out=run(['pdfinfo',str(pdf)],timeout=30)
+    match=re.search(r'^Pages:\s+(\d+)\s*$',out,re.M)
+    if match is None or int(match.group(1))<=0:
+        raise RuntimeError('primary manuscript has no positive page count')
+    return pdf
 
 
 def bib_closure():
@@ -76,6 +73,14 @@ def empty_field(path, keys):
     return bad
 
 
+def audit_problems(obj, fields, require_status=False):
+    bad=[(field,obj[field]) for field in fields
+         if field in obj and obj[field] not in ([],{},0,None,'',False)]
+    if require_status and obj.get('status') != 'PASS':
+        bad.append(('status',obj.get('status','MISSING')))
+    return bad
+
+
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--skip-build',action='store_true'); args=ap.parse_args()
     checks=[]; blockers=[]; notes=[]
@@ -99,7 +104,7 @@ def main():
       ([sys.executable,'scripts/audit_security_test_evidence.py','--strict'],ART),
       ([sys.executable,'scripts/audit_scope_consistency.py','--strict'],ART),
       ([sys.executable,'scripts/audit_claim_language.py','--strict'],ART),
-      ([sys.executable,'scripts/audit_paper_claims.py','--strict'],ART),
+      ([sys.executable,'scripts/audit_paper_claims.py','--paper',str(PAPER),'--strict'],ART),
     ]
     for cmd,cwd in commands:
         run(cmd,cwd=cwd)
@@ -152,17 +157,15 @@ def main():
       'security-test-evidence.json':('release_blockers',),
       'scope-consistency-audit.json':('release_blockers',),
       'claim-language-audit.json':('release_blockers','blocking_hits'),
-      'paper-claim-audit.json':('release_blockers',),
-      'release-audit.json':('release_blockers','violations'),
+      'paper-claim-audit.json':('release_blockers','missing','forbidden_hits'),
+      'release-audit.json':('release_blockers','violations','issues'),
     }
     for filename,fields in expected_audits.items():
         p=ART/'docs'/filename
         check('audit-present:'+filename,p.exists(),str(p.relative_to(ROOT)) if p.exists() else 'missing')
         if not p.exists(): continue
         obj=load(p)
-        bad=[]
-        for field in fields:
-            if field in obj and obj[field] not in ([],{},0,None,'',False): bad.append((field,obj[field]))
+        bad=audit_problems(obj,fields,filename in {'paper-claim-audit.json','release-audit.json'})
         check('audit-clean:'+filename,not bad,f'{bad}')
 
     security=load(ART/'docs'/'security-test-evidence.json')

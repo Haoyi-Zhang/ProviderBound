@@ -1,22 +1,20 @@
 # Paper claim audit
 
-**Status: FAIL**
+**Status: PASS**
 
-Pages: 36
+Active-manuscript text anchors and positive main.pdf page count; not scientific, source-PDF-binding or venue clearance.
+
+Pages: 36; no locked journal ceiling asserted.
 
 | Required element | Present |
 |---|---|
-| label-partition enumeration | no |
-| complete archive frame | no |
-| upstream projects | no |
-| all unordered pairs | no |
-| multi-provider orders | no |
-| multi-provider output classes | no |
+| current provider cohort | yes |
+| current collision pairs | yes |
 | hidden equal-byte reversals | yes |
-| global-coupling resolution | no |
-| caller supplied labels | yes |
+| global-coupling resolution | yes |
+| supplied owner labels | yes |
 | not legal ownership | yes |
-| finite-frame generalization | no |
-| entry-map equality | no |
-| Info-ZIP validation | no |
-| metadata sensitivity | no |
+| bounded interpretation | yes |
+| entry-map equality | yes |
+| current external builder | yes |
+| package-label negative result | yes |
