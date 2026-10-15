@@ -91,6 +91,11 @@ For read-only result checks, run `python -B scripts/final_release_gate.py`.
 It binds the finite-oracle, fixture, public-build, scale and owner-label counts
 to their named JSON fields and CSV rows, independently recomputes the bundled
 collision-pair census, and checks manifest membership and Python syntax. It
+also checks the retained direct-comparison counts against every output/schema
+row and the current 80-build census, together with the diagnostic producer and
+input-catalogue bindings. Changed producers or labels require new diagnostic
+evidence; they cannot inherit the recorded comparisons or zero scope changes.
+The earlier diagnostic's execution receipt and test counts remain unchanged. It
 prints its report without changing the artifact. These checks reuse recorded
 executions; they do not run a new Ant or JVM experiment.
 
@@ -157,10 +162,14 @@ population is added. Six command-capture and optimization-guard controls also
 test raw diagnostic preservation, nonzero compiler/builder exits and exact
 numeric probe decoding.
 
-Thirteen result-binding controls reject missing named sources, unrelated
+The retained diagnostic includes thirteen result-binding controls that reject missing named sources, unrelated
 numeric reports, changed summary fields, inconsistent census rows, duplicate
 keys or columns, Boolean count substitutions and nonfinite numbers. Two
 manifest controls reject duplicate membership and invalid relative paths.
+Eight additional focused auditor tests cover the direct-comparison records,
+their row membership, receipt, source bindings and label census. The complete
+focused auditor suite has 21 passing tests; this does not replace the earlier
+diagnostic's recorded 102-test execution.
 
 The owner diagnostic admits exactly two complete provider maps and two labels,
 rejecting a third rather than omitting it. Zero-collision rates and means are

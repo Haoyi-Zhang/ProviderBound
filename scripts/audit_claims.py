@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import math
 import re
@@ -30,12 +31,29 @@ JSON_FILES = (
     "results/current/public/summary.json",
     "results/current/scale_summary.json",
     "results/owner-granularity.json",
+    "results/diagnostics/current/owner-granularity.json",
+    "results/diagnostics/current/receipt.json",
+    "results/diagnostics/current/input-source-sha256.json",
 )
 CSV_FILES = (
     "results/current/oracle_details.csv",
     "results/current/cases.csv",
     "inputs/public/providers.csv",
     "inputs/public/collision_pairs.csv",
+    "results/current/public/cases.csv",
+)
+# These files produced the retained diagnostic. Auditor/test changes do not
+# rewrite that execution's receipt or make its earlier test run current.
+DIAGNOSTIC_BINDINGS = (
+    "scripts/analyze_owner_granularity.py",
+    "scripts/reproduce_diagnostics.py",
+    "src/archive_producer.py",
+    "src/archive_checker.py",
+    "src/producer.py",
+    "src/checker.py",
+    "inputs/public/providers.csv",
+    "inputs/public/collision_pairs.csv",
+    "inputs/public/selection.json",
     "results/current/public/cases.csv",
 )
 
@@ -147,6 +165,97 @@ def field(obj: Any, key: str, expected: int, location: str) -> int:
 
 def csv_sum(rows: list[dict[str, str]], column: str, relative: str) -> int:
     return sum(csv_integer(row, column, f"{relative}:row{index}") for index, row in enumerate(rows, 2))
+
+
+def audit_diagnostic(root, data, builds, providers, owner):
+    """Bind the retained direct comparison, without running provider programs."""
+    relative, receipt_path, bindings_path = JSON_FILES[6:9]
+    value, receipt, bindings = (data[name] for name in JSON_FILES[6:9])
+    for name in DIAGNOSTIC_BINDINGS:
+        recorded = member(bindings, name, bindings_path)
+        if type(recorded) is not str or not re.fullmatch(r"[0-9a-f]{64}", recorded):
+            raise AuditError(f"invalid diagnostic source binding: {name}")
+        actual = hashlib.sha256(source(root, name).read_bytes()).hexdigest()
+        exact(actual, recorded, bindings_path + ":" + name)
+
+    # The zero developer counts below depend on this supplied label census,
+    # not on a claim that the labels constitute independent ownership truth.
+    metadata = {row["archive"]: row for row in providers}
+    if any(not row["owner"].startswith("lib:") for row in providers):
+        raise AuditError("retained diagnostic requires its all-library owner labels")
+    for key, count in (("provider_archives", 43), ("pair_cases", 40),
+                       ("modeled_outputs_per_schema", 80),
+                       ("retained_case_count_checks", 80),
+                       ("archive_adapter_disagreements", 0),
+                       ("certificate_oracle_disagreements", 0)):
+        field(value, key, count, relative)
+    for key in ("actual_ant_builds", "provider_code_executions",
+                "archive_extractions", "public_zip_output_replays"):
+        field(receipt, key, 0, receipt_path)
+    for key, count in (("label_schemas", 2),
+                       ("modeled_outputs_per_label_schema", 80),
+                       ("collision_observations_per_schema", 8156)):
+        field(receipt, key, count, receipt_path)
+    schemas = ("archive", "debian_package")
+    exact(set(member(value, "label_schemas", relative)), set(schemas), relative + ":label schemas")
+    pair_rows = member(value, "pairs", relative)
+    exact(pair_rows, member(owner, "pairs", JSON_FILES[5]), relative + ":retained pair rows")
+    for pair in pair_rows:
+        names = member(pair, "archives", relative)
+        scheme = member(pair, "scheme", relative)
+        if type(names) is not list or len(names) != 2 or any(name not in metadata for name in names):
+            raise AuditError("invalid diagnostic provider pair")
+        if scheme not in schemas:
+            raise AuditError("unknown diagnostic label scheme")
+        labels = [metadata[name]["owner"] if scheme == "archive"
+                  else "deb:" + metadata[name]["package"] for name in names]
+        exact(member(pair, "labels", relative), labels, relative + ":pair labels")
+
+    observations = member(value, "observations", relative)
+    if type(observations) is not list or len(observations) != 160:
+        raise AuditError("retained diagnostic requires 160 observations")
+    expected_builds = {row["build_id"]: row for row in builds}
+    decision_fields = ("local_developer_inclusions", "certified_developer_inclusions",
+                       "direct_developer_inclusions", "developer_scope_differences",
+                       "same_information_direct_owner_matches",
+                       "same_information_direct_scope_matches")
+    totals = {}
+    for scheme in schemas:
+        rows = [row for row in observations if member(row, "scheme", relative) == scheme]
+        exact(len(rows), 80, relative + ":" + scheme + ":row count")
+        ids = [member(row, "build_id", relative) for row in rows]
+        if any(type(name) is not str for name in ids) or len(set(ids)) != 80:
+            raise AuditError("duplicate/invalid diagnostic build ID")
+        exact(set(ids), set(expected_builds), relative + ":" + scheme + ":build IDs")
+        sums = Counter()
+        for row in rows:
+            build = expected_builds[row["build_id"]]
+            location = relative + ":" + scheme + ":" + row["build_id"]
+            exact(member(row, "pair_id", location), build["pair_id"], location + ":pair ID")
+            counts = member(row, "counts", location)
+            n = csv_integer(build, "collision_regions", CSV_FILES[4])
+            field(counts, "collision_observations", n, location)
+            field(counts, "entry_regions", csv_integer(build, "entry_regions", CSV_FILES[4]), location)
+            for key in decision_fields:
+                field(counts, key, n if key.startswith("same_information_") else 0, location)
+                sums[key] += counts[key]
+            for key, column in (("local_ambiguous", "local_ambiguous_regions"),
+                                ("certified_ambiguous", "certified_ambiguous_regions"),
+                                ("strict_narrowings", "global_narrowings")):
+                expected = csv_integer(build, column, CSV_FILES[4]) if scheme == "archive" else 0
+                exact(integer(counts.get(key, 0), location + ":" + key), expected, location + ":" + key)
+            field(counts, "provider_narrowings", csv_integer(build, "global_narrowings", CSV_FILES[4]), location)
+            sums["collision_observations"] += n
+        metrics = member(member(value, "metrics", relative), scheme, relative)
+        for key, count in sums.items():
+            field(metrics, key, count, relative + ":metrics/" + scheme)
+        # Keep the previously checked label-quotient results connected too.
+        previous = member(member(owner, "metrics", JSON_FILES[5]), scheme, JSON_FILES[5])
+        for key, expected in previous.items():
+            exact(member(metrics, key, relative), expected, relative + ":metrics/" + scheme + "/" + key)
+        exact(sums["collision_observations"], 8156, relative + ":collision sum")
+        totals[scheme] = dict(sums)
+    return totals
 
 
 def _audit_checked(root: Path) -> dict[str, Any]:
@@ -295,6 +404,8 @@ def _audit_checked(root: Path) -> dict[str, Any]:
     exact({p["pair_id"] for p in archive_pairs if p["strict_narrowings"] > 0}, set(member(owner, "narrowing_pairs", JSON_FILES[5])), JSON_FILES[5] + ":narrowing pair IDs")
     field(member(metrics, "debian_package", JSON_FILES[5] + ":metrics"), "removed_owner_associations", 0, JSON_FILES[5] + ":debian_package")
 
+    diagnostic = audit_diagnostic(root, data, builds, providers, owner)
+
     if not isinstance(scale, list) or len(scale) != 3:
         raise AuditError("scale source must contain the three retained probes")
     forced = [row for row in scale if member(row, "case", JSON_FILES[4]) == "forced-repeated-collision"]
@@ -308,7 +419,7 @@ def _audit_checked(root: Path) -> dict[str, Any]:
         "status": "PASS",
         "errors": [],
         "scope": "Named current scientific JSON/CSV bindings only; no campaign execution or full scientific acceptance",
-        "scientific_sources": list(JSON_FILES + CSV_FILES),
+        "scientific_sources": list(dict.fromkeys(JSON_FILES + CSV_FILES + DIAGNOSTIC_BINDINGS)),
         "claims": {
             "finite_labelled_models": 90582,
             "finite_mismatches": 0,
@@ -321,6 +432,7 @@ def _audit_checked(root: Path) -> dict[str, Any]:
             "identical_output_pair_paths_with_owner_flip": 3471,
             "archive_label_strict_narrowings": 100,
             "debian_package_additional_owner_resolutions": 0,
+            "retained_same_information_diagnostic": diagnostic,
             "largest_retained_scale_probe": {"providers": 300, "regions": 20000, "certificate_bytes": 8602784},
         },
     }

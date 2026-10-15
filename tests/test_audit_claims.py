@@ -9,6 +9,7 @@ import csv
 import contextlib
 import io
 import importlib.util
+import hashlib
 import json
 import os
 import tempfile
@@ -33,7 +34,8 @@ class AuditClaimsTests(unittest.TestCase):
         holder = tempfile.TemporaryDirectory(prefix="p010-claim-", dir=HERE)
         self.addCleanup(holder.cleanup)
         root = Path(holder.name)
-        for relative in audit_module.JSON_FILES + audit_module.CSV_FILES:
+        for relative in dict.fromkeys(audit_module.JSON_FILES + audit_module.CSV_FILES
+                                      + audit_module.DIAGNOSTIC_BINDINGS):
             target = root / relative
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes((CURRENT / relative).read_bytes())
@@ -53,6 +55,103 @@ class AuditClaimsTests(unittest.TestCase):
         self.assertEqual(report["claims"]["finite_labelled_models"], 90582)
         self.assertEqual(report["claims"]["debian_package_additional_owner_resolutions"], 0)
         self.assertNotIn("107", str(report["claims"]))
+        for totals in report["claims"]["retained_same_information_diagnostic"].values():
+            self.assertEqual(totals["same_information_direct_owner_matches"], 8156)
+            self.assertEqual(totals["direct_developer_inclusions"], 0)
+
+    def diagnostic(self, root):
+        path = root / audit_module.JSON_FILES[6]
+        return path, json.loads(path.read_text(encoding="utf-8"))
+
+    def test_diagnostic_and_receipt_are_required_named_sources(self):
+        for relative in audit_module.JSON_FILES[6:9]:
+            with self.subTest(relative=relative):
+                root = self.fixture()
+                (root / relative).unlink()
+                self.assert_rejected(root, "missing scientific source: " + relative)
+
+    def test_diagnostic_decision_fields_are_required_strict_counts(self):
+        fields = ("local_developer_inclusions", "certified_developer_inclusions",
+                  "direct_developer_inclusions", "developer_scope_differences",
+                  "same_information_direct_owner_matches",
+                  "same_information_direct_scope_matches")
+        for field in fields:
+            for mutation in ("missing", "boolean", "wrong"):
+                with self.subTest(field=field, mutation=mutation):
+                    root = self.fixture()
+                    path, value = self.diagnostic(root)
+                    counts = value["observations"][0]["counts"]
+                    if mutation == "missing":
+                        del counts[field]
+                    else:
+                        counts[field] = True if mutation == "boolean" else counts[field] + 1
+                    path.write_text(json.dumps(value), encoding="utf-8")
+                    self.assert_rejected(root, field)
+
+    def test_diagnostic_observation_membership_and_pair_binding(self):
+        for mutation in ("duplicate", "pair", "scheme", "missing"):
+            with self.subTest(mutation=mutation):
+                root = self.fixture()
+                path, value = self.diagnostic(root)
+                if mutation == "duplicate":
+                    value["observations"][1] = value["observations"][0]
+                elif mutation == "pair":
+                    value["observations"][0]["pair_id"] = "different-owned-pair"
+                elif mutation == "scheme":
+                    value["observations"][0]["scheme"] = "different-owned-schema"
+                else:
+                    value["observations"].pop()
+                path.write_text(json.dumps(value), encoding="utf-8")
+                report = audit_module.audit(root)
+                self.assertEqual(report["status"], "FAIL")
+                self.assertEqual(report["claims"], {})
+
+    def test_diagnostic_aggregate_must_equal_its_rows(self):
+        root = self.fixture()
+        path, value = self.diagnostic(root)
+        value["metrics"]["archive"]["same_information_direct_owner_matches"] += 1
+        path.write_text(json.dumps(value), encoding="utf-8")
+        self.assert_rejected(root, "same_information_direct_owner_matches")
+
+    def test_coordinated_diagnostic_edits_still_bind_to_build_census(self):
+        root = self.fixture()
+        path, value = self.diagnostic(root)
+        for key in ("collision_observations", "same_information_direct_owner_matches",
+                    "same_information_direct_scope_matches"):
+            value["observations"][0]["counts"][key] += 1
+            value["metrics"]["archive"][key] += 1
+        path.write_text(json.dumps(value), encoding="utf-8")
+        self.assert_rejected(root, "collision_observations")
+
+    def test_diagnostic_execution_receipt_cannot_claim_native_runs(self):
+        for key in ("actual_ant_builds", "provider_code_executions",
+                    "archive_extractions", "public_zip_output_replays"):
+            with self.subTest(key=key):
+                root = self.fixture()
+                path = root / audit_module.JSON_FILES[7]
+                value = json.loads(path.read_text(encoding="utf-8"))
+                value[key] = 1
+                path.write_text(json.dumps(value), encoding="utf-8")
+                self.assert_rejected(root, key)
+
+    def test_changed_diagnostic_producer_requires_new_evidence(self):
+        root = self.fixture()
+        path = root / "scripts/analyze_owner_granularity.py"
+        with path.open("a", encoding="utf-8") as stream:
+            stream.write("\n# owned benign source-change fixture\n")
+        self.assert_rejected(root, "scripts/analyze_owner_granularity.py")
+
+    def test_changed_owner_labels_cannot_inherit_zero_scope_counts(self):
+        root = self.fixture()
+        path = root / "inputs/public/providers.csv"
+        text = path.read_text(encoding="utf-8")
+        text = text.replace("lib:batik-all-1.18", "developer", 1)
+        path.write_text(text, encoding="utf-8")
+        binding_path = root / audit_module.JSON_FILES[8]
+        bindings = json.loads(binding_path.read_text(encoding="utf-8"))
+        bindings["inputs/public/providers.csv"] = hashlib.sha256(path.read_bytes()).hexdigest()
+        binding_path.write_text(json.dumps(bindings), encoding="utf-8")
+        self.assert_rejected(root, "all-library owner labels")
 
     def test_self_report_with_arbitrary_numbers_cannot_replace_missing_source(self):
         root = self.fixture()
