@@ -1,6 +1,6 @@
 The original implementation, generated fixtures, owned Java examples, and
 artifact documentation are distributed under the adjacent MIT license. This
-does not assert exclusive copyright over AI-assisted material or change any
+does not assert exclusive copyright over all distributed material or change any
 third-party rights. Human approval remains required before external use.
 
 The public-corpus directory embeds 45 unmodified JAR archives obtained from

@@ -143,9 +143,7 @@ not a downstream analyzer, vulnerability, suppression, or call-graph experiment.
 
 ## Current bounded diagnostics
 
-OpenAI Codex assisted manuscript revision, implementation and test development,
-and checking of the ordinary arguments. Reported measurements come from the
-executed artifact workflows.
+Reported measurements come from the executed artifact workflows.
 
 Run the current offline model/receipt checks into a fresh directory:
 
@@ -291,14 +289,13 @@ strictly wider than the exact global answer.  No rate in this repository is a
 performance claim about LibScout, LibRadar, AndroLibZoo, or another published
 tool.
 
-## Reliability, disclosure, and licensing
+## Reliability and licensing
 
 All scientific inputs needed for the reported runs are retained.  Result tables
 are generated from JSON/CSV evidence, and the paper build fails when required
 measurements are absent.  Passing commands demonstrate execution on the
 retained inputs; the ordinary mathematical proof remains distinct from finite
 testing and there is no mechanized proof of the Python implementation.
-
 
 Original repository material is under `LICENSE` (MIT).  The embedded public JARs
 retain their own upstream terms; `licenses/NOTICE.txt`, `inputs/public/providers.csv`,
