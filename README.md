@@ -301,3 +301,13 @@ Original repository material is under `LICENSE` (MIT).  The embedded public JARs
 retain their own upstream terms; `licenses/NOTICE.txt`, `inputs/public/providers.csv`,
 and `inputs/public/licenses/` identify and preserve those records.  The MIT
 license does not relicense third-party binaries.
+
+## Manuscript diagrams
+
+The model and protocol schematics are drawn directly in Python as vector PDFs
+with embedded STIX fonts. They encode the stated relationships, not measured
+performance. To regenerate them with Python 3.9+ and Matplotlib:
+
+```sh
+python -B figures/draw_schematics.py --output figures
+```
