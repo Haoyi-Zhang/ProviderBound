@@ -55,7 +55,7 @@ model API, private cache, paper directory, or external service is required.
 From the repository root:
 
 ```sh
-python scripts/reproduce.py --output reproduced --java
+python -B scripts/reproduce.py --output ../verification-full --java
 ```
 
 The command performs, in order:
@@ -78,7 +78,7 @@ sequential.
 For the portable finite-only campaign (no Ant or JVM execution):
 
 ```sh
-python -B scripts/reproduce.py --output fresh-finite --skip-public
+python -B scripts/reproduce.py --output ../verification-finite --skip-public
 ```
 
 The passive public-input census still reads the bundled archives and notices;
@@ -86,6 +86,8 @@ it does not execute their classes. Windows RSS and child CPU counters are
 unavailable and recorded as null. See `ENVIRONMENT.md` for current versus
 retained measurements. `scripts/reproduce_release.py` is a compatibility entry
 point for this same campaign with release-manifest integrity verification.
+Both examples keep their fresh results outside the artifact, so they do not
+alter the retained release-manifest inventory.
 
 For read-only result checks, run `python -B scripts/final_release_gate.py`.
 It binds the finite-oracle, fixture, public-build, scale and owner-label counts
@@ -152,7 +154,7 @@ python -B scripts/reproduce_diagnostics.py --output results/fresh-diagnostics
 ```
 
 `results/diagnostics/current/` records the current execution:
-102 of 103 discovered tests run and pass. The explicitly excluded retained test
+110 of 111 discovered tests run and pass. The explicitly excluded retained test
 writes a traversal-name ZIP; it is not executed or counted as a pass by this
 benign-fixture path. The other tests include the unchanged 90,582-model finite
 family, owned ordinary ZIP readback, metadata-only NUL admission controls, and
@@ -162,14 +164,14 @@ population is added. Six command-capture and optimization-guard controls also
 test raw diagnostic preservation, nonzero compiler/builder exits and exact
 numeric probe decoding.
 
-The retained diagnostic includes thirteen result-binding controls that reject missing named sources, unrelated
+The diagnostic includes thirteen original result-binding controls that reject missing named sources, unrelated
 numeric reports, changed summary fields, inconsistent census rows, duplicate
 keys or columns, Boolean count substitutions and nonfinite numbers. Two
 manifest controls reject duplicate membership and invalid relative paths.
-Eight additional focused auditor tests cover the direct-comparison records,
+Eight additional auditor tests cover the direct-comparison records,
 their row membership, receipt, source bindings and label census. The complete
-focused auditor suite has 21 passing tests; this does not replace the earlier
-diagnostic's recorded 102-test execution.
+21-method auditor suite is included in the current 110-test execution. Earlier
+diagnostic receipts retain their own original execution counts and logs.
 
 The owner diagnostic admits exactly two complete provider maps and two labels,
 rejecting a third rather than omitting it. Zero-collision rates and means are

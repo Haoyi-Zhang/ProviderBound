@@ -55,15 +55,25 @@ writes (`-B`) and hash seed 0. Its UTC times correspond to 2026-10-14 in
 Asia/Shanghai. It runs 84 of 85 discovered tests; one retained test that writes
 a traversal-name ZIP is explicitly not executed. Temporary owned fixtures stay
 inside the selected output and are removed after the run. The full test IDs,
-raw log, source/input SHA-256 bindings and current provider-byte replay are
+raw log, source/input bindings and provider-byte replay are
 retained there. The measured single-run wall time describes this diagnostic
 only; no CPU/RSS or comparative speed result is inferred from it.
 
-This current execution performs no Ant/JVM build, provider-class execution,
+That execution performs no Ant/JVM build, provider-class execution,
 archive extraction, network acquisition or public-output ZIP replay. The same
 80 modeled content maps are each evaluated under two label schemes; those 160
 count records are neither 160 builds nor additional independent public cases.
 Actual ownership labels and downstream analyzer findings remain unmeasured.
+
+The current `results/diagnostics/current/receipt.json` records the fresh
+Windows/CPython 3.12.14 execution of 110 selected methods from 111 discovered
+methods. The same one retained traversal-ZIP fixture is explicitly excluded.
+Its raw log, all 165 input/source bindings and 36 retained-metric comparisons
+are included. This run used the unchanged diagnostic driver in a private
+extraction, with extended Windows paths after an initial path-length failure;
+the receipt preserves its actual paths and times. It ran no Ant/JVM build,
+provider code, archive extraction or network acquisition. The earlier receipts
+remain historical observations rather than being relabelled as this run.
 
 The separate native replay in `results/native-replay/` uses Temurin OpenJDK
 21.0.12.1 on the same Windows/Python host. It actually runs 80 Apache Ant builds

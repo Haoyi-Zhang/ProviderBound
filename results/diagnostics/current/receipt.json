@@ -4,12 +4,12 @@
   "collision_observations_per_schema": 8156,
   "command": [
     "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\pdf-env\\Scripts\\python.exe",
-    "scripts/reproduce_diagnostics.py",
+    "\\\\?\\D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\private\\branch_handoffs\\branch-1\\artifact-repository-current\\group-B\\logs\\P010\\fresh-diagnostics\\project\\artifact\\scripts\\reproduce_diagnostics.py",
     "--output",
-    "results/diagnostics/current"
+    "\\\\?\\D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\private\\branch_handoffs\\branch-1\\artifact-repository-current\\group-B\\logs\\P010\\fresh-diagnostics\\project\\artifact\\results\\diagnostics\\fresh-run-extended"
   ],
-  "cwd": "D:\\CodexProjects\\wg-check\\substantive-library\\P010\\artifact",
-  "finished_utc": "2026-10-14T20:18:51.194122+00:00",
+  "cwd": "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\private\\branch_handoffs\\branch-1\\artifact-repository-current\\group-B\\logs\\P010\\fresh-diagnostics\\project\\artifact",
+  "finished_utc": "2026-10-15T10:31:58.248717+00:00",
   "hash_seed": "0",
   "label_schemas": 2,
   "modeled_outputs_per_label_schema": 80,
@@ -19,16 +19,16 @@
   "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
   "retained_metric_checks": 36,
   "scope": "Bundled provider bytes and caller-declared labels; new model replay and owned controls, not new native builds or ownership authentication.",
-  "started_utc": "2026-10-14T20:18:43.363131+00:00",
+  "started_utc": "2026-10-15T10:31:49.856562+00:00",
   "tests": {
-    "discovered": 103,
+    "discovered": 111,
     "errors": 0,
     "excluded_not_executed": {
       "test_boundary.BoundaryTests.test_concrete_archive_adapters_and_safety": "Retained test writes a traversal-name ZIP; omitted from this benign-fixture run."
     },
     "failures": 0,
-    "run": 102,
-    "selected": 102,
+    "run": 110,
+    "selected": 110,
     "selected_test_ids": [
       "test_archive_metadata.ArchiveMetadataTests.test_adapters_validate_before_manifest_or_directory_filter",
       "test_archive_metadata.ArchiveMetadataTests.test_changed_spelling_is_not_canonicalized",
@@ -40,9 +40,17 @@
       "test_archive_metadata.ArchiveMetadataTests.test_valid_excluded_members_do_not_read_payloads",
       "test_audit_claims.AuditClaimsTests.test_boolean_in_integer_field_fails",
       "test_audit_claims.AuditClaimsTests.test_boolean_in_nested_category_count_fails",
+      "test_audit_claims.AuditClaimsTests.test_changed_diagnostic_producer_requires_new_evidence",
+      "test_audit_claims.AuditClaimsTests.test_changed_owner_labels_cannot_inherit_zero_scope_counts",
       "test_audit_claims.AuditClaimsTests.test_cli_rejects_output_inside_artifact",
+      "test_audit_claims.AuditClaimsTests.test_coordinated_diagnostic_edits_still_bind_to_build_census",
       "test_audit_claims.AuditClaimsTests.test_correct_actual_current_sources_pass",
       "test_audit_claims.AuditClaimsTests.test_default_cli_stdout_does_not_write_docs",
+      "test_audit_claims.AuditClaimsTests.test_diagnostic_aggregate_must_equal_its_rows",
+      "test_audit_claims.AuditClaimsTests.test_diagnostic_and_receipt_are_required_named_sources",
+      "test_audit_claims.AuditClaimsTests.test_diagnostic_decision_fields_are_required_strict_counts",
+      "test_audit_claims.AuditClaimsTests.test_diagnostic_execution_receipt_cannot_claim_native_runs",
+      "test_audit_claims.AuditClaimsTests.test_diagnostic_observation_membership_and_pair_binding",
       "test_audit_claims.AuditClaimsTests.test_duplicate_csv_column_fails",
       "test_audit_claims.AuditClaimsTests.test_duplicate_json_key_fails",
       "test_audit_claims.AuditClaimsTests.test_float_overflow_json_fails",
@@ -141,6 +149,6 @@
     "fresh Ant/JVM experiment",
     "general ZIP header-parser correctness"
   ],
-  "wall_seconds": 7.831525300000067,
+  "wall_seconds": 8.391805399995064,
   "zipfile_sha256": "83031a1582b84054fdde260a372f8ed25d9dedfbfcbedcef2bc015bcca7c5332"
 }
