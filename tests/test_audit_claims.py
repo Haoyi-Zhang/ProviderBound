@@ -1,4 +1,4 @@
-"""Owned regression fixtures for the staged P010 claim auditor.
+"""Owned regression fixtures for the staged ProviderBound claim auditor.
 
 Only the named benign current science files are copied into owned temporary directories
 under this tests directory. No upstream program or campaign is executed.

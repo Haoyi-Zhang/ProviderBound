@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit current P010 quantitative claims against named scientific inputs only.
+"""Audit current ProviderBound quantitative claims against named scientific inputs only.
 
 This is a read-only verifier. It never scans the artifact tree, treats a number's
 mere occurrence as evidence, or reads reports/claim indexes/process tables.
