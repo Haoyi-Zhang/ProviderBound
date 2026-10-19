@@ -3,12 +3,12 @@
   "archive_extractions": 0,
   "collision_observations_per_schema": 8156,
   "command": [
-    "<PROJECTS_ROOT>\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\pdf-env\\Scripts\\python.exe",
-    "\\\\?\\<PROJECTS_ROOT>\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\private\\branch_handoffs\\branch-1\\artifact-repository-current\\group-B\\logs\\P010\\fresh-diagnostics\\project\\artifact\\scripts\\reproduce_diagnostics.py",
+    "<PYTHON_ROOT>/Scripts/python.exe",
+    "\\\\?\\<ARTIFACT_ROOT>/scripts/reproduce_diagnostics.py",
     "--output",
-    "\\\\?\\<PROJECTS_ROOT>\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\private\\branch_handoffs\\branch-1\\artifact-repository-current\\group-B\\logs\\P010\\fresh-diagnostics\\project\\artifact\\results\\diagnostics\\fresh-run-extended"
+    "\\\\?\\<ARTIFACT_ROOT>/results/diagnostics/fresh-run-extended"
   ],
-  "cwd": "<PROJECTS_ROOT>\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\private\\branch_handoffs\\branch-1\\artifact-repository-current\\group-B\\logs\\P010\\fresh-diagnostics\\project\\artifact",
+  "cwd": "<ARTIFACT_ROOT>",
   "finished_utc": "2026-10-15T10:31:58.248717+00:00",
   "hash_seed": "0",
   "label_schemas": 2,
