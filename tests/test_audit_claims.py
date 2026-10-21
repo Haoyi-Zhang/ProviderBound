@@ -12,6 +12,8 @@ import importlib.util
 import hashlib
 import json
 import os
+import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -30,6 +32,18 @@ spec.loader.exec_module(audit_module)
 
 
 class AuditClaimsTests(unittest.TestCase):
+    def test_dynamic_import_resolves_owned_sibling_without_pythonpath(self):
+        with tempfile.TemporaryDirectory(prefix='auditor-isolated-import-') as cwd:
+            code = ('import importlib.util,sys; '
+                    'spec=importlib.util.spec_from_file_location("owned_audit",sys.argv[1]); '
+                    'module=importlib.util.module_from_spec(spec); '
+                    'spec.loader.exec_module(module); '
+                    'assert callable(module.validate_diagnostic_inputs)')
+            result = subprocess.run([sys.executable, '-I', '-X', 'utf8', '-B', '-c', code, str(SCRIPT)],
+                                    cwd=cwd, capture_output=True, text=True,
+                                    encoding='utf-8', timeout=15)
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
     def fixture(self):
         holder = tempfile.TemporaryDirectory(prefix="p010-claim-", dir=HERE)
         self.addCleanup(holder.cleanup)

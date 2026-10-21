@@ -18,6 +18,10 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
+
+# Dynamic-file test loading and direct CLI execution must resolve the same
+# owned sibling, without relying on an earlier caller's PYTHONPATH mutation.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from manuscript_inputs import SCIENTIFIC_BINDINGS, validate_diagnostic_inputs
 
 
