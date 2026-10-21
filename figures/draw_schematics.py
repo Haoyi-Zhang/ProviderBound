@@ -99,14 +99,14 @@ def draw(out):
         ('producer',8,0,'world/force\nquery producer'),
         ('cert',8,-2.5,'normalized graph\nand certificate'),
         ('lowerc',4,-5,'checker-side\nsafe lowering'),
-        ('checker',8,-5,'independent\nreplay checker'),
+        ('checker',8,-5,'graph comparison\nand independent\nreplay'),
         ('answer',8,-7.5,'accepted exact\nowner sets')]:
         d.box(name,x,y,3.15,1.2,label,size=8.5)
     d.ax.add_patch(Rectangle((8-3.15/2+.06,-5-1.2/2+.06),3.15-.12,1.2-.12,fill=False,linewidth=.55,edgecolor='black',zorder=3))
     d.edge('archives','lowerp','e','w')
     d.arrow(d.point('facts','e'),d.point('lowerp','s'),via=[(2.2,-2.5),(2.2,-1.3),(4,-1.3)])
     d.edge('lowerp','producer','e','w');d.edge('producer','cert')
-    d.arrow(d.point('cert','s'),d.point('lowerc','n'),via=[(8,-4),(4,-4)])
+    d.edge('cert','checker')
     d.edge('lowerc','checker','e','w');d.edge('checker','answer')
     d.arrow(d.point('archives','w'),(4-3.15/2,-4.8),via=[(-2.2,0),(-2.2,-4.8)])
     d.arrow(d.point('facts','s'),(4-3.15/2,-5.2),via=[(0,-5.2)])

@@ -65,7 +65,7 @@ archive extraction, network acquisition or public-output ZIP replay. The same
 count records are neither 160 builds nor additional independent public cases.
 Actual ownership labels and downstream analyzer findings remain unmeasured.
 
-The current `results/diagnostics/current/receipt.json` records the fresh
+The retained `results/diagnostics/current/receipt.json` records a
 Windows/CPython 3.12.14 execution of 110 selected methods from 111 discovered
 methods. The same one retained traversal-ZIP fixture is explicitly excluded.
 Its raw log, all 165 input/source bindings and 36 retained-metric comparisons
@@ -74,6 +74,14 @@ extraction, with extended Windows paths after an initial path-length failure;
 the receipt preserves its actual paths and times. It ran no Ant/JVM build,
 provider code, archive extraction or network acquisition. The earlier receipts
 remain historical observations rather than being relabelled as this run.
+
+The recorded 165-entry catalogue is preserved in full. Its scientific/input
+bindings (163 files) still match current bytes; the two auditor programs
+`scripts/audit_claims.py` and `tests/test_audit_claims.py` identify the historical
+execution, not current auditor bodies. Both the release gate and manuscript
+export enforce this distinction without dropping mandatory bindings or updating
+the old digests. The test count therefore remains a recorded execution count;
+the research counts retain the unchanged producer/checker/input/label binding.
 
 The separate native replay in `results/native-replay/` uses Temurin OpenJDK
 21.0.12.1 on the same Windows/Python host. It actually runs 80 Apache Ant builds

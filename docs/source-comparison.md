@@ -78,7 +78,8 @@ the certificate oracle agree on every observation.  Thirty reversed pairs have
 identical output byte maps while 3,471 shared paths change hidden winner, showing
 that output bytes alone may not identify provenance.  The single mixed pair
 shows the converse: one differing shared path constrains the global order and
-resolves 100 equal-byte observations that are locally ambiguous.
+resolves 96 equal-byte observations that are locally ambiguous. A second pair,
+p027, contributes four LICENSE/NOTICE observations, giving 100 in total.
 
 These are real archive-composition facts for the frozen corpus.  They do not
 establish the prevalence of first-winner ambiguity in Android apps, nor do they

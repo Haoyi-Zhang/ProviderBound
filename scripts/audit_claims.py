@@ -10,14 +10,15 @@ from __future__ import annotations
 
 import argparse
 import csv
-import hashlib
 import json
 import math
 import re
+import statistics
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
+from manuscript_inputs import SCIENTIFIC_BINDINGS, validate_diagnostic_inputs
 
 
 class AuditError(ValueError):
@@ -44,18 +45,7 @@ CSV_FILES = (
 )
 # These files produced the retained diagnostic. Auditor/test changes do not
 # rewrite that execution's receipt or make its earlier test run current.
-DIAGNOSTIC_BINDINGS = (
-    "scripts/analyze_owner_granularity.py",
-    "scripts/reproduce_diagnostics.py",
-    "src/archive_producer.py",
-    "src/archive_checker.py",
-    "src/producer.py",
-    "src/checker.py",
-    "inputs/public/providers.csv",
-    "inputs/public/collision_pairs.csv",
-    "inputs/public/selection.json",
-    "results/current/public/cases.csv",
-)
+DIAGNOSTIC_BINDINGS = SCIENTIFIC_BINDINGS
 
 
 def unique_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
@@ -167,16 +157,73 @@ def csv_sum(rows: list[dict[str, str]], column: str, relative: str) -> int:
     return sum(csv_integer(row, column, f"{relative}:row{index}") for index, row in enumerate(rows, 2))
 
 
+def measured(observed, expected, location, rounded=False):
+    """Strict finite numeric comparison; public rates are serialized to 6 decimals."""
+    if type(observed) not in (int, float) or not math.isfinite(observed):
+        raise AuditError('expected finite numeric measurement at ' + location)
+    wanted = round(expected, 6) if rounded else expected
+    if observed != wanted:
+        raise AuditError(f'metric mismatch at {location}: observed {observed!r}, expected {wanted!r}')
+
+
+def public_metrics(public, builds):
+    """Reconstruct the six fixed two-provider references from strict case counts."""
+    location = CSV_FILES[4]
+    n = csv_sum(builds, 'collision_regions', location)
+    if n <= 0:
+        raise AuditError('public collision denominator must be positive')
+    local_ambiguous = csv_sum(builds, 'local_ambiguous_regions', location)
+    certified_ambiguous = csv_sum(builds, 'certified_ambiguous_regions', location)
+    trace_exact = sum(csv_integer(row, 'collision_regions', location) for row in builds
+                      if csv_integer(row, 'admissible_actual_orders', location) == 1)
+    for row in builds:
+        if csv_integer(row, 'admissible_actual_orders', location) not in (1, 2):
+            raise AuditError('invalid two-provider oracle order count')
+    columns = {'catalogue_tiebreak': 'catalogue_tiebreak_oracle_exact',
+               'inventory_size_proxy': 'inventory_size_proxy_oracle_exact',
+               'dependency': 'dependency_oracle_exact',
+               'local_bytes': 'local_bytes_oracle_exact', 'certified': 'certified_oracle_exact'}
+    trace_covered = csv_sum(builds, 'trusted_trace_hidden_winner_covered', location)
+    exact(trace_covered, n, location + ':trusted trace coverage')
+    result = {}
+    for name in (*columns, 'trusted_trace'):
+        k = csv_sum(builds, columns[name], location) if name in columns else trace_exact
+        if not 0 <= k <= n:
+            raise AuditError('invalid exact-set count: ' + name)
+        singleton = name in ('catalogue_tiebreak', 'inventory_size_proxy', 'trusted_trace')
+        conservative = k if singleton else n
+        # A fixed singleton picks each hidden winner once across opposite orders.
+        covered = n // 2 if name in ('catalogue_tiebreak', 'inventory_size_proxy') else n
+        if n % 2:
+            raise AuditError('opposite-order collision count must be even')
+        size = (n if singleton else 2*n if name == 'dependency'
+                else n + local_ambiguous if name == 'local_bytes' else n + certified_ambiguous)
+        derived = {'observations': n, 'oracle_exact_count': k,
+                   'oracle_exact_rate': round(k/n, 6),
+                   'oracle_conservative_rate': round(conservative/n, 6),
+                   'hidden_winner_coverage_rate': round(covered/n, 6),
+                   'mean_owner_set_size': round(size/n, 6)}
+        stored = member(member(public, 'baseline_comparison_on_collision_regions', JSON_FILES[3]), name, name)
+        for key in ('observations', 'oracle_exact_count'):
+            field(stored, key, derived[key], name)
+        for key in ('oracle_exact_rate', 'oracle_conservative_rate',
+                    'hidden_winner_coverage_rate', 'mean_owner_set_size'):
+            measured(member(stored, key, name), derived[key], name + '/' + key)
+        result[name] = derived
+    sizes = [csv_integer(row, 'certificate_bytes', location) for row in builds]
+    for key, value in (('certificate_bytes_min', min(sizes)),
+                       ('certificate_bytes_max', max(sizes))):
+        field(public, key, value, JSON_FILES[3])
+    measured(member(public, 'certificate_bytes_median', JSON_FILES[3]), statistics.median(sizes),
+             JSON_FILES[3] + '/certificate_bytes_median')
+    return result
+
+
 def audit_diagnostic(root, data, builds, providers, owner):
     """Bind the retained direct comparison, without running provider programs."""
     relative, receipt_path, bindings_path = JSON_FILES[6:9]
     value, receipt, bindings = (data[name] for name in JSON_FILES[6:9])
-    for name in DIAGNOSTIC_BINDINGS:
-        recorded = member(bindings, name, bindings_path)
-        if type(recorded) is not str or not re.fullmatch(r"[0-9a-f]{64}", recorded):
-            raise AuditError(f"invalid diagnostic source binding: {name}")
-        actual = hashlib.sha256(source(root, name).read_bytes()).hexdigest()
-        exact(actual, recorded, bindings_path + ":" + name)
+    validate_diagnostic_inputs(root)
 
     # The zero developer counts below depend on this supplied label census,
     # not on a claim that the labels constitute independent ownership truth.
@@ -245,6 +292,14 @@ def audit_diagnostic(root, data, builds, providers, owner):
                 expected = csv_integer(build, column, CSV_FILES[4]) if scheme == "archive" else 0
                 exact(integer(counts.get(key, 0), location + ":" + key), expected, location + ":" + key)
             field(counts, "provider_narrowings", csv_integer(build, "global_narrowings", CSV_FILES[4]), location)
+            ambiguous_local = csv_integer(build, 'local_ambiguous_regions', CSV_FILES[4]) if scheme == 'archive' else 0
+            ambiguous_exact = csv_integer(build, 'certified_ambiguous_regions', CSV_FILES[4]) if scheme == 'archive' else 0
+            narrow = csv_integer(build, 'global_narrowings', CSV_FILES[4]) if scheme == 'archive' else 0
+            for key, expected in (('local_exact_count', n-narrow), ('certified_exact_count', n),
+                                  ('local_set_size_sum', n+ambiguous_local),
+                                  ('certified_set_size_sum', n+ambiguous_exact)):
+                field(counts, key, expected, location)
+                sums[key] += expected
             sums["collision_observations"] += n
         metrics = member(member(value, "metrics", relative), scheme, relative)
         for key, count in sums.items():
@@ -254,6 +309,12 @@ def audit_diagnostic(root, data, builds, providers, owner):
         for key, expected in previous.items():
             exact(member(metrics, key, relative), expected, relative + ":metrics/" + scheme + "/" + key)
         exact(sums["collision_observations"], 8156, relative + ":collision sum")
+        for key, numerator in (('local_exact_rate', 'local_exact_count'),
+                               ('certified_exact_rate', 'certified_exact_count'),
+                               ('local_mean_set_size', 'local_set_size_sum'),
+                               ('certified_mean_set_size', 'certified_set_size_sum')):
+            measured(member(metrics, key, relative), sums[numerator]/sums['collision_observations'],
+                     relative + ':' + scheme + '/' + key)
         totals[scheme] = dict(sums)
     return totals
 
@@ -373,6 +434,7 @@ def _audit_checked(root: Path) -> dict[str, Any]:
         baseline = member(baselines, name, JSON_FILES[3] + ":baselines")
         field(baseline, "oracle_exact_count", expected, JSON_FILES[3] + ":" + name)
         exact(csv_sum(builds, column, CSV_FILES[4]), expected, CSV_FILES[4] + ":" + column)
+    derived_public = public_metrics(public, builds)
 
     # Owner labels: archive-level gain is real; package-level gain is zero.
     field(owner, "provider_archives", 43, JSON_FILES[5])
@@ -418,6 +480,8 @@ def _audit_checked(root: Path) -> dict[str, Any]:
         "schema_version": 2,
         "status": "PASS",
         "errors": [],
+        "diagnostic_binding_scope": validate_diagnostic_inputs(root),
+        "derived_public_metrics": derived_public,
         "scope": "Named current scientific JSON/CSV bindings only; no campaign execution or full scientific acceptance",
         "scientific_sources": list(dict.fromkeys(JSON_FILES + CSV_FILES + DIAGNOSTIC_BINDINGS)),
         "claims": {

@@ -34,8 +34,9 @@ class AuditClaimsTests(unittest.TestCase):
         holder = tempfile.TemporaryDirectory(prefix="p010-claim-", dir=HERE)
         self.addCleanup(holder.cleanup)
         root = Path(holder.name)
+        bindings = json.loads((CURRENT / audit_module.JSON_FILES[8]).read_text(encoding='utf-8'))
         for relative in dict.fromkeys(audit_module.JSON_FILES + audit_module.CSV_FILES
-                                      + audit_module.DIAGNOSTIC_BINDINGS):
+                                      + tuple(bindings)):
             target = root / relative
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes((CURRENT / relative).read_bytes())
@@ -151,7 +152,8 @@ class AuditClaimsTests(unittest.TestCase):
         bindings = json.loads(binding_path.read_text(encoding="utf-8"))
         bindings["inputs/public/providers.csv"] = hashlib.sha256(path.read_bytes()).hexdigest()
         binding_path.write_text(json.dumps(bindings), encoding="utf-8")
-        self.assert_rejected(root, "all-library owner labels")
+        # Coordinated relabelling cannot rewrite a retained execution catalogue.
+        self.assert_rejected(root, "catalogue identity changed")
 
     def test_self_report_with_arbitrary_numbers_cannot_replace_missing_source(self):
         root = self.fixture()

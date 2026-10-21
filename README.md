@@ -141,7 +141,7 @@ The 100 provider-level narrowings remain. No public provider is labelled
 developer, so the developer-inclusion policy changes on zero regions. This is
 not a downstream analyzer, vulnerability, suppression, or call-graph experiment.
 
-## Current bounded diagnostics
+## Retained bounded diagnostics
 
 Reported measurements come from the executed artifact workflows.
 
@@ -151,7 +151,7 @@ Run the current offline model/receipt checks into a fresh directory:
 python -B scripts/reproduce_diagnostics.py --output results/fresh-diagnostics
 ```
 
-`results/diagnostics/current/` records the current execution:
+`results/diagnostics/current/` records a retained execution:
 110 of 111 discovered tests run and pass. The explicitly excluded retained test
 writes a traversal-name ZIP; it is not executed or counted as a pass by this
 benign-fixture path. The other tests include the unchanged 90,582-model finite
@@ -168,7 +168,7 @@ keys or columns, Boolean count substitutions and nonfinite numbers. Two
 manifest controls reject duplicate membership and invalid relative paths.
 Eight additional auditor tests cover the direct-comparison records,
 their row membership, receipt, source bindings and label census. The complete
-21-method auditor suite is included in the current 110-test execution. Earlier
+21-method auditor suite was included in that 110-test execution. Earlier
 diagnostic receipts retain their own original execution counts and logs.
 
 The owner diagnostic admits exactly two complete provider maps and two labels,
@@ -180,14 +180,25 @@ matches and zero developer inclusions for all three methods. The package map
 removes the 100 per-JAR owner narrowings, not the provider-level exclusions.
 These are conditional calculations under supplied labels, not label validation.
 
-The current record contains all 160 per-output/schema count observations, the
+The retained record contains all 160 per-output/schema count observations, the
 40-pair input census, 36 unchanged retained-metric checks, selected test IDs,
 raw logs, source/input bindings and the Windows/Python environment. It records
 **zero new Ant builds**, zero provider-code execution and zero extraction.
 The earlier `results/current/`, `results/unit-tests.*` and
 `results/owner-granularity.json` stay separate and unchanged. The manuscript
-table generator consumes the new diagnostic receipt without relabelling those
+table generator consumes the retained diagnostic receipt without relabelling those
 historical executions as current-code validation.
+
+The release gate and table generator use the same binding validator. All 165
+recorded catalogue entries and their values are preserved and pinned. Of these,
+163 scientific/input files must still match current bytes; only
+`scripts/audit_claims.py` and `tests/test_audit_claims.py` are explicitly historical
+execution identities. Their recorded digests are not replaced by current ones.
+The unchanged producer, checker, diagnostic driver, inputs and owner labels
+still bind the adopted research counts. Maintaining the auditors does not claim
+that their current bodies ran in the retained execution. Missing, extra,
+duplicate or malformed catalogue entries fail closed. Changed scientific
+bindings require new execution evidence, not a rewritten historical digest.
 
 The separate current native replay in `results/native-replay/` executes all 80
 Ant builds and both owned Java assemblies. All 165,630 regional observations

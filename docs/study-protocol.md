@@ -131,7 +131,7 @@ provider, so the manuscript's developer-inclusion policy does not change on any
 region. This diagnostic does not measure analyzer findings, call graphs,
 security defects or suppression changes.
 
-The current diagnostic record is separate in
+The retained diagnostic record is separate in
 `results/diagnostics/`. Its two-provider interface rejects
 other arities; empty collision denominators yield null rates/means with zero
 counts. It records per-output/schema counts for local, certified and literal
