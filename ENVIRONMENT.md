@@ -28,7 +28,7 @@ For the historical public case CSV, the conventional even-sample median is
 292,845 bytes, averaging 292,719 and 292,971; the prior summary stored the upper
 middle value. The table generator recomputes that statistic from raw rows.
 
-The manuscript's complete Linux 6.17 / CPython 3.12.14 / Temurin 21.0.12.1
+The manuscript's complete Linux 6.17 / CPython 3.12.14 / Temurin 17.0.20.1
 campaign is in `results/current/`: eight stages, including 80 public Ant builds
 and two owned Java builds, completed in 72.17 wall seconds. The table generator
 uses these measurements, not `results/local/`.

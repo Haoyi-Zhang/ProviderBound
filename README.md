@@ -37,7 +37,7 @@ The public pair study is exact for its two-provider worlds: building `A,B` and
 `B,A` enumerates every total provider order.  It is a frozen collision-bearing
 sample of Debian-distributed Java archives, not a representative sample of
 Android applications or Maven Central. `results/current/` contains the complete
-Linux 6.17 / CPython 3.12.14 / Temurin 21.0.12.1 campaign: eight successful
+Linux 6.17 / CPython 3.12.14 / Temurin 17.0.20.1 campaign: eight successful
 stages in 72.17 wall seconds, including all 80 Ant builds and both owned Java
 builds. Its public stage took 58.43 seconds; all three scale certificates
 replayed. Earlier Linux records and `results/local/` Windows finite results

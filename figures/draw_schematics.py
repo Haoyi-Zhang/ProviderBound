@@ -108,8 +108,9 @@ def draw(out):
     d.edge('lowerp','producer','e','w');d.edge('producer','cert')
     d.edge('cert','checker')
     d.edge('lowerc','checker','e','w');d.edge('checker','answer')
-    d.arrow(d.point('archives','w'),(4-3.15/2,-4.8),via=[(-2.2,0),(-2.2,-4.8)])
-    d.arrow(d.point('facts','s'),(4-3.15/2,-5.2),via=[(0,-5.2)])
+    # The outer archive route enters below the facts route, avoiding a false junction.
+    d.arrow(d.point('archives','w'),(4-3.15/2,-5.2),via=[(-2.2,0),(-2.2,-5.2)])
+    d.arrow(d.point('facts','s'),(4-3.15/2,-4.8),via=[(0,-4.8)])
     d.frame(2.125,-.9,7.75,1.8);d.text(6,1.25,'untrusted production',size=8.5)
     d.frame(2.125,-5.9,7.75,1.8);d.text(6,-6.25,'replay boundary',size=8.5)
     d.save(out,'protocol-pipeline')
