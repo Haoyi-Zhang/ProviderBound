@@ -34,6 +34,14 @@ jobs:
         shell: bash
         run: |
           python -B scripts/final_release_gate.py --output-json "$RUNNER_TEMP/p010-scientific/retained-contract.json"
+      - name: Replay all native three-provider collision triples
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -B -m unittest discover -s tests/triples -v
+          python -B -O -m unittest discover -s tests/triples -v
+          python -B scripts/triple_study.py --out "$RUNNER_TEMP/p010-scientific/triples" --compare results/triple-study
+          python -B scripts/triple_report.py
       - name: Upload raw results and logs, including failed stages
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02

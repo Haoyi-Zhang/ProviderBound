@@ -1,4 +1,4 @@
-# Proof-Carrying Library Boundary
+# Proof-Carrying Provider Attribution under First-Winner Archive Merging
 
 This standalone repository implements and evaluates an independently replayable
 certificate protocol for **first-winner archive composition**.  The input is a
@@ -223,6 +223,44 @@ CPU remains separate. The native replay used an isolated Temurin JDK
 decoding does not determine build success or change the numeric probe contract.
 Standalone Java and diagnostic commands reject optimized Python before output
 creation because their scientific checks require active assertions.
+
+## Native three-provider extension
+
+The complete census of the same 43 retained provider archives contains four
+unordered triples sharing a non-META-INF member. The extension builds all six
+orders of every triple with the unchanged Ant Zip first-winner operation:
+24 actual builds and 29,454 output-region observations. Each output has both
+per-JAR and Debian-package labels, yielding 48 labelled models, not 48 builds.
+Two triples span three packages each. Provider classes are never loaded.
+All content maps, separate archive adapters and exact six-order owner sets
+agree. Batik yields 104 per-JAR narrowings over local bytes; every triple has
+zero extra package-level narrowing. These counts are separate from the earlier
+80 pair builds and do not demonstrate an Android or developer/library benefit.
+
+Run with Python and an installed Java runtime (JAVA_HOME or PATH):
+
+    python -B -m unittest discover -s tests/triples -v
+    python -B -O -m unittest discover -s tests/triples -v
+    python -B scripts/triple_study.py --out /fresh/private/triples --compare results/triple-study
+    python -B scripts/triple_report.py
+
+The seven regression methods are separate from retained historical test counts.
+The record consumer validates source bindings, all current native member
+identities, graphs, certificates, direct answers, counts and measured samples.
+It does not claim to re-execute Ant; the preceding native command does that.
+CI runs both test modes, fresh native semantic comparison and the consumer,
+in addition to every existing full-campaign and release gate.
+
+The Windows record separately times producer inference, independent replay
+and exact six-order solving on identical loaded graphs. One warmup precedes
+five timed calls; Python allocation peaks are measured in separate calls.
+Archive parsing, Ant, JSON serialization and disk I/O are excluded. The measured
+pooled medians are in the derived paper table; replay is not the fastest
+method here. A separately checkable possibility/exclusion object is the value,
+not extra answer precision or a speed advantage over the same-information
+solver. Per-model durations, allocation peaks, certificates and native entry
+identities are retained in results/triple-study. Existing Linux timings and
+historical pair results are unchanged.
 
 ## Repository map
 

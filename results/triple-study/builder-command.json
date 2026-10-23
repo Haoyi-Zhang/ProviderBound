@@ -1,0 +1,1 @@
+{"actual_zip_tasks":24,"argv":["<JAVA>","-Xmx768m","-cp","<ARTIFACT_ROOT>/inputs/public/jars/ant-1.10.15.jar;<ARTIFACT_ROOT>/inputs/public/jars/ant-launcher-1.10.15.jar","org.apache.tools.ant.Main","-q","-f","<WORK_ROOT>/build.xml"],"manifest_handling":"META-INF/MANIFEST.MF excluded; other entries opaque first-winner bytes","returncode":0}
